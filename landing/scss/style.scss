@@ -1,0 +1,160 @@
+body{
+   margin: 0;
+   font-size: 16px;
+   background-color: #333;
+   color: #fff;
+   font-family: Arial, Helvetica, sans-serif;
+   line-height: 1.2;
+   height: 100%;
+}
+.wrapper{
+   min-height: 100%;
+}
+h1,h2,h3{
+   margin: 0;
+   font-weight: inherit;
+   font-size: inherit;
+}
+p{
+   margin: 0;
+}
+ul{
+   margin: 0;
+   padding: 0;
+   list-style: none;
+}
+*,*::before,*::after{
+   box-sizing: border-box;
+}
+
+
+
+.page {
+   padding: 90px 0 30px 0;
+
+		&__section {
+         padding: 30px;
+         max-width: 1200px;
+         margin: 0 auto;
+		}
+
+		&__section-1 {
+         background-color: #794f45;
+		}
+
+		&__title {
+         margin: 0 0 20px;
+         font-size: 40px;
+		}
+
+		&__text {
+         font-size: 16px;
+		}
+
+		&__section-2 {
+         background-color: #776f45;
+		}
+
+		&__sub-title {
+         margin: 0 0 20px;
+         font-size: 30px;
+		}
+
+		&__section-3 {
+         background-color: #7a9565;
+		}
+}
+
+// Header
+.header {
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   z-index: 100;
+   background-color: #912315;
+
+   &__container {
+      max-width: 1200px;
+      margin: 0px auto;
+      display: flex;
+      padding: 0px 30px;
+      justify-content: space-between;
+      align-items: center;
+      min-height: 70px;
+   }
+
+   &__logo {
+      border-radius: 50%;
+      background-color: #fff;
+      position: relative;
+      z-index: 1;
+      width: 40px;
+      height: 40px;
+   }
+
+   &__menu {
+   }
+
+   &__icon {
+   }
+}
+
+body._pc .menu__list > li:hover .menu__sub-list {
+   opacity: 1;
+   visibility: visible;
+   transform: translate(0px, 0px);
+}
+
+.menu {
+
+   &__body {
+   }
+
+   &__list {
+
+     & > li{
+      position: relative;
+      margin: 0 0 0 20px;
+      }
+   }
+
+   &__link {
+      color: #fff;
+      font-size: 18px;
+   }
+
+   &__sub-list {
+      position: absolute;
+      top: 100%;
+      right: 0;
+      background-color: #000;
+      padding: 15px;
+      min-width: 200px;
+      & > li{
+         position: relative;
+         margin: 0 0 10px;
+         &:last-child{
+            margin: 0;
+         }
+         }
+   }
+
+   &__sub-link {
+   }
+}
+
+@media (min-width: 767px){
+   .menu__list{
+      display: flex;
+      align-items: center;
+   }
+   .menu__list>li{
+      padding: 10px 0;
+   }
+   .menu__sub-list{
+      opacity: 0;
+      transform: translate(0px, 10%);
+      visibility: hidden;
+   }
+}
