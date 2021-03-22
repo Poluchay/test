@@ -1,0 +1,37 @@
+@font-face {
+   font-family: "Gilroy";
+   src: local("Gilroy Semibold"), local("Gilroy-Semibold"), url("../fonts/Gilroy-Semibold.woff2") format("woff2"),
+      url("../fonts/Gilroy-Semibold.woff") format("woff"), url("../fonts/Gilroy-Semibold.ttf") format("truetype");
+   font-weight: 600;
+   font-style: normal;
+}
+@font-face {
+   font-family: "Gilroy";
+   src: local("Gilroy Medium"), local("Gilroy-Medium"), url("../fonts/Gilroy-Medium.woff2") format("woff2"),
+      url("../fonts/Gilroy-Medium.woff") format("woff"), url("../fonts/Gilroy-Medium.ttf") format("truetype");
+   font-weight: 500;
+   font-style: normal;
+}
+@font-face {
+   font-family: "Gilroy";
+   src: local("Gilroy Regular"), local("Gilroy-Regular"), url("../fonts/Gilroy-Regular.woff2") format("woff2"),
+      url("../fonts/Gilroy-Regular.woff") format("woff"), url("../fonts/Gilroy-Regular.ttf") format("truetype");
+   font-weight: 400;
+   font-style: normal;
+}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&display=swap');
+@import '_header.scss';
+@import '_first-screen.scss';
+
+*,*::before,*::after{
+   box-sizing: border-box;
+}
+
+button{
+   color: inherit;
+   white-space: nowrap;
+}
+a{
+   text-decoration: none;
+   color: inherit;
+}

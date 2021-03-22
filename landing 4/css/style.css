@@ -1,0 +1,197 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&display=swap");
+@font-face {
+  font-family: "Gilroy";
+  src: local("Gilroy Semibold"), local("Gilroy-Semibold"), url("../fonts/Gilroy-Semibold.woff2") format("woff2"), url("../fonts/Gilroy-Semibold.woff") format("woff"), url("../fonts/Gilroy-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: local("Gilroy Medium"), local("Gilroy-Medium"), url("../fonts/Gilroy-Medium.woff2") format("woff2"), url("../fonts/Gilroy-Medium.woff") format("woff"), url("../fonts/Gilroy-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: local("Gilroy Regular"), local("Gilroy-Regular"), url("../fonts/Gilroy-Regular.woff2") format("woff2"), url("../fonts/Gilroy-Regular.woff") format("woff"), url("../fonts/Gilroy-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
+  position: relative;
+  z-index: 10;
+}
+
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 4;
+}
+
+.header__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 1920px;
+  margin: 0 auto;
+  padding: 20px 20px 18px;
+  color: white;
+}
+
+.header__cell {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 50%;
+          flex: 1 1 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__inner {
+  margin-left: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header__logo {
+  position: relative;
+  top: -5px;
+  height: 58px;
+  margin-right: 23px;
+}
+
+.header__present {
+  padding: 13px 29px;
+  background-color: transparent;
+  border: 2px solid #3d8b8c;
+  font-family: "Gilroy";
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  max-height: 54px;
+}
+
+.header__present:hover {
+  background-color: #3d8b8c;
+}
+
+.header__call {
+  margin-left: 14px;
+  width: 50px;
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  background-image: url(../img/header/phone-call.svg);
+  background-repeat: no-repeat;
+  background-size: 20px;
+  background-position: center;
+}
+
+.header__call:hover {
+  background-color: #3d8b8c;
+  border-color: #3d8b8c;
+}
+
+.header__tel {
+  margin-left: 14px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: center;
+      align-self: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.header-logo__img {
+  height: 100%;
+}
+
+.header-slogan {
+  width: 420px;
+  vertical-align: middle;
+  font-family: "Montserrat", sans-serif;
+  font-style: italic;
+  font-size: 16px;
+}
+
+.header-tel__number {
+  font-family: "Gilroy";
+  font-size: 22px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.header-tel__back-call {
+  background-color: transparent;
+  border: none;
+  font-family: "Gilroy";
+  font-size: 16px;
+  text-decoration: underline;
+}
+
+.header-tel__back-call:hover {
+  text-decoration: none;
+}
+
+.first-screen {
+  height: 100vh;
+  min-height: 600px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+.first-screen__wrap {
+  position: relative;
+  z-index: 0;
+}
+
+.first-screen__bg::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.first-screen__video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+button {
+  color: inherit;
+  white-space: nowrap;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}

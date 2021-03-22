@@ -1,0 +1,107 @@
+.wrapper {
+   min-height: 100%;
+   overflow: hidden;
+   position: relative;
+   z-index: 10;
+}
+.header {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   z-index: 4;
+   &__row {
+      display: flex;
+      max-width: 1920px;
+      margin: 0 auto;
+      padding: 20px 20px 18px;
+      color: white;
+   }
+
+   &__cell {
+      flex: 1 1 50%;
+      display: flex;
+      align-items: center;
+   }
+
+   &__inner {
+      margin-left: auto;
+      display: flex;
+   }
+
+   &__logo {
+      position: relative;
+      top: -5px;
+      height: 58px;
+      margin-right: 23px;
+   }
+
+   &__present {
+      padding: 13px 29px;
+      background-color: transparent;
+      border: 2px solid #3d8b8c;
+      font-family: "Gilroy";
+      font-size: 18px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      max-height: 54px;
+      &:hover {
+         background-color: #3d8b8c;
+      }
+   }
+
+   &__call {
+      margin-left: 14px;
+      width: 50px;
+      height: 50px;
+      border: 1px solid rgba(255, 255, 255, 0.4);
+      background-image: url(../img/header/phone-call.svg);
+      background-repeat: no-repeat;
+      background-size: 20px;
+      background-position: center;
+      &:hover {
+         background-color: #3d8b8c;
+         border-color: #3d8b8c;
+      }
+   }
+
+   &__tel {
+      margin-left: 14px;
+      display: flex;
+      align-self: center;
+      flex-direction: column;
+   }
+}
+.header-logo {
+   &__img {
+      height: 100%;
+   }
+}
+.header-slogan {
+   width: 420px;
+   vertical-align: middle;
+   font-family: "Montserrat", sans-serif;
+   font-style: italic;
+   font-size: 16px;
+}
+
+.header-tel {
+   &__number {
+      font-family: "Gilroy";
+      font-size: 22px;
+      font-weight: 600;
+      white-space: nowrap;
+   }
+
+   &__back-call {
+      background-color: transparent;
+      border: none;
+      font-family: "Gilroy";
+      font-size: 16px;
+      text-decoration: underline;
+      &:hover {
+         text-decoration: none;
+      }
+   }
+}
