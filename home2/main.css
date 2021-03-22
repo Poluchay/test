@@ -1,0 +1,30 @@
+.red{
+   color: red;
+}
+.one{
+   width: 120px;
+   background-color: blue;
+}
+.two{
+   width: 100%;
+   background-color: green;
+}
+.white{
+   color: white;
+}
+.three{
+   width:100%;
+   padding:15px 15px;
+   background-color: green;
+}
+.four{
+   margin-left: 20px;
+}
+ul{
+   font-size: 25px;
+   font-weight: bold;
+}
+li{
+   border: 1px solid black;
+   padding: 5px 0;
+}
