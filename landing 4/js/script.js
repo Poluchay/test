@@ -20,14 +20,52 @@
 //       clearInterval(interval);
 //     }
 //   }, 1000)
-// };
+// }; Android BlackBerry iPhone iPad iPod Opera Mini IEMobile
 
-// div.addEventListener('click', v);
+//userAgent
+document.addEventListener('DOMContentLoaded', () => {
+   const isMobile = {
+      Android: function () {
+         return navigator.userAgent.match(/Android/i);
+      },
+      BlackBerry: function () {
+         return navigator.userAgent.match(/BlackBerry/i);
+      },
+      iOS: function () {
+         return navigator.userAgent.match(/iPhone|iPad|iPod/i);
+      },
+      Opera: function () {
+         return navigator.userAgent.match(/Opera Mini/i);
+      },
+      IEMobile: function () {
+         return navigator.userAgent.match(/IEMobile/i);
+      },
+      any: function () {
+         return (
+            isMobile.Android() ||
+            isMobile.BlackBerry() ||
+            isMobile.iOS() ||
+            isMobile.Opera() ||
+            isMobile.IEMobile()
+         )
+      }
+   }
+   // true картинка, false видео 
+   if (isMobile.any()) {
+      document.querySelector('html').className = 'mob';
+   } else {
+      let firstScreenBg = document.querySelector('.first-screen__bg');
+      firstScreenBg.innerHTML = '<video class="first-screen__video" playsinline autoplay loop muted> <source src="img/header/video1.mp4" type="video/mp4"> </video>';
+   }
+})
 
-// const a = new Array (1,2,3,4, v = new Function('b'));
-// console.log(a)
-// console.log(a.toString())
-// const Arr = new Object ()
-// console.log(Arr)
-//window.innerWidth = 300;
-//window.outerWidth = 300;
+const presentBtnText = document.querySelector('.first-screen__button');
+if (window.innerWidth < 801) {
+   presentBtnText.textContent = 'РАССЧЕТ БЮДЖЕТА';
+}
+window.addEventListener('resize', function (e) {
+   if (window.innerWidth < 801) {
+      presentBtnText.textContent = 'РАССЧЕТ БЮДЖЕТА';
+   } else presentBtnText.textContent = 'БЕСПЛАТНЫЙ РАССЧЕТ БЮДЖЕТА';
+}
+)

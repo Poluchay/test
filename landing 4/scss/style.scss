@@ -23,6 +23,11 @@
 @import '_header.scss';
 @import '_first-screen.scss';
 
+body{
+   font-family: "Gilroy";
+   font-weight: 400;
+}
+
 *,*::before,*::after{
    box-sizing: border-box;
 }
@@ -30,8 +35,19 @@
 button{
    color: inherit;
    white-space: nowrap;
+   border: none;
 }
 a{
    text-decoration: none;
    color: inherit;
+}
+picture{
+   height: 100%;
+   display: block;
+}
+.wrapper {
+   min-height: 100%;
+   overflow: hidden;
+   position: relative;
+   z-index: 10;
 }

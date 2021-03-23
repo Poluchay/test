@@ -1,34 +1,93 @@
 .first-screen {
-   height: 100vh;
-   min-height: 600px;
-   margin: 0 auto;
    position: relative;
    z-index: 1;
    &__wrap {
       position: relative;
-      z-index: 0;
+      z-index: 3;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      @media (max-width: 800px) {
+         min-height: 550px;
+         padding: 100px 0 70px;
+      }
+      @media (min-width: 800px) {
+         min-height: 750px;
+         height: 100vh;
+      }
    }
 
    &__content {
+      max-width: 911px;
+      width: 100%;
+      text-align: center;
+      padding: 27px 33px 27px;
+      border: 1px solid #cad0d7;
+      @media (max-width: 1024px) {
+         max-width: 750px;
+      }
+      @media (max-width: 800px) {
+         max-width: 400px;
+         padding: 27px 17px 27px;
+         margin: 0 10px;
+      }
    }
 
    &__form {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
    }
 
    &__input {
+      flex: 0 0 calc(50% - 7px);
+      height: 56px;
+      padding: 4px 14px;
+      margin-bottom: 15px;
+      @media (max-width: 800px) {
+         flex: 100%;
+      }
    }
 
    &__button {
+      flex: 100%;
+      height: 56px;
+      background-color: #3d8b8c;
+      font-family: "Gilroy";
+      font-size: 18px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 1px;
    }
 }
 .first-screen {
    &__title {
+      margin-bottom: 12px;
+      font-weight: bold;
+      font-size: 60px;
+      @media (max-width: 1024px) {
+         font-size: 45px;
+      }
+      @media (max-width: 800px) {
+         font-size: 23px;
+      }
    }
 
    &__text {
+      margin-bottom: 21px;
+      font-weight: bold;
+      font-size: 24px;
+      letter-spacing: 0.05px;
+      @media (max-width: 1024px) {
+         font-size: 18px;
+      }
+      @media (max-width: 1024px) {
+         font-size: 16px;
+      }
    }
 
-   &__bg{
+   &__bg {
       &::before {
          content: "";
          position: absolute;
@@ -41,12 +100,24 @@
       }
    }
 
-   &__video{
+   &__video {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 1;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+   }
+   &__img {
       position: absolute;
       top: 0;
       left: 0;
       width: 100%;
       height: 100%;
-      object-fit: cover;      
+      background-image: url(../img/header/first-screen.jpg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
    }
 }
