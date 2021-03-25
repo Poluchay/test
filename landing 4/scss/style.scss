@@ -20,8 +20,6 @@
    font-style: normal;
 }
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&display=swap');
-@import '_header.scss';
-@import '_first-screen.scss';
 
 body{
    font-family: "Gilroy";
@@ -51,3 +49,13 @@ picture{
    position: relative;
    z-index: 10;
 }
+.container{
+   max-width: 1240px;
+   width: 100%;
+   padding: 0 10px;
+   margin: 0 auto;
+}
+
+@import '_header.scss';
+@import '_first-screen.scss';
+@import '_catalog.scss';

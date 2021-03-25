@@ -20,6 +20,46 @@
   font-style: normal;
 }
 
+body {
+  font-family: "Gilroy";
+  font-weight: 400;
+}
+
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+button {
+  color: inherit;
+  white-space: nowrap;
+  border: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+picture {
+  height: 100%;
+  display: block;
+}
+
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
+  position: relative;
+  z-index: 10;
+}
+
+.container {
+  max-width: 1240px;
+  width: 100%;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
 .header {
   position: absolute;
   top: 0;
@@ -104,6 +144,7 @@
 
 .header__present {
   padding: 13px 29px;
+  max-height: 54px;
   background-color: transparent;
   border: 2px solid #3d8b8c;
   font-family: "Gilroy";
@@ -111,7 +152,8 @@
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 1px;
-  max-height: 54px;
+  -webkit-transition: background-color 0.6s;
+  transition: background-color 0.6s;
 }
 
 .header__present:hover {
@@ -132,6 +174,8 @@
   background-repeat: no-repeat;
   background-size: 20px;
   background-position: center;
+  -webkit-transition: background-color 0.6s;
+  transition: background-color 0.6s;
 }
 
 .header__call:hover {
@@ -241,19 +285,19 @@
       -ms-flex-pack: center;
           justify-content: center;
   color: white;
+  padding: 100px 0 70px;
 }
 
 @media (max-width: 800px) {
   .first-screen__wrap {
     min-height: 550px;
-    padding: 100px 0 70px;
   }
 }
 
 @media (min-width: 800px) {
   .first-screen__wrap {
-    min-height: 750px;
-    height: 100vh;
+    min-height: 100vh;
+    padding: 150px 0 70px;
   }
 }
 
@@ -299,6 +343,14 @@
   margin-bottom: 15px;
 }
 
+.first-screen__input:hover {
+  border: 2px #3d8b8c solid;
+}
+
+.first-screen__input:focus {
+  border: 2px #3d8b8c solid;
+}
+
 @media (max-width: 800px) {
   .first-screen__input {
     -webkit-box-flex: 100%;
@@ -318,6 +370,12 @@
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 1px;
+  -webkit-transition: background-color 0.6s;
+  transition: background-color 0.6s;
+}
+
+.first-screen__button:hover {
+  background-color: #5fa1a3;
 }
 
 .first-screen__title {
@@ -391,35 +449,208 @@
   background-size: cover;
 }
 
-body {
-  font-family: "Gilroy";
-  font-weight: 400;
+.catalog__main {
+  padding: 70px 0 10px;
 }
 
-*, *::before, *::after {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+.catalog__title {
+  margin-bottom: 30px;
 }
 
-button {
-  color: inherit;
-  white-space: nowrap;
-  border: none;
+.catalog__nav {
+  margin-bottom: 30px;
 }
 
-a {
-  text-decoration: none;
-  color: inherit;
+.catalog__slider {
+  margin-bottom: 30px;
 }
 
-picture {
-  height: 100%;
+.block-title__inner {
+  border-left: 6px solid #3d8b8c;
+  padding-left: 17px;
+}
+
+.block-title__title {
+  margin-bottom: 20px;
+  font: 800 44px/0.9 "Gilroy";
+}
+
+.block-title__subtitle {
+  font: 400 18px/0.9 "Montserrat";
+}
+
+.select {
+  display: none;
+}
+
+.select-box__list {
+  cursor: pointer;
   display: block;
+  padding: 20px 10px;
+  border: 1px solid #d8d8d8;
+  white-space: nowrap;
+  text-align: center;
 }
 
-.wrapper {
-  min-height: 100%;
-  overflow: hidden;
+.select-box__list:hover {
+  font-weight: 600;
+  color: #3d8b8c;
+  border-color: #3d8b8c;
+}
+
+.catalog-nav__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.catalog-nav__item {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 155px;
+          flex: 0 1 155px;
+  margin-right: 18px;
+}
+
+.catalog-nav__item:first-child {
+  margin-bottom: 10px;
+}
+
+.catalog-nav__item:last-child {
+  margin-right: 0;
+}
+
+.catalog-nav__input {
+  display: none;
+}
+
+.catalog-nav__button {
+  cursor: pointer;
+  display: block;
+  padding: 20px 10px;
+  border: 1px solid #d8d8d8;
+  white-space: nowrap;
+  text-align: center;
+}
+
+.catalog-nav__button:hover {
+  font-weight: 600;
+  color: #3d8b8c;
+  border-color: #3d8b8c;
+}
+
+.catalog-slider__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.catalog-slider__item {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 calc(50% - 10px);
+          flex: 0 0 calc(50% - 10px);
+  margin-bottom: 20px;
   position: relative;
-  z-index: 10;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+@media (max-width: 800px) {
+  .catalog-slider__item {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 calc(100%);
+            flex: 0 0 calc(100%);
+  }
+}
+
+.catalog-slider__inner {
+  position: relative;
+  z-index: 1;
+  padding-top: 60%;
+}
+
+.catalog-slider__inner::before {
+  content: "";
+  position: absolute;
+  z-index: 3;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(179deg, rgba(0, 0, 0, 0) 44%, #000000 171%);
+}
+
+.catalog-slider__img {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.catalog-slider__content {
+  z-index: 2;
+  position: absolute;
+  top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding: 0 17px;
+  height: 100%;
+  width: 100%;
+  color: #fff;
+  font: 500 18px/0.9 "Monserrat";
+  -webkit-transform: translateY(12%);
+          transform: translateY(12%);
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
+  transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
+}
+
+.catalog-slider__content:hover {
+  -webkit-transform: translateY(-5%);
+          transform: translateY(-5%);
+}
+
+.catalog-slider__text {
+  padding-left: 14px;
+  border-left: 6px solid #3d8b8c;
+}
+
+.catalog-slider__bottom {
+  margin-top: 20px;
+  padding: 10px 0 0;
+  border-top: 1px solid rgba(212, 212, 212, 0.3);
+}
+
+.catalog-slider__title {
+  margin-bottom: 10px;
+  font: bold 24px/0.9 "Gilroy";
+}
+
+.catalog-slider__link {
+  font: bold 18px/28px "Gilroy";
+  color: #fff;
+  border-bottom: 2px solid #3d8b8c;
+  letter-spacing: 0.05px;
 }
