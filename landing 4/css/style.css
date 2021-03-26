@@ -25,6 +25,12 @@ body {
   font-weight: 400;
 }
 
+@media (max-width: 800px) {
+  body {
+    font-size: 13px;
+  }
+}
+
 *, *::before, *::after {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -450,19 +456,43 @@ picture {
 }
 
 .catalog__main {
-  padding: 70px 0 10px;
+  padding: 70px 0 25px;
+}
+
+@media (max-width: 800px) {
+  .catalog__main {
+    padding: 40px 0 0px;
+  }
 }
 
 .catalog__title {
   margin-bottom: 30px;
 }
 
+@media (max-width: 800px) {
+  .catalog__title {
+    margin-bottom: 15px;
+  }
+}
+
 .catalog__nav {
   margin-bottom: 30px;
 }
 
+@media (max-width: 800px) {
+  .catalog__nav {
+    margin-bottom: 15px;
+  }
+}
+
 .catalog__slider {
   margin-bottom: 30px;
+}
+
+@media (max-width: 800px) {
+  .catalog__slider {
+    margin-bottom: 15px;
+  }
 }
 
 .block-title__inner {
@@ -475,8 +505,20 @@ picture {
   font: 800 44px/0.9 "Gilroy";
 }
 
+@media (max-width: 800px) {
+  .block-title__title {
+    font: 800 30px/0.9 "Gilroy";
+  }
+}
+
 .block-title__subtitle {
   font: 400 18px/0.9 "Montserrat";
+}
+
+@media (max-width: 800px) {
+  .block-title__subtitle {
+    font: 800 17px/0.9 "Gilroy";
+  }
 }
 
 .select {
@@ -524,6 +566,12 @@ picture {
   margin-right: 0;
 }
 
+@media (max-width: 800px) {
+  .catalog-nav__item {
+    display: none;
+  }
+}
+
 .catalog-nav__input {
   display: none;
 }
@@ -541,6 +589,12 @@ picture {
   font-weight: 600;
   color: #3d8b8c;
   border-color: #3d8b8c;
+}
+
+@media (max-width: 800px) {
+  .catalog-nav__button {
+    padding: 20px 10px;
+  }
 }
 
 .catalog-slider__list {
@@ -619,8 +673,8 @@ picture {
   width: 100%;
   color: #fff;
   font: 500 18px/0.9 "Monserrat";
-  -webkit-transform: translateY(12%);
-          transform: translateY(12%);
+  -webkit-transform: translateY(40px);
+          transform: translateY(40px);
   -webkit-transition: -webkit-transform 1s;
   transition: -webkit-transform 1s;
   transition: transform 1s;
@@ -628,8 +682,8 @@ picture {
 }
 
 .catalog-slider__content:hover {
-  -webkit-transform: translateY(-5%);
-          transform: translateY(-5%);
+  -webkit-transform: translateY(-15px);
+          transform: translateY(-15px);
 }
 
 .catalog-slider__text {
@@ -653,4 +707,90 @@ picture {
   color: #fff;
   border-bottom: 2px solid #3d8b8c;
   letter-spacing: 0.05px;
+}
+
+.advantages {
+  background-image: url(../img/advantages/advantages-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.advantages__main {
+  padding: 50px 0;
+}
+
+@media (max-width: 800px) {
+  .advantages__main {
+    padding: 20px 0;
+  }
+}
+
+.advantages__title {
+  margin-bottom: 40px;
+}
+
+.advantage {
+  background-color: #fff;
+}
+
+.advantage__cell {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 30px 0 0;
+  border: 1px solid #cad0d7;
+}
+
+.advantage__items {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 50%;
+          flex: 1 0 50%;
+  padding: 0 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.advantage__item {
+  margin-bottom: 30px;
+  min-height: 45px;
+}
+
+.advantage__text {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 55px;
+}
+
+.advantage__text::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 45px;
+  height: 45px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  background-image: url(../img/advantages/advantage.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.advantage__title {
+  font: 18px/22px 'Montserrat';
 }

@@ -1,0 +1,70 @@
+.advantages {
+   background-image: url(../img/advantages/advantages-bg.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center center;
+
+   &__main {
+      padding: 50px 0;
+      @media (max-width: 800px) {
+         padding: 20px 0;
+      }
+   }
+
+   &__title {
+      margin-bottom: 40px;
+   }
+
+   &__content {
+   }
+}
+
+.advantage {
+   background-color: #fff;
+   &__cell {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 30px 0 0;
+      border: 1px solid #cad0d7;
+   }
+
+   &__items {
+      flex: 1 0 50%;
+      padding: 0 30px;
+      display: flex;
+      flex-direction: column;
+   }
+
+   &__item {
+      margin-bottom: 30px;
+      min-height: 45px;
+   }
+
+   &__text {
+      position: relative;
+      height: 100%;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      padding-left: 55px;
+      &::before{
+         content: "";
+         position: absolute;
+         top: 50%;
+         left: 0;
+         width: 45px;
+         height: 45px;
+         transform: translateY(-50%);
+         background-image: url(../img/advantages/advantage.svg);
+         background-repeat: no-repeat;
+         background-position: center;
+         background-size: cover;
+         
+
+      }
+   }
+
+   &__title {
+      font: 18px/22px 'Montserrat';
+   }
+}

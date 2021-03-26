@@ -24,6 +24,9 @@
 body{
    font-family: "Gilroy";
    font-weight: 400;
+   @media (max-width: 800px) {
+      font-size: 13px;
+   }
 }
 
 *,*::before,*::after{
@@ -59,3 +62,4 @@ picture{
 @import '_header.scss';
 @import '_first-screen.scss';
 @import '_catalog.scss';
+@import '_advantages.scss';
