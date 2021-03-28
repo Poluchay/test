@@ -23,6 +23,7 @@
 }
 
 body {
+  font-display: auto;
   font-family: "Gilroy";
   font-weight: 400;
 }
