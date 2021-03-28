@@ -1,4 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital@0;
+
+1&display=swap");
 @font-face {
   font-family: "Gilroy";
   src: local("Gilroy Semibold"), local("Gilroy-Semibold"), url("../fonts/Gilroy-Semibold.woff2") format("woff2"), url("../fonts/Gilroy-Semibold.woff") format("woff"), url("../fonts/Gilroy-Semibold.ttf") format("truetype");
@@ -25,15 +27,11 @@ body {
   font-weight: 400;
 }
 
-@media (max-width: 800px) {
-  body {
-    font-size: 13px;
-  }
-}
-
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 button {
@@ -83,14 +81,8 @@ picture {
   padding: 20px 20px 18px;
   color: white;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-@media (max-width: 800px) {
-  .header__row {
-    padding: 20px 8px 18px;
-  }
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 .header__cell {
@@ -98,18 +90,10 @@ picture {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-@media (min-width: 800px) {
-  .header__cell {
-    -webkit-box-flex: 1;
-        -ms-flex: 1 1 50%;
-            flex: 1 1 50%;
-  }
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .header__inner {
@@ -118,34 +102,14 @@ picture {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-}
-
-@media (max-width: 800px) {
-  .header__inner {
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
-  }
+  -ms-flex-pack: end;
+  justify-content: flex-end;
 }
 
 .header__logo {
   height: 58px;
-}
-
-@media (min-width: 800px) {
-  .header__logo {
-    margin-right: 23px;
-    margin-top: -8px;
-  }
-}
-
-@media (max-width: 468px) {
-  .header__logo {
-    height: 48px;
-  }
 }
 
 .header__present {
@@ -159,17 +123,12 @@ picture {
   text-transform: uppercase;
   letter-spacing: 1px;
   -webkit-transition: background-color 0.6s;
+  -o-transition: background-color 0.6s;
   transition: background-color 0.6s;
 }
 
 .header__present:hover {
   background-color: #3d8b8c;
-}
-
-@media (max-width: 800px) {
-  .header__present {
-    display: none;
-  }
 }
 
 .header__call {
@@ -181,6 +140,7 @@ picture {
   background-size: 20px;
   background-position: center;
   -webkit-transition: background-color 0.6s;
+  -o-transition: background-color 0.6s;
   transition: background-color 0.6s;
 }
 
@@ -189,39 +149,16 @@ picture {
   border-color: #3d8b8c;
 }
 
-@media (min-width: 468px) {
-  .header__call {
-    margin-left: 14px;
-    width: 50px;
-    height: 50px;
-  }
-}
-
 .header__right {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-item-align: center;
-      align-self: center;
+  align-self: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-@media (max-width: 800px) {
-  .header__right {
-    -webkit-box-ordinal-group: 0;
-        -ms-flex-order: -1;
-            order: -1;
-  }
-}
-
-@media (min-width: 468px) {
-  .header__right {
-    margin-top: 8px;
-    margin-left: 14px;
-  }
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 
 .header-logo__img {
@@ -236,23 +173,11 @@ picture {
   font-size: 16px;
 }
 
-@media (max-width: 800px) {
-  .header-slogan {
-    display: none;
-  }
-}
-
 .header-tel__number {
   font-family: "Gilroy";
   font-size: 22px;
   font-weight: 600;
   white-space: nowrap;
-}
-
-@media (max-width: 468px) {
-  .header-tel__number {
-    font-size: 18px;
-  }
 }
 
 .header-tel__back-call {
@@ -267,12 +192,6 @@ picture {
   text-decoration: none;
 }
 
-@media (max-width: 468px) {
-  .header-tel__back-call {
-    font-size: 13px;
-  }
-}
-
 .first-screen {
   position: relative;
   z-index: 1;
@@ -285,26 +204,13 @@ picture {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   color: white;
   padding: 100px 0 70px;
-}
-
-@media (max-width: 800px) {
-  .first-screen__wrap {
-    min-height: 550px;
-  }
-}
-
-@media (min-width: 800px) {
-  .first-screen__wrap {
-    min-height: 100vh;
-    padding: 150px 0 70px;
-  }
 }
 
 .first-screen__content {
@@ -315,35 +221,21 @@ picture {
   border: 1px solid #cad0d7;
 }
 
-@media (max-width: 1024px) {
-  .first-screen__content {
-    max-width: 750px;
-  }
-}
-
-@media (max-width: 800px) {
-  .first-screen__content {
-    max-width: 400px;
-    padding: 27px 17px 27px;
-    margin: 0 10px;
-  }
-}
-
 .first-screen__form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 .first-screen__input {
   -webkit-box-flex: 0;
-      -ms-flex: 0 0 calc(50% - 7px);
-          flex: 0 0 calc(50% - 7px);
+  -ms-flex: 0 0 calc(50% - 7px);
+  flex: 0 0 calc(50% - 7px);
   height: 56px;
   padding: 4px 14px;
   margin-bottom: 15px;
@@ -357,18 +249,10 @@ picture {
   border: 2px #3d8b8c solid;
 }
 
-@media (max-width: 800px) {
-  .first-screen__input {
-    -webkit-box-flex: 100%;
-        -ms-flex: 100%;
-            flex: 100%;
-  }
-}
-
 .first-screen__button {
   -webkit-box-flex: 100%;
-      -ms-flex: 100%;
-          flex: 100%;
+  -ms-flex: 100%;
+  flex: 100%;
   height: 56px;
   background-color: #3d8b8c;
   font-family: "Gilroy";
@@ -377,6 +261,7 @@ picture {
   text-transform: uppercase;
   letter-spacing: 1px;
   -webkit-transition: background-color 0.6s;
+  -o-transition: background-color 0.6s;
   transition: background-color 0.6s;
 }
 
@@ -390,35 +275,11 @@ picture {
   font-size: 60px;
 }
 
-@media (max-width: 1024px) {
-  .first-screen__title {
-    font-size: 45px;
-  }
-}
-
-@media (max-width: 800px) {
-  .first-screen__title {
-    font-size: 23px;
-  }
-}
-
 .first-screen__text {
   margin-bottom: 21px;
   font-weight: bold;
   font-size: 24px;
   letter-spacing: 0.05px;
-}
-
-@media (max-width: 1024px) {
-  .first-screen__text {
-    font-size: 18px;
-  }
-}
-
-@media (max-width: 1024px) {
-  .first-screen__text {
-    font-size: 16px;
-  }
 }
 
 .first-screen__bg::before {
@@ -440,7 +301,7 @@ picture {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .first-screen__img {
@@ -459,40 +320,16 @@ picture {
   padding: 70px 0 25px;
 }
 
-@media (max-width: 800px) {
-  .catalog__main {
-    padding: 40px 0 0px;
-  }
-}
-
 .catalog__title {
   margin-bottom: 30px;
-}
-
-@media (max-width: 800px) {
-  .catalog__title {
-    margin-bottom: 15px;
-  }
 }
 
 .catalog__nav {
   margin-bottom: 30px;
 }
 
-@media (max-width: 800px) {
-  .catalog__nav {
-    margin-bottom: 15px;
-  }
-}
-
 .catalog__slider {
   margin-bottom: 30px;
-}
-
-@media (max-width: 800px) {
-  .catalog__slider {
-    margin-bottom: 15px;
-  }
 }
 
 .block-title__inner {
@@ -505,20 +342,8 @@ picture {
   font: 800 44px/0.9 "Gilroy";
 }
 
-@media (max-width: 800px) {
-  .block-title__title {
-    font: 800 30px/0.9 "Gilroy";
-  }
-}
-
 .block-title__subtitle {
   font: 400 18px/0.9 "Montserrat";
-}
-
-@media (max-width: 800px) {
-  .block-title__subtitle {
-    font: 800 17px/0.9 "Gilroy";
-  }
 }
 
 .select {
@@ -545,16 +370,16 @@ picture {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .catalog-nav__item {
   -webkit-box-flex: 0;
-      -ms-flex: 0 1 155px;
-          flex: 0 1 155px;
+  -ms-flex: 0 1 155px;
+  flex: 0 1 155px;
   margin-right: 18px;
 }
 
@@ -564,12 +389,6 @@ picture {
 
 .catalog-nav__item:last-child {
   margin-right: 0;
-}
-
-@media (max-width: 800px) {
-  .catalog-nav__item {
-    display: none;
-  }
 }
 
 .catalog-nav__input {
@@ -591,39 +410,25 @@ picture {
   border-color: #3d8b8c;
 }
 
-@media (max-width: 800px) {
-  .catalog-nav__button {
-    padding: 20px 10px;
-  }
-}
-
 .catalog-slider__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 .catalog-slider__item {
   -webkit-box-flex: 0;
-      -ms-flex: 0 0 calc(50% - 10px);
-          flex: 0 0 calc(50% - 10px);
+  -ms-flex: 0 0 calc(50% - 10px);
+  flex: 0 0 calc(50% - 10px);
   margin-bottom: 20px;
   position: relative;
   overflow: hidden;
   cursor: pointer;
-}
-
-@media (max-width: 800px) {
-  .catalog-slider__item {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 calc(100%);
-            flex: 0 0 calc(100%);
-  }
 }
 
 .catalog-slider__inner {
@@ -640,6 +445,7 @@ picture {
   left: 0;
   width: 100%;
   height: 100%;
+  background-image: -o-linear-gradient(271deg, rgba(0, 0, 0, 0) 44%, #000000 171%);
   background-image: linear-gradient(179deg, rgba(0, 0, 0, 0) 44%, #000000 171%);
 }
 
@@ -651,7 +457,7 @@ picture {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .catalog-slider__content {
@@ -663,27 +469,30 @@ picture {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
   padding: 0 17px;
   height: 100%;
   width: 100%;
   color: #fff;
   font: 500 18px/0.9 "Monserrat";
   -webkit-transform: translateY(40px);
-          transform: translateY(40px);
+  -ms-transform: translateY(40px);
+  transform: translateY(40px);
   -webkit-transition: -webkit-transform 1s;
   transition: -webkit-transform 1s;
+  -o-transition: transform 1s;
   transition: transform 1s;
   transition: transform 1s, -webkit-transform 1s;
 }
 
 .catalog-slider__content:hover {
   -webkit-transform: translateY(-15px);
-          transform: translateY(-15px);
+  -ms-transform: translateY(-15px);
+  transform: translateY(-15px);
 }
 
 .catalog-slider__text {
@@ -720,12 +529,6 @@ picture {
   padding: 50px 0;
 }
 
-@media (max-width: 800px) {
-  .advantages__main {
-    padding: 20px 0;
-  }
-}
-
 .advantages__title {
   margin-bottom: 40px;
 }
@@ -739,28 +542,45 @@ picture {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   padding: 30px 0 0;
   border: 1px solid #cad0d7;
 }
 
 .advantage__items {
   -webkit-box-flex: 1;
-      -ms-flex: 1 0 50%;
-          flex: 1 0 50%;
+  -ms-flex: 1 0 50%;
+  flex: 1 0 50%;
   padding: 0 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 
 .advantage__item {
   margin-bottom: 30px;
   min-height: 45px;
+  position: relative;
+}
+
+.advantage__icon {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  width: 50px;
+  height: 50px;
+}
+
+.advantage__img {
+  width: 100%;
+  height: auto;
 }
 
 .advantage__text {
@@ -771,26 +591,165 @@ picture {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   padding-left: 55px;
-}
-
-.advantage__text::before {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 0;
-  width: 45px;
-  height: 45px;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-  background-image: url(../img/advantages/advantage.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
 }
 
 .advantage__title {
   font: 18px/22px 'Montserrat';
+}
+
+@media (min-width: 468px) {
+  .header__call {
+    margin-left: 14px;
+    width: 50px;
+    height: 50px;
+  }
+
+  .header__right {
+    margin-top: 8px;
+    margin-left: 14px;
+  }
+}
+
+@media (min-width: 800px) {
+  .header__cell {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 50%;
+    flex: 1 1 50%;
+  }
+
+  .header__logo {
+    margin-right: 23px;
+    margin-top: -8px;
+  }
+
+  .first-screen__wrap {
+    min-height: 100vh;
+    padding: 150px 0 70px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .first-screen__content {
+    max-width: 750px;
+  }
+
+  .first-screen__title {
+    font-size: 45px;
+  }
+
+  .first-screen__text {
+    font-size: 18px;
+  }
+
+  .first-screen__text {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 800px) {
+  body {
+    font-size: 13px;
+  }
+
+  .header__row {
+    padding: 20px 8px 18px;
+  }
+
+  .header__inner {
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+  }
+
+  .header__present {
+    display: none;
+  }
+
+  .header__right {
+    -webkit-box-ordinal-group: 0;
+    -ms-flex-order: -1;
+    order: -1;
+  }
+
+  .header-slogan {
+    display: none;
+  }
+
+  .first-screen__wrap {
+    min-height: 550px;
+  }
+
+  .first-screen__content {
+    max-width: 400px;
+    padding: 27px 17px 27px;
+    margin: 0 10px;
+  }
+
+  .first-screen__input {
+    -webkit-box-flex: 100%;
+    -ms-flex: 100%;
+    flex: 100%;
+  }
+
+  .first-screen__title {
+    font-size: 23px;
+  }
+
+  .catalog__main {
+    padding: 40px 0 0px;
+  }
+
+  .catalog__title {
+    margin-bottom: 15px;
+  }
+
+  .catalog__nav {
+    margin-bottom: 15px;
+  }
+
+  .catalog__slider {
+    margin-bottom: 15px;
+  }
+
+  .block-title__title {
+    font: 800 30px/0.9 "Gilroy";
+  }
+
+  .block-title__subtitle {
+    font: 800 17px/0.9 "Gilroy";
+  }
+
+  .catalog-nav__item {
+    display: none;
+  }
+
+  .catalog-nav__button {
+    padding: 20px 10px;
+  }
+
+  .catalog-slider__item {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 calc(100%);
+    flex: 0 0 calc(100%);
+  }
+
+  .advantages__main {
+    padding: 20px 0;
+  }
+}
+
+@media (max-width: 468px) {
+  .header__logo {
+    height: 48px;
+  }
+
+  .header-tel__number {
+    font-size: 18px;
+  }
+
+  .header-tel__back-call {
+    font-size: 13px;
+  }
 }
