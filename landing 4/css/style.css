@@ -6,6 +6,7 @@
   src: local("Gilroy Semibold"), local("Gilroy-Semibold"), url("../fonts/Gilroy-Semibold.woff2") format("woff2"), url("../fonts/Gilroy-Semibold.woff") format("woff"), url("../fonts/Gilroy-Semibold.ttf") format("truetype");
   font-weight: 600;
   font-style: normal;
+  font-display: fallback;
 }
 
 @font-face {
@@ -13,6 +14,7 @@
   src: local("Gilroy Medium"), local("Gilroy-Medium"), url("../fonts/Gilroy-Medium.woff2") format("woff2"), url("../fonts/Gilroy-Medium.woff") format("woff"), url("../fonts/Gilroy-Medium.ttf") format("truetype");
   font-weight: 500;
   font-style: normal;
+  font-display: fallback;
 }
 
 @font-face {
@@ -20,11 +22,11 @@
   src: local("Gilroy Regular"), local("Gilroy-Regular"), url("../fonts/Gilroy-Regular.woff2") format("woff2"), url("../fonts/Gilroy-Regular.woff") format("woff"), url("../fonts/Gilroy-Regular.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
+  font-display: fallback;
 }
 
 body {
-  font-display: auto;
-  font-family: "Gilroy";
+  font-family: "Gilroy", sans-serif;
   font-weight: 400;
 }
 
@@ -118,7 +120,7 @@ picture {
   max-height: 54px;
   background-color: transparent;
   border: 2px solid #3d8b8c;
-  font-family: "Gilroy";
+  font-family: "Gilroy", sans-serif;
   font-size: 18px;
   font-weight: 600;
   text-transform: uppercase;
@@ -175,7 +177,7 @@ picture {
 }
 
 .header-tel__number {
-  font-family: "Gilroy";
+  font-family: "Gilroy", sans-serif;
   font-size: 22px;
   font-weight: 600;
   white-space: nowrap;
@@ -184,7 +186,7 @@ picture {
 .header-tel__back-call {
   background-color: transparent;
   border: none;
-  font-family: "Gilroy";
+  font-family: "Gilroy", sans-serif;
   font-size: 16px;
   text-decoration: underline;
 }
@@ -256,7 +258,7 @@ picture {
   flex: 100%;
   height: 56px;
   background-color: #3d8b8c;
-  font-family: "Gilroy";
+  font-family: "Gilroy", sans-serif;
   font-size: 18px;
   font-weight: 600;
   text-transform: uppercase;
@@ -344,7 +346,7 @@ picture {
 }
 
 .block-title__subtitle {
-  font: 400 18px/0.9 "Montserrat";
+  font: 400 18px/0.9 "Montserrat", sans-serif;
 }
 
 .select {
@@ -479,7 +481,7 @@ picture {
   height: 100%;
   width: 100%;
   color: #fff;
-  font: 500 18px/0.9 "Monserrat";
+  font: 500 18px/0.9 "Monserrat", sans-serif;
   -webkit-transform: translateY(40px);
   -ms-transform: translateY(40px);
   transform: translateY(40px);
@@ -509,11 +511,11 @@ picture {
 
 .catalog-slider__title {
   margin-bottom: 10px;
-  font: bold 24px/0.9 "Gilroy";
+  font: bold 24px/0.9 "Gilroy", sans-serif;
 }
 
 .catalog-slider__link {
-  font: bold 18px/28px "Gilroy";
+  font: bold 18px/28px "Gilroy", sans-serif;
   color: #fff;
   border-bottom: 2px solid #3d8b8c;
   letter-spacing: 0.05px;
@@ -719,7 +721,7 @@ picture {
   }
 
   .block-title__subtitle {
-    font: 800 17px/0.9 "Gilroy";
+    font: 800 17px/0.9 "Gilroy", sans-serif;
   }
 
   .catalog-nav__item {
