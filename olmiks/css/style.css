@@ -511,7 +511,7 @@ body {
 }
 
 .product {
-  color: red;
+  color: #ff1e1e;
   font-weight: 700;
 }
 
@@ -612,7 +612,7 @@ body {
   font-weight: 600;
   font-size: 14px;
   line-height: 3;
-  color: #002a2b;
+  color: #02312d;
 }
 .product__button img {
   margin-right: 10px;
@@ -620,7 +620,7 @@ body {
 @media (max-width: 1200px) {
   .product__button {
     font-size: 10px;
-    line-height: 4.25;
+    line-height: 3;
   }
   .product__button img {
     margin-right: 0;
