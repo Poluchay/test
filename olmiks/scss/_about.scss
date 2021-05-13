@@ -1,0 +1,28 @@
+.about {
+   padding: 50px 0 250px;
+}
+.about__title {
+   margin-bottom: 20px;
+}
+.about__content {
+   position: relative;
+   > ul {
+      max-width: 620px;
+      font-size: 16px;
+      font-weight: 400;
+      > li {
+         margin-bottom: 5px;
+         :last-child {
+            margin-bottom: 0;
+         }
+      }
+   }
+}
+.about__img {
+   position: absolute;
+   top: -200px;
+   right: 30px;
+   max-width: 450px;
+   overflow: hidden;
+   border-radius: 10px;
+}

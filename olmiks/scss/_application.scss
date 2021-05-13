@@ -1,0 +1,34 @@
+.application {
+   padding: 40px 0 25px;
+}
+.application__title {
+   margin-bottom: 50px;
+   text-align: center;
+}
+.application__list {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+}
+.application__card {
+   flex: 0 1 28%;
+   margin-right: 60px;
+   margin-bottom: 45px;
+   position: relative;
+   @media (max-width: 768px) {
+      margin-right: 25px;
+      margin-bottom: 15px;
+   }
+}
+.application__text {
+   position: absolute;
+   top: 50%;
+   left: 0;
+   width: 100%;
+   transform: translateY(-50%);
+   text-transform: uppercase;
+   text-align: center;
+   font-weight: 600;
+   font-size: 24px;
+   color: white;
+}
