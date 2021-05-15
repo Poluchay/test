@@ -301,12 +301,9 @@ body._lock {
 
 .cover-block__img {
   position: absolute;
-  top: 50%;
+  top: -10%;
   right: -100%;
   max-height: 370px;
-  -webkit-transform: translateY(-52%);
-  -ms-transform: translateY(-52%);
-  transform: translateY(-52%);
 }
 
 .cover-block__img img {
@@ -1319,13 +1316,6 @@ body._lock {
     -ms-flex-pack: center;
     justify-content: center;
     padding-left: 0;
-  }
-
-  .cover-block__img {
-    -webkit-transform: translate(80%, -50%);
-    -ms-transform: translate(80%, -50%);
-    transform: translate(80%, -50%);
-    right: 0;
   }
 
   .advantages__item {
