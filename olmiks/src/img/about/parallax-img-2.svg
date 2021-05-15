@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="240" height="236" viewBox="0 0 240 236">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #1ae4be;
+        fill-opacity: 0;
+        stroke: red;
+        stroke-linejoin: round;
+        stroke-opacity: 0.48;
+        stroke-width: 6px;
+        fill-rule: evenodd;
+        opacity: 0.18;
+      }
+    </style>
+  </defs>
+  <path id="border_копия" data-name="border копия" class="cls-1" d="M1240.97,3479.68l44.06-179.81a18.1,18.1,0,0,0-17.17-18.96l-182.94-9.69a18.078,18.078,0,0,0-19.07,17.04l-9.54,181.64a18.1,18.1,0,0,0,17.17,18.95l148.43,7.86A18.073,18.073,0,0,0,1240.97,3479.68Z" transform="translate(-1051 -3266)"/>
+</svg>

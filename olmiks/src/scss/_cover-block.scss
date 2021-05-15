@@ -1,0 +1,224 @@
+.cover-block {
+   position: relative;
+   z-index: 1;
+
+   width: 100%;
+   height: 100vh;
+   max-height: 1150px;
+   padding-top: 15px;
+   min-height: 500px;
+
+   background-image: url(../img/block-cover/bg.jpg);
+   background-position: bottom;
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-attachment: fixed;
+
+   @media (min-width: 1200px) {
+      min-height: 750px;
+   }
+}
+.cover-block__header {
+   position: absolute;
+   top: 34px;
+   left: 0;
+   right: 0;
+   @media (max-width: 768px) {
+      top: 44px;
+   }
+}
+.cover-block__logo {
+   position: relative;
+   z-index: 2;
+
+   width: 100%;
+   height: 100px;
+   padding: 5px 0 3px;
+   @media (max-width: 992px) {
+      height: 80px;
+   }
+   @media (max-width: 768px) {
+      height: 60px;
+   }
+
+   &::before {
+      position: absolute;
+      z-index: 1;
+      top: 0;
+      content: "";
+      width: 100%;
+      height: 100%;
+      display: block;
+      background-image: radial-gradient(51% 110% at 50% -10px, white 99.5%, transparent 100%);
+      @media (max-width: 768px) {
+         background-color: #fff;
+      }
+   }
+
+}
+
+.cover-block__container {
+   position: relative;
+   height: 100%;
+}
+.cover-block__inner {
+   position: relative;
+
+   display: flex;
+   align-items: center;
+
+   width: 100%;
+   height: 100%;
+   padding-left: 23px;
+   @media (max-width: 1200px) {
+      justify-content: center;
+      padding-left: 0;
+   }
+}
+.cover-block__content {
+   position: relative;
+   max-width: 600px;
+   padding: 46px 50.6px 65px 30px;
+   background-color: rgba(255, 255, 255, 0.7);
+   border-radius: 10px;
+   @media (max-width: 768px) {
+      max-width: 500px;
+      padding: 20px 15px 35px 15px;
+   }
+}
+.cover-block__img {
+   position: absolute;
+   top: -10%;
+   right: -100%;
+   max-height: 370px;
+   @media (max-width: 768px) {
+      display: none;
+   }
+   img {
+      height: auto;
+      width: 100%;
+   }
+}
+.cover-block__title {
+   margin-bottom: 30px;
+   span {
+      font-weight: 500;
+      font-style: italic;
+   }
+   @media (max-width: 768px) {
+      margin-bottom: 10px;
+   }
+}
+
+.cover-block__text {
+   font-size: 20px;
+   font-weight: 500;
+   p {
+      margin-bottom: 20px;
+      @media (max-width: 768px) {
+         margin-bottom: 6px;
+      }
+   }
+   span {
+      display: inline-block;
+      font-size: 24px;
+      font-weight: 600;
+      @media (max-width: 768px) {
+         font-size: 20px;
+      }
+   }
+
+   @media (max-width: 768px) {
+      font-size: 13px;
+   }
+}
+
+
+
+.logo {
+}
+
+.logo__link {
+   position: relative;
+   z-index: 2;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+
+   margin: 0 auto;
+   max-width: 500px;
+   width: 100%;
+   height: 100%;
+   @media (max-width: 992px) {
+      max-width: 350px;
+      padding: 0 15px;
+   }
+}
+
+.logo__left {
+   flex: 1 1 0;
+   margin-left: 15px;
+   display: flex;
+   justify-content: center;
+   @media (max-width: 768px) {
+      margin-left: 0;
+   }
+}
+.logo__img {
+   flex: 0 0 90px;
+   margin-right: 15px;
+   @media (max-width: 768px) {
+      flex: 0 0 70px;
+      margin-right: 0;
+   }
+   img {
+      height: auto;
+      width: 100%;
+   }
+}
+.logo__right {
+   flex: 1 1 0;
+}
+
+.title {
+   position: relative;
+   z-index: 3;
+   text-transform: uppercase;
+   font-size: 30px;
+   font-weight: 700;
+   @media (max-width: 768px) {
+      font-size: 20px;
+   }
+}
+
+.title--fs24 {
+   font-size: 24px;
+   @media (max-width: 768px) {
+      font-size: 20px;
+   }
+}
+
+.container-chevron {
+   position: absolute;
+   max-width: 50px;
+   bottom: 20%;
+   left: 50%;
+   cursor: pointer;
+   transform: translateX(-50%);
+   animation: arrow-scroll 1.7s infinite ease;
+   svg {
+      position: relative;
+      width: 100%;
+   }
+   @media (max-width: 768px) {
+      bottom: 15%;
+      max-width: 30px;
+   }
+}
+
+@keyframes arrow-scroll {
+   0% {transform: translateX(-50%) translateY(0) rotate(90deg) scale(1)}
+   50% {transform: translateX(-50%) translateY(-7px) rotate(90deg) scale(1.05)}
+   55% {transform: translateX(-50%) translateY(-7px) rotate(90deg) scale(1.05)}
+   100% {transform: translateX(-50%) translateY(0) rotate(90deg) scale(1)}
+ }
