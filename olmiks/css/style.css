@@ -58,7 +58,7 @@ a {
 html,
 body {
   height: 100%;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   color: #002a2b;
   font-size: 16px;
 }
@@ -68,6 +68,7 @@ body._lock {
 }
 
 .wrap {
+  overflow-x: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -75,7 +76,6 @@ body._lock {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  overflow-x: hidden;
   min-height: 100%;
 }
 
@@ -83,6 +83,8 @@ body._lock {
   -webkit-box-flex: 1;
   -ms-flex: 1 0 auto;
   flex: 1 0 auto;
+  background: -o-repeating-linear-gradient(315deg, rgba(180, 180, 180, 0.07) 0, rgba(218, 217, 217, 0.25) 25%, rgba(218, 217, 217, 0.2) 20%);
+  background: repeating-linear-gradient(135deg, rgba(180, 180, 180, 0.07) 0, rgba(218, 217, 217, 0.25) 25%, rgba(218, 217, 217, 0.2) 20%);
 }
 
 .footer {
@@ -182,7 +184,7 @@ body._lock {
   top: 0;
   left: 0;
   width: 100%;
-  height: 36px;
+  height: 45px;
   background-color: #002a2b;
 }
 
@@ -571,7 +573,8 @@ body._lock {
 
 .product__block {
   position: relative;
-  z-index: 2;
+  width: 100%;
+  z-index: 1;
   margin-bottom: 25px;
 }
 
@@ -584,9 +587,9 @@ body._lock {
   height: 100%;
   -o-object-fit: cover;
   object-fit: cover;
-  border-radius: 5px;
-  -webkit-transform: perspective(158px) rotateX(4deg) rotateY(356deg) rotateZ(0deg);
-  transform: perspective(158px) rotateX(4deg) rotateY(356deg) rotateZ(0deg);
+  border-radius: 10px;
+  -webkit-transform: perspective(228px) rotateX(7deg) rotateY(356deg) rotateZ(0) translate(4px, -19px);
+  transform: perspective(228px) rotateX(7deg) rotateY(356deg) rotateZ(0) translate(4px, -19px);
   -webkit-transform-origin: center center;
   -ms-transform-origin: center center;
   transform-origin: center center;
@@ -595,20 +598,40 @@ body._lock {
 .product__block--left img {
   top: 10px;
   left: -25px;
-  -webkit-transform: perspective(158px) rotateX(4deg) rotateY(2deg) rotateZ(0deg);
-  transform: perspective(158px) rotateX(4deg) rotateY(2deg) rotateZ(0deg);
+  -webkit-transform: perspective(228px) rotateX(7deg) rotateY(6deg) rotateZ(0) translate(23px, -15px);
+  transform: perspective(228px) rotateX(7deg) rotateY(6deg) rotateZ(0) translate(23px, -15px);
   -webkit-transform-origin: center center;
   -ms-transform-origin: center center;
   transform-origin: center center;
 }
 
+.product__block--left .product__img {
+  -webkit-transform: translate(-15px, 30px);
+  -ms-transform: translate(-15px, 30px);
+  transform: translate(-15px, 30px);
+}
+
 .product__bg {
   position: relative;
+  overflow: hidden;
   z-index: 3;
   padding-bottom: 90%;
   width: 100%;
   border: 7px solid red;
   border-radius: 10px;
+}
+
+.product__img {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  width: 100%;
+  padding: 46%;
+  border-radius: 10px;
+  overflow: hidden;
+  -webkit-transform: translate(15px, 30px);
+  -ms-transform: translate(15px, 30px);
+  transform: translate(15px, 30px);
 }
 
 .product__button {
@@ -1416,6 +1439,10 @@ body._lock {
   html,
   body {
     font-size: 13px;
+  }
+
+  .header {
+    height: 45px;
   }
 
   .header__inner {
