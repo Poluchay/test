@@ -1457,6 +1457,10 @@ body._lock {
     margin-right: 9px;
   }
 
+  .cover-block__header {
+    top: 44px;
+  }
+
   .cover-block__logo {
     height: 60px;
   }
