@@ -462,6 +462,7 @@ body._lock {
 
 .advantages {
   position: relative;
+  padding-top: 50px;
   padding-bottom: 22px;
 }
 
@@ -517,6 +518,10 @@ body._lock {
 
 .img-parallax {
   display: none;
+}
+
+.products {
+  padding-top: 50px;
 }
 
 .products__title {
@@ -702,6 +707,7 @@ body._lock {
 }
 
 .cooperation {
+  padding-top: 50px;
   font-weight: 600;
   color: red;
 }
@@ -823,7 +829,7 @@ body._lock {
 }
 
 .slider {
-  padding: 70px 0 100px;
+  padding: 50px 0 100px;
 }
 
 .slider__title {
@@ -1175,12 +1181,29 @@ body._lock {
   margin-bottom: 40px;
 }
 
+.contacts__text {
+  margin-bottom: 25px;
+}
+
 .contacts__text > li {
   margin-bottom: 25px;
 }
 
 .contacts__text > li:last-child {
   margin-bottom: 0;
+}
+
+.contacts__button {
+  width: 100%;
+  max-width: 395px;
+  margin: 0 auto;
+  padding: 9px 16px;
+  color: #fff;
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+  border-radius: 6px;
+  background-color: #f10000;
 }
 
 .yandex-map {
