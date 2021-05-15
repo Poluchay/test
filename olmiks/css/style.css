@@ -732,17 +732,29 @@ body._lock {
 }
 
 .about__content > ul {
+  position: relative;
+  list-style: none;
   max-width: 620px;
   font-size: 16px;
   font-weight: 400;
 }
 
 .about__content > ul > li {
+  padding-left: 5px;
   margin-bottom: 5px;
 }
 
 .about__content > ul > li :last-child {
   margin-bottom: 0;
+}
+
+.about__content > ul > li::before {
+  content: "";
+  list-style-type: disc;
+  display: list-item;
+  float: left;
+  width: 1px;
+  margin: 0 -5px 0 10px;
 }
 
 .about__img {
@@ -833,7 +845,7 @@ body._lock {
 .slider-button-next {
   position: absolute;
   top: 50%;
-  right: -10%;
+  right: -5%;
   -webkit-transform: translate(100%, -50%);
   -ms-transform: translate(100%, -50%);
   transform: translate(100%, -50%);
@@ -1564,11 +1576,6 @@ body._lock {
 @media (max-width: 500px) {
   .header__tel {
     font-size: 13px;
-  }
-
-  .header__social a svg {
-    width: 14px;
-    height: 14px;
   }
 
   .application__card {
