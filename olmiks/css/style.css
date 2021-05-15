@@ -697,6 +697,10 @@ body._lock {
   color: white;
 }
 
+.application__img {
+  width: 100%;
+}
+
 .cooperation {
   font-weight: 600;
   color: red;
