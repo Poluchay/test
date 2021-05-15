@@ -12,12 +12,20 @@
    background-position: bottom;
    background-repeat: no-repeat;
    background-size: cover;
+   background-attachment: fixed;
+
+   @media (min-width: 1200px) {
+      min-height: 750px;
+   }
 }
 .cover-block__header {
    position: absolute;
    top: 34px;
    left: 0;
    right: 0;
+   @media (max-width: 768px) {
+      top: 44px;
+   }
 }
 .cover-block__logo {
    position: relative;
@@ -50,6 +58,7 @@
 }
 
 .cover-block__container {
+   position: relative;
    height: 100%;
 }
 .cover-block__inner {
@@ -79,14 +88,9 @@
 }
 .cover-block__img {
    position: absolute;
-   top: 50%;
+   top: -10%;
    right: -100%;
    max-height: 370px;
-   transform: translateY(-52%);
-   @media (max-width: 1200px) {
-      transform: translate3d(80%, -50%, 0);
-      right: 0;
-   }
    @media (max-width: 768px) {
       display: none;
    }
@@ -105,6 +109,7 @@
       margin-bottom: 10px;
    }
 }
+
 .cover-block__text {
    font-size: 20px;
    font-weight: 500;
@@ -129,6 +134,7 @@
 }
 
 
+
 .logo {
 }
 
@@ -140,11 +146,11 @@
    justify-content: center;
 
    margin: 0 auto;
-   max-width: 560px;
+   max-width: 500px;
    width: 100%;
    height: 100%;
    @media (max-width: 992px) {
-      max-width: 450px;
+      max-width: 350px;
       padding: 0 15px;
    }
 }
@@ -162,7 +168,7 @@
    flex: 0 0 90px;
    margin-right: 15px;
    @media (max-width: 768px) {
-      flex: 0 0 60px;
+      flex: 0 0 70px;
       margin-right: 0;
    }
    img {
@@ -175,6 +181,8 @@
 }
 
 .title {
+   position: relative;
+   z-index: 3;
    text-transform: uppercase;
    font-size: 30px;
    font-weight: 700;
@@ -189,3 +197,28 @@
       font-size: 20px;
    }
 }
+
+.container-chevron {
+   position: absolute;
+   max-width: 50px;
+   bottom: 20%;
+   left: 50%;
+   cursor: pointer;
+   transform: translateX(-50%);
+   animation: arrow-scroll 1.7s infinite ease;
+   svg {
+      position: relative;
+      width: 100%;
+   }
+   @media (max-width: 768px) {
+      bottom: 15%;
+      max-width: 30px;
+   }
+}
+
+@keyframes arrow-scroll {
+   0% {transform: translateX(-50%) translateY(0) rotate(90deg) scale(1)}
+   50% {transform: translateX(-50%) translateY(-7px) rotate(90deg) scale(1.05)}
+   55% {transform: translateX(-50%) translateY(-7px) rotate(90deg) scale(1.05)}
+   100% {transform: translateX(-50%) translateY(0) rotate(90deg) scale(1)}
+ }
