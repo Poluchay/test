@@ -522,6 +522,7 @@ body._lock {
 
 .products {
   padding-top: 50px;
+  padding-bottom: 30px;
 }
 
 .products__title {
@@ -1628,6 +1629,10 @@ body._lock {
 
   .application__text {
     font-size: 16px;
+  }
+
+  .slider__title {
+    margin-bottom: 35px;
   }
 
   .slider__left {
