@@ -1129,7 +1129,7 @@ body._lock {
 
 .mail__input {
   width: 100%;
-  max-width: 350px;
+  max-width: 400px;
   height: 54px;
   margin-right: 56px;
   padding-left: 26px;
@@ -1669,6 +1669,23 @@ body._lock {
     margin: 0 auto;
   }
 
+  .mail__form {
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    max-height: none;
+  }
+
+  .mail__input {
+    height: 40px;
+    margin-bottom: 15px;
+    margin-right: 0;
+  }
+
   .contacts {
     padding: 30px 0 0;
   }
@@ -1720,21 +1737,6 @@ body._lock {
 
   .slider__item {
     padding: 0 6px 10px;
-  }
-
-  .mail__form {
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    max-height: none;
-  }
-
-  .mail__input {
-    -webkit-box-flex: 1;
-    -ms-flex: 1 1 100%;
-    flex: 1 1 100%;
-    height: 40px;
-    margin-bottom: 15px;
-    margin-right: 0;
   }
 }
 
