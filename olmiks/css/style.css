@@ -1568,11 +1568,12 @@ body._lock {
   }
 
   .cover-block__img {
-    top: -100%;
+    top: -100px;
     right: 50%;
-    -webkit-transform: translate3d(50%, 50%, 0);
-    transform: translate3d(50%, 50%, 0);
-    max-height: 150px;
+    -webkit-transform: translate3d(50%, 0, 0);
+    transform: translate3d(50%, 0, 0);
+    height: 100%;
+    width: 250px;
   }
 
   .cover-block__title {
