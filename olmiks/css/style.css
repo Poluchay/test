@@ -1567,10 +1567,6 @@ body._lock {
     padding: 20px 15px 35px 15px;
   }
 
-  .cover-block__img {
-    display: none;
-  }
-
   .cover-block__title {
     margin-bottom: 10px;
   }
