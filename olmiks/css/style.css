@@ -1567,6 +1567,14 @@ body._lock {
     padding: 20px 15px 35px 15px;
   }
 
+  .cover-block__img {
+    top: -100%;
+    right: 50%;
+    -webkit-transform: translate3d(50%, 50%, 0);
+    transform: translate3d(50%, 50%, 0);
+    max-height: 150px;
+  }
+
   .cover-block__title {
     margin-bottom: 10px;
   }
