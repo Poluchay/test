@@ -1116,7 +1116,6 @@ body._lock {
 }
 
 .mail__form {
-  max-width: 1070px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
