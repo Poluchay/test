@@ -1757,6 +1757,7 @@ body._lock {
 
   .slider__item {
     padding: 0 6px 10px;
+    max-height: 120px;
   }
 }
 
