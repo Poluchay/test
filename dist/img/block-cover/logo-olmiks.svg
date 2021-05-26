@@ -1,1 +1,26 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="162" height="32"><image data-name="Векторный смарт-объект2" width="162" height="32" xlink:href="data:image/png;base64,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"/></svg>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 23.0.3, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Режим_изоляции"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 858.9 612.3"
+	 style="enable-background:new 0 0 858.9 612.3;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill-rule:evenodd;clip-rule:evenodd;}
+	.st1{fill-rule:evenodd;clip-rule:evenodd;fill:#F20000;}
+</style>
+<path class="st0" d="M649,322.4h-6.7v-16.7h-2v11.8c0,1.6-0.2,2.7-0.7,3.3c-0.5,0.7-1.2,1.1-2.3,1.3c-1,0.2-2.6,0.3-4.8,0.3h-1.1
+	v-3.6c0.8,0,1.4-0.1,1.7-0.2c0.3-0.2,0.5-0.7,0.5-1.7v-15.4H649V322.4L649,322.4z M623.4,306.9c0-1-0.1-1.6-0.2-1.9
+	c-0.1-0.3-0.4-0.4-0.8-0.4c-0.4,0-0.6,0.1-0.8,0.3c-0.2,0.2-0.3,0.9-0.3,1.9v9.7c0,1.2,0.1,2,0.2,2.2c0.1,0.3,0.4,0.4,0.9,0.4
+	c0.5,0,0.7-0.2,0.9-0.5c0.1-0.3,0.2-1.1,0.2-2.3V306.9L623.4,306.9z M630.1,313.7c0,2.1-0.1,3.6-0.2,4.4c-0.1,0.9-0.5,1.7-1.1,2.4
+	c-0.6,0.7-1.5,1.3-2.6,1.7c-1.1,0.4-2.4,0.6-3.8,0.6c-1.4,0-2.6-0.2-3.7-0.5c-1.1-0.4-2-0.9-2.7-1.6c-0.7-0.7-1.1-1.5-1.2-2.4
+	c-0.1-0.9-0.2-2.4-0.2-4.5v-3.6c0-2.1,0.1-3.6,0.2-4.5c0.1-0.9,0.5-1.7,1.1-2.4c0.6-0.7,1.5-1.3,2.6-1.7c1.1-0.4,2.4-0.6,3.8-0.6
+	c1.4,0,2.6,0.2,3.7,0.5c1.1,0.4,2,0.9,2.7,1.6c0.7,0.7,1.1,1.5,1.2,2.4c0.1,0.9,0.2,2.4,0.2,4.5V313.7L630.1,313.7z"/>
+<path class="st1" d="M726.1,310.6h-6.7V307c0-1.1-0.1-1.7-0.2-2c-0.1-0.3-0.5-0.4-0.9-0.4c-0.6,0-0.9,0.2-1.1,0.5
+	c-0.1,0.3-0.2,1-0.2,2.1v9.7c0,1,0.1,1.7,0.2,2c0.2,0.3,0.5,0.5,1,0.5c0.5,0,0.8-0.2,1-0.5c0.2-0.3,0.2-1,0.2-2.2V314h6.7v0.8
+	c0,2.2-0.2,3.7-0.6,4.6c-0.4,0.9-1.2,1.7-2.5,2.4c-1.3,0.7-2.9,1-4.8,1c-2,0-3.6-0.3-4.9-0.9c-1.3-0.6-2.1-1.4-2.5-2.4
+	c-0.4-1-0.6-2.5-0.6-4.6l0-6.1c0-1.5,0.1-2.6,0.2-3.4c0.1-0.8,0.5-1.5,1.1-2.2c0.6-0.7,1.5-1.2,2.6-1.6c1.1-0.4,2.4-0.6,3.9-0.6
+	c2,0,3.6,0.3,4.9,0.9c1.3,0.6,2.1,1.4,2.5,2.3c0.4,0.9,0.6,2.4,0.6,4.3V310.6L726.1,310.6z M692.9,301.5h6.7l0,8.8
+	c1.3,0,1.9-0.6,2-1.7l0.1-4.1c0-1.5,0.4-2.5,1.1-3h6.2c-0.6,0.5-0.9,1.6-0.9,3.1l0,3.6c0,2.2-1.5,3.4-4.5,3.7c3,0.3,4.6,1.6,4.5,3.8
+	l0,3.3c0,1.6,0.3,2.7,0.9,3.4h-6.2c-0.7-0.5-1.1-1.5-1.1-3v-4.1c0-0.5-0.2-0.9-0.6-1.2c-0.4-0.3-0.9-0.5-1.5-0.5l0,8.8h-6.7V301.5
+	L692.9,301.5z M690.2,322.4h-5.6v-9.5l-3.5,9.5h-5.9v-20.9h5.6v9.4l3.8-9.4h5.6V322.4L690.2,322.4z M672.5,301.5v20.9h-5.9v-14.1
+	l-2.3,14.1h-4.2l-2.5-13.8v13.8h-5.9v-20.9h8.7c0.3,1.3,0.5,2.7,0.8,4.4l0.9,5.3l1.5-9.7H672.5L672.5,301.5z"/>
+</svg>
