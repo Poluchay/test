@@ -1259,6 +1259,8 @@ textarea.form__input {
 .footer__menu {
   padding-bottom: 30px;
   border-bottom: 2px solid rgba(96, 96, 96, 0.5);
+  font-family: "xolonium",sans-serif;
+  font-size: 16px;
 }
 
 .foouter__bottom {
