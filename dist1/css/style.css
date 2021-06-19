@@ -1982,11 +1982,11 @@ textarea.form__input {
   }
 
   .button-consult {
-    font-size: calc(20px - 5px);
+    font-size: calc(20px - 4px);
   }
 
   .cover-block__text {
-    font-size: calc(17px - 5px);
+    font-size: calc(17px - 4px);
   }
 
   .advantages__list {
@@ -2005,7 +2005,7 @@ textarea.form__input {
   }
 
   .about-article li {
-    font-size: calc(16px - 5px);
+    font-size: calc(16px - 4px);
   }
 
   .cover-single {
@@ -2021,11 +2021,11 @@ textarea.form__input {
   }
 
   .cover-single__button {
-    font-size: calc(20px - 5px);
+    font-size: calc(20px - 4px);
   }
 
   .cover-single__text {
-    font-size: calc(16px - 5px);
+    font-size: calc(16px - 4px);
   }
 
   .cover-single__bg {
@@ -2033,11 +2033,11 @@ textarea.form__input {
   }
 
   .services-slider__title {
-    font-size: calc(24px - 5px);
+    font-size: calc(24px - 4px);
   }
 
   .services-slider__text {
-    font-size: calc(16px - 5px);
+    font-size: calc(16px - 4px);
   }
 
   .cooperation__item {
@@ -2062,11 +2062,11 @@ textarea.form__input {
   }
 
   .contact-block__right {
-    font-size: calc(20px - 5px);
+    font-size: calc(20px - 4px);
   }
 
   .form__title {
-    font-size: calc(30px - 5px);
+    font-size: calc(30px - 4px);
   }
 
   .header {
