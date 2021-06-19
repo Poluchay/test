@@ -2115,7 +2115,7 @@ textarea.form__input {
 
 @media (max-width: 767.98px) {
   .cover-block {
-    min-height: 540px;
+    min-height: 580px;
   }
 
   .cover-block__feedback {
