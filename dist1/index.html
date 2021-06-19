@@ -84,7 +84,7 @@
                   <div class="contacts__item contact">
                      <a class="tel" href="tel:+79631918621">+7 (963) 191-86-21</a>
                      <div class="contact__item">
-                        <button class="button-modal">Заказать звонок</button>
+                        <button class="button-modal" data-hystmodal="#myModal-send">Заказать звонок</button>
                      </div>
                   </div>
                </div>
@@ -109,7 +109,7 @@
               <p class="title-block__subtitle">в Красноярском крае и в других регионах России</p>
             </div>
             <div class="cover-block__feedback">
-              <button class="cover-block__button button-consult">
+              <button class="cover-block__button button-consult" data-hystmodal="#myModal-send">
                 Оставить заявку
               </button>
               <div class="cover-block__text">
@@ -267,7 +267,7 @@
             </div>
           </div>
           <div class="services__button">
-            <button class="button-consult">Получить <span>бесплатную</span> консультацию</button>
+            <button class="button-consult" data-hystmodal="#myModal-send">Получить <span>бесплатную</span> консультацию</button>
           </div>
         </div>
       </section>
@@ -493,7 +493,7 @@
 
           </div>
           <div class="cooperation__button">
-            <button class="button-consult">Получить <span>бесплатную</span> консультацию</button>
+            <button class="button-consult" data-hystmodal="#myModal-send">Получить <span>бесплатную</span> консультацию</button>
           </div>
         </div>
       </section>
@@ -686,6 +686,7 @@
                   </div>
                   <button type="submit" class="button-consult">Получить консультацию</button>
                 </form>
+
               </div>
               <div class="contacts-form__map">
                 <picture>
@@ -730,7 +731,7 @@
                   <div class="contacts__item contact">
                      <a class="tel" href="tel:+79631918621">+7 (963) 191-86-21</a>
                      <div class="contact__item">
-                        <button class="button-modal">Заказать звонок</button>
+                        <button class="button-modal" data-hystmodal="#myModal-send">Заказать звонок</button>
                      </div>
                   </div>
                </div>
@@ -785,6 +786,39 @@
       <div class="hystmodal__window" role="dialog" aria-modal="true">
         <button data-hystclose class="hystmodal__close" aria-label="Close">Close</button>
         <!-- You modal HTML markup -->
+      </div>
+    </div>
+  </div>
+
+  <div class="hystmodal" id="myModal-send" aria-hidden="true">
+    <div class="hystmodal__wrap">
+      <div class="hystmodal__window" role="dialog" aria-modal="true">
+
+        <button data-hystclose class="hystmodal__close" aria-label="Close">Close</button>
+        <!-- You modal HTML markup -->
+        <div class="hystmodal__form form">
+  
+          <form action="#" id="form-modal" class="form__body">
+            <h5 class="form__title">Остались вопросы?</h5>
+            <div class="form__subtitle">Оставьте заявку и наш эксперт проконсультирует вас в течении 30 минут</div>
+            <div class="form__item">
+              <input placeholder="Имя" id="formName-modal" type="text" name="name-modal" class="form__input _req form__input--gray">
+            </div>
+            <div class="form__item">
+              <input placeholder="Телефон" id="tel-modal" type="tel" name="tel-modal" class="form__input _req form__input--gray">
+            </div>
+            <div class="form__item">
+              <textarea placeholder="Ваш комментарий" name="message-modal" id="formMessage-modal" class="form__input form__input--gray"></textarea>
+            </div>
+            <div class="form__item">
+              <div class="checkbox checkbox__label--gray">
+                <input id="formAgreement-modal" checked type="checkbox" name="agreement-modal" class="checkbox__input _req form__input--gray ">
+                <label for="formAgreement-modal" class="checkbox__label "><span>С политикой обработки <a href="#">персональных данных</a> ознакомлен</span></label>
+              </div>
+            </div>
+            <button type="submit" class="button-consult">Получить консультацию</button>
+          </form>
+        </div>
       </div>
     </div>
   </div>

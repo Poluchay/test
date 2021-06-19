@@ -250,6 +250,10 @@ body._lock {
   opacity: 0;
 }
 
+.hystmodal__form {
+  padding: 100px;
+}
+
 .hystmodal--active .hystmodal__window {
   -webkit-transform: scale(1);
   -ms-transform: scale(1);
@@ -1160,6 +1164,10 @@ body._lock {
   color: #000;
 }
 
+.form__input--gray {
+  background-color: #e1e1e1;
+}
+
 .form__input:focus {
   -webkit-box-shadow: 0 0 15px #7a956b;
   box-shadow: 0 0 15px #7a956b;
@@ -1202,6 +1210,10 @@ textarea.form__input {
   align-items: center;
   position: relative;
   cursor: pointer;
+}
+
+.checkbox__label--gray .checkbox__label::before {
+  background-color: #e1e1e1;
 }
 
 .checkbox__label::before {
@@ -1699,6 +1711,10 @@ textarea.form__input {
 }
 
 @media (max-width: 1170.98px) {
+  .hystmodal__form {
+    padding: calc(20px + (100 - 20) * (100vw - 300px) / (1170 - 300));
+  }
+
   .cover-block__title .title-block__title {
     font-size: calc(23px + (60 - 23) * (100vw - 300px) / (992 - 300));
   }
@@ -1824,7 +1840,7 @@ textarea.form__input {
     margin-bottom: 10px;
     margin-left: 0;
     padding: 40px 0;
-    background-color: #fff;
+    background-color: transparent;
     border-bottom: 2px solid rgba(57, 57, 57, 0.5);
   }
 
@@ -2216,6 +2232,14 @@ textarea.form__input {
 
   .contacts-form__map img {
     height: 100%;
+  }
+
+  .form__input {
+    height: 50px;
+  }
+
+  textarea.form__input {
+    min-height: 80px;
   }
 
   .footer__menu .menu__items {
