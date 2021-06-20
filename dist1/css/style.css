@@ -1454,10 +1454,6 @@ textarea.form__input {
   margin-left: 20px;
 }
 
-.sub-menu a {
-  white-space: nowrap;
-}
-
 .menu-item {
   padding: 10px;
 }
@@ -1643,6 +1639,10 @@ textarea.form__input {
     top: 35px;
     visibility: hidden;
     z-index: 1;
+  }
+
+  .sub-menu a {
+    white-space: nowrap;
   }
 
   .menu-item {
