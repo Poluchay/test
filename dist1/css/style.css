@@ -1576,7 +1576,7 @@ textarea.form__input {
 }
 
 @media (min-width: 1070px) {
-  .nav__item:hover {
+  .nav__item {
     padding: 10px 0;
   }
 
@@ -1584,6 +1584,28 @@ textarea.form__input {
     opacity: 1;
     top: 40px;
     visibility: visible;
+  }
+
+  .sub-menu {
+    margin-left: 0;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    background-color: #fff;
+    top: 35px;
+    visibility: hidden;
+    z-index: 1;
+  }
+
+  .sub-menu a {
+    white-space: nowrap;
+  }
+
+  .menu-item {
+    opacity: 0.7;
+    -webkit-transition: opacity 0.5s;
+    -o-transition: opacity 0.5s;
+    transition: opacity 0.5s;
   }
 }
 
@@ -1626,30 +1648,6 @@ textarea.form__input {
 
   .logo__text {
     padding-left: 20px;
-  }
-}
-
-@media (min-width: 1170px) {
-  .sub-menu {
-    margin-left: 0;
-    left: 0;
-    opacity: 0;
-    position: absolute;
-    background-color: #fff;
-    top: 35px;
-    visibility: hidden;
-    z-index: 1;
-  }
-
-  .sub-menu a {
-    white-space: nowrap;
-  }
-
-  .menu-item {
-    opacity: 0.7;
-    -webkit-transition: opacity 0.5s;
-    -o-transition: opacity 0.5s;
-    transition: opacity 0.5s;
   }
 }
 
