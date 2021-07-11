@@ -43,8 +43,8 @@
 @font-face {
   font-family: "PlayfairDisplay";
   font-display: swap;
-  src: url("../fonts/PlayfairDisplay-SemiBolditalic.woff") format("woff"), url("../fonts/PlayfairDisplay-SemiBolditalic.woff2") format("woff2");
-  font-weight: 800;
+  src: url("../fonts/PlayfairDisplay-SemiBoldItalic.woff") format("woff"), url("../fonts/PlayfairDisplay-SemiBoldItalic.woff2") format("woff2");
+  font-weight: 600;
   font-style: italic;
 }
 
