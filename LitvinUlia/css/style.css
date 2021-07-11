@@ -715,10 +715,6 @@ textarea.input {
   transition: all 0.4s;
 }
 
-.social a:hover {
-  background-color: rgba(183, 155, 108, 0.5);
-}
-
 .social a:not(:last-child) {
   margin-right: 10px;
 }
@@ -2262,6 +2258,10 @@ body.ie ._ibg img {
 
   .btn:hover.btn--black {
     background-color: #b79b6c;
+  }
+
+  .social a:hover {
+    background-color: rgba(183, 155, 108, 0.5);
   }
 
   .btn-down:hover {
