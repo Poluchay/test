@@ -127,7 +127,6 @@ function body_lock_add(delay) {
 	}
 }
 
-
 //=================
 /*
 Для родителя слойлеров пишем атрибут data-spollers
@@ -255,11 +254,6 @@ if (spollersArray.length > 0) {
 		}
 	}
 }
-//=================
-
-//=================
-
-
 //Popups
 let popup_link = document.querySelectorAll('._popup-link');
 let popups = document.querySelectorAll('.popup');
@@ -405,7 +399,24 @@ let _slideToggle = (target, duration = 500) => {
 		return _slideUp(target, duration);
 	}
 }
-
+//========================================
+//Wrap
+function _wrap(el, wrapper) {
+	el.parentNode.insertBefore(wrapper, el);
+	wrapper.appendChild(el);
+}
+//========================================
+//RemoveClasses
+function _removeClasses(el, class_name) {
+	for (var i = 0; i < el.length; i++) {
+		el[i].classList.remove(class_name);
+	}
+}
+//========================================
+//IsHidden
+function _is_hidden(el) {
+	return (el.offsetParent === null)
+}
 
 document.addEventListener('DOMContentLoaded', () => {
    // add number
