@@ -1798,6 +1798,10 @@ body.ie ._ibg img {
     background-image: linear-gradient(#000);
   }
 
+  .menu__social {
+    display: none;
+  }
+
   .menu__item {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1920,12 +1924,6 @@ body.ie ._ibg img {
 @media (min-width: 991.98px) and (any-hover: hover) {
   .logo:hover {
     opacity: 0.8;
-  }
-}
-
-@media (min-width: 991.98) {
-  .menu__social {
-    display: none;
   }
 }
 
