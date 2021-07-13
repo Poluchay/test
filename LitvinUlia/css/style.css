@@ -2128,20 +2128,12 @@ body.ie ._ibg img {
     left: 0;
   }
 
-  .menu__body._active::after {
-    width: 90%;
-  }
-
-  .menu__body._active::before {
-    width: 90%;
-  }
-
   .menu__body::before {
     content: "";
     position: fixed;
     top: 0;
     z-index: 10;
-    width: 70%;
+    width: 90%;
     height: 80px;
     -webkit-transition: all 0.4s;
     -o-transition: all 0.4s;
