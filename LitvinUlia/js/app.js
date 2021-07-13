@@ -410,15 +410,28 @@ document.addEventListener('DOMContentLoaded', () => {
          box_number[i].innerHTML = '0' + number;
          number = 0;
       } else
-      box_number[i].innerHTML = '0' + number;
+         box_number[i].innerHTML = '0' + number;
 
       number = number + 1;
+   }
+
+   let downBtn = document.querySelector('.down');
+   if (downBtn) {
+      downBtn.addEventListener('click', () => {
+         function goTop() {
+            if (window.pageYOffset !== 0) {
+               window.scrollBy(0, -40);
+               setTimeout(goTop, 0);
+            }
+            return
+         }
+         goTop()
+      })
    }
 
 })
 // ('files/regular.js', {})
 // ('files/forms.js', {})
-
 let currentScroll;
 
 //ScrollOnScroll
@@ -426,12 +439,23 @@ window.addEventListener('scroll', scroll_scroll);
 
 function scroll_scroll() {
 	let src_value = currentScroll = pageYOffset;
+	let heightWindow = window.innerHeight;
+
+	let downBtn = document.querySelector('.down');
 	let header = document.querySelector('header.header');
 	if (header !== null) {
 		if (src_value > 10) {
 			header.classList.add('_scroll');
 		} else {
 			header.classList.remove('_scroll');
+		}
+	}
+	if (downBtn !== null) {
+		if (src_value > heightWindow && !downBtn.classList.contains('_show')) {
+			downBtn.classList.add('_show');
+		}
+		if(src_value < heightWindow && downBtn.classList.contains('_show')) {
+			downBtn.classList.remove('_show');
 		}
 	}
 }
