@@ -2125,9 +2125,9 @@ body.ie ._ibg img {
     -webkit-transition: opacity 0.4s, visibility 0.4s, left 0.4s;
     -o-transition: opacity 0.4s, visibility 0.4s, left 0.4s;
     transition: opacity 0.4s, visibility 0.4s, left 0.4s;
-    background-image: -webkit-gradient(linear, left top, right top, color-stop(90%, #fff), color-stop(10%, rgba(0, 0, 0, 0.7)));
-    background-image: -o-linear-gradient(left, #fff 90%, rgba(0, 0, 0, 0.7) 10%);
-    background-image: linear-gradient(to right, #fff 90%, rgba(0, 0, 0, 0.7) 10%);
+    background-image: -webkit-gradient(linear, left top, right top, color-stop(90.1%, #fff), color-stop(10%, rgba(0, 0, 0, 0.7)));
+    background-image: -o-linear-gradient(left, #fff 90.1%, rgba(0, 0, 0, 0.7) 10%);
+    background-image: linear-gradient(to right, #fff 90.1%, rgba(0, 0, 0, 0.7) 10%);
     opacity: 0;
   }
 
