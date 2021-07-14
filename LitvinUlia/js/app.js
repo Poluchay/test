@@ -415,6 +415,7 @@ document.addEventListener('DOMContentLoaded', () => {
       number = number + 1;
    }
 
+   //down button
    let downBtn = document.querySelector('.down');
    if (downBtn) {
       downBtn.addEventListener('click', () => {
@@ -428,6 +429,41 @@ document.addEventListener('DOMContentLoaded', () => {
          goTop()
       })
    }
+
+   //swiper
+   let slider_about = new Swiper('.slider', {
+
+     // effect: 'fade',
+      autoplay: {
+         delay: 2400,
+         disableOnInteraction: false,
+      },
+
+      loop: true,
+      observer: true,
+      observeParents: true,
+      slidesPerView: 3,
+      spaceBetween: 0,
+      autoHeight: true,
+      speed: 800,
+
+      breakpoints: {
+         320: {
+            slidesPerView: 1,
+            spaceBetween: 10,
+            autoHeight: true,
+         },
+         768: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+         },
+         992: {
+            slidesPerView: 3,
+            spaceBetween: 20,
+         },
+      },
+
+   });
 
 })
 // ('files/regular.js', {})

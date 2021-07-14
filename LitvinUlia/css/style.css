@@ -646,7 +646,7 @@ textarea.input {
 }
 
 .article-title {
-  line-height: 1;
+  line-height: 1.2;
   color: #474747;
   font-family: "PlayfairDisplay", sans-serif;
   font-size: 21px;
@@ -802,6 +802,7 @@ textarea.input {
 }
 
 .style-link {
+  display: inline-block;
   font-size: 15px;
   font-family: "PlayfairDisplay", Sans-serif;
   font-weight: 700;
@@ -819,6 +820,7 @@ textarea.input {
 }
 
 .style-link--default {
+  display: inline-block;
   font-weight: 500;
   -webkit-transition: all 0.3s;
   -o-transition: all 0.3s;
@@ -1185,7 +1187,7 @@ body.ie ._ibg img {
   position: relative;
   z-index: 20;
   padding-top: 30px;
-  background-color: #fff;
+  background-color: #f8f8f8;
 }
 
 .footer__body {
@@ -1606,6 +1608,7 @@ body.ie ._ibg img {
 .faq {
   padding-top: 50px;
   padding-bottom: 50px;
+  background-color: #f8f8f8;
 }
 
 .faq__title {
@@ -1675,6 +1678,84 @@ body.ie ._ibg img {
 
 .faq__text p + p {
   margin-top: 20px;
+}
+
+.articles {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.articles__title {
+  margin-bottom: 40px;
+}
+
+.slider {
+  width: calc(100% + 16px);
+  padding: 8px 8px;
+  margin-left: -8px;
+}
+
+.slider__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  -webkit-box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+  padding-bottom: 15px;
+}
+
+.slide__header {
+  margin-bottom: 15px;
+}
+
+.slide__img {
+  position: relative;
+  padding-bottom: 70%;
+  margin-bottom: 10px;
+}
+
+.slide__img img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.slide__title {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.slide__body {
+  padding: 0 8px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  margin-bottom: 15px;
+}
+
+.slide__footer {
+  margin-top: auto;
+}
+
+.slide__link {
+  display: inline-block;
+  line-height: 1.3;
+  margin-bottom: 1px;
 }
 
 .page {
@@ -2082,6 +2163,26 @@ body.ie ._ibg img {
 
   .faq__title {
     margin-bottom: calc(15px + 25 * ((100vw - 320px) / 850));
+  }
+
+  .articles {
+    padding-top: calc(25px + 25 * ((100vw - 320px) / 850));
+  }
+
+  .articles {
+    padding-bottom: calc(20px + 30 * ((100vw - 320px) / 850));
+  }
+
+  .articles__title {
+    margin-bottom: calc(15px + 25 * ((100vw - 320px) / 850));
+  }
+
+  .slide__header {
+    margin-bottom: calc(7px + 8 * ((100vw - 320px) / 850));
+  }
+
+  .slide__body {
+    margin-bottom: calc(7px + 8 * ((100vw - 320px) / 850));
   }
 }
 
