@@ -399,6 +399,16 @@ function _is_hidden(el) {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
+   
+   (function init100vh() {
+      function setHeight() {
+         var vh = window.innerHeight * 0.01;
+         document.documentElement.style.setProperty('--vh', `${vh}px`);
+      }
+      setHeight();
+      window.addEventListener('resize', setHeight);
+   })();
+
    // add number
    const box_number = document.querySelectorAll('.number');
 
@@ -433,7 +443,7 @@ document.addEventListener('DOMContentLoaded', () => {
    //swiper
    let slider_about = new Swiper('.slider', {
 
-     // effect: 'fade',
+      // effect: 'fade',
       autoplay: {
          delay: 2400,
          disableOnInteraction: false,

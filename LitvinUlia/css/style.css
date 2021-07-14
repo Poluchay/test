@@ -1292,7 +1292,8 @@ body.ie ._ibg img {
 .cover {
   position: relative;
   z-index: 0;
-  min-height: calc(100vh - 100px);
+  height: 100vh;
+  height: calc(var(--vh, 1vh) * 100);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
