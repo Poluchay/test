@@ -1293,7 +1293,7 @@ body.ie ._ibg img {
   position: relative;
   z-index: 0;
   height: 100vh;
-  height: calc(var(--vh, 1vh) * 100);
+  height: calc(var(--vh) * 100);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
