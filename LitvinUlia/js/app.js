@@ -401,28 +401,16 @@ function _is_hidden(el) {
 document.addEventListener('DOMContentLoaded', () => {
 
 
-   let background = document.querySelector('.cover__bg');
+   // let background = document.querySelector('.cover__bg');
 
-   // Fix background image jump on mobile
-   if ((/Android|iPhone|iPad|iPod|BlackBerry/i).test(navigator.userAgent || navigator.vendor || window.opera)) {
-      background.style.top = 'auto';
-      background.style.bottom = 0;
-
-      window.onresize = sizeBackground;
-      sizeBackground();
-   }
-   function sizeBackground() {
-      background.style.height = screen.height;
-   }
-
-   (function init100vh() {
-      function setHeight() {
-         var vh = window.innerHeight * 0.01;
-         document.documentElement.style.setProperty('--vh', `${vh}px`);
-      }
-      setHeight();
-      window.addEventListener('resize', setHeight);
-   })();
+   // (function init100vh() {
+   //    function setHeight() {
+   //       var vh = window.innerHeight * 0.01;
+   //       document.documentElement.style.setProperty('--vh', `${vh}px`);
+   //    }
+   //    setHeight();
+   //    window.addEventListener('resize', setHeight);
+   // })();
 
    // add number
    const box_number = document.querySelectorAll('.number');
