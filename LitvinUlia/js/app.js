@@ -406,7 +406,6 @@ document.addEventListener('DOMContentLoaded', () => {
          document.documentElement.style.setProperty('--vh', `${vh}px`);
       }
       setHeight();
-     window.addEventListener('resize', setHeight);
    })();
 
    // add number
