@@ -400,6 +400,21 @@ function _is_hidden(el) {
 
 document.addEventListener('DOMContentLoaded', () => {
 
+
+   let background = document.querySelector('.cover__bg');
+
+   // Fix background image jump on mobile
+   if ((/Android|iPhone|iPad|iPod|BlackBerry/i).test(navigator.userAgent || navigator.vendor || window.opera)) {
+      background.style.top = 'auto';
+      background.style.bottom = 0;
+
+      window.onresize = sizeBackground;
+      sizeBackground();
+   }
+   function sizeBackground() {
+      background.style.height = screen.height;
+   }
+
    (function init100vh() {
       function setHeight() {
          var vh = window.innerHeight * 0.01;
