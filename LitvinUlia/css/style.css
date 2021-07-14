@@ -1294,7 +1294,7 @@ body.ie ._ibg img {
   z-index: 0;
   padding-top: 100px;
   min-height: 100vh;
-  min-height: calc(var(--vh) * 100);
+  min-height: calc(var(--vh, 1vh) * 100);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2430,6 +2430,17 @@ body.ie ._ibg img {
             flex-direction: column;
     height: 100px;
     margin-bottom: 15px;
+  }
+}
+
+@media (max-width: 479.98px) {
+  .cover__bg {
+    position: absolute;
+  }
+
+  .cover__bg img {
+    -o-object-position: top;
+       object-position: top;
   }
 }
 
