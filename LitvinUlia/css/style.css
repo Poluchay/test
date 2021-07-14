@@ -2433,17 +2433,6 @@ body.ie ._ibg img {
   }
 }
 
-@media (max-width: 479.98px) {
-  .cover__bg {
-    position: absolute;
-  }
-
-  .cover__bg img {
-    -o-object-position: top;
-       object-position: top;
-  }
-}
-
 @media (min-width: 991.98px) and (max-width: 1170px) {
   .about__content {
     padding-left: calc(1px + 59 * ((100vw - 320px) / 850));
