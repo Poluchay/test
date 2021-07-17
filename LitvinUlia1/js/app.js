@@ -526,6 +526,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
    //lightgallery
    lightGallery(document.getElementById('lightgallery'), {
+      selector: 'a',
       speed: 500,
    });
    lightGallery(document.getElementById('book-gallery'), {
