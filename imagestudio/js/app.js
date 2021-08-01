@@ -646,6 +646,9 @@ const price_slider = new Swiper('#price-slider', {
 		320: {
 			slidesPerView: 1,
 		},
+		768: {
+			slidesPerView: 2,
+		},
 
 		992: {
 			slidesPerView: "auto",
@@ -722,7 +725,7 @@ if (window.innerWidth >= 768) {
 
 
 	});
-} 
+}
 document.addEventListener('DOMContentLoaded', () => {
 
    document.addEventListener('click', documentActions);
@@ -736,6 +739,16 @@ document.addEventListener('DOMContentLoaded', () => {
       }
       if (targetElement.classList.contains('nav__down') || targetElement.closest('.nav__down')) {
          targetElement.closest('.nav__item').classList.remove('_show');
+      }
+      if (targetElement.classList.contains('cover__swipe') || targetElement.closest('.cover__swipe')) {
+         function goTop() {
+            if (window.pageYOffset < document.body.clientHeight) {
+               window.scrollBy(0, 15);
+               setTimeout(goTop, 0);
+            }
+            return;
+         }
+         goTop();
       }
 
    }
