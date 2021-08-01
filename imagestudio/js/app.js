@@ -747,7 +747,7 @@ document.addEventListener('DOMContentLoaded', () => {
       }
       if (targetElement.classList.contains('cover__swipe') || targetElement.closest('.cover__swipe')) {
          function goTop() {
-            if (window.pageYOffset < document.body.clientHeight) {
+            if (window.pageYOffset < document.querySelector('.cover').scrollHeight) {
                window.scrollBy(0, 15);
                setTimeout(goTop, 0);
             }
