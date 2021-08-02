@@ -360,6 +360,7 @@ a {
 .contacts-cell__subtitle {
   font-size: 20px;
   line-height: 28px;
+  font-size: 20px;
 }
 
 .contacts-cell__form {
@@ -3644,6 +3645,10 @@ body.ie ._ibg img {
 @media (max-width: 1180px) {
   .contacts-cell__header:not(:last-child) {
     margin-bottom: calc(20px + 10 * ((100vw - 320px) / 860));
+  }
+
+  .contacts-cell__subtitle {
+    font-size: calc(12px + 8 * ((100vw - 320px) / 860));
   }
 
   .contacts-cell__form:not(:last-child) {
