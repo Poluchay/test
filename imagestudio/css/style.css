@@ -2351,7 +2351,7 @@ body.ie ._ibg img {
   background-image: url(../img/price/star.png);
   background-repeat: no-repeat;
   background-size: contain;
-  background-position: bottom;
+  background-position: center;
 }
 
 .price-cart__bottom {
