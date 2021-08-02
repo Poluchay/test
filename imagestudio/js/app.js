@@ -687,14 +687,14 @@ if (document.querySelector('#portfolio-slider') || document.querySelector('#inst
 
 			initSlider();
 
-		} else if (windowWidth <= 768 && portfolio_slider != undefined) {
+		} else if (windowWidth < 768 && portfolio_slider != undefined) {
 
 			portfolio_slider.destroy();
 			inst_slider.destroy();
 			portfolio_slider = undefined;
 			inst_slider = undefined;
 		}
-		
+
 	})
 }
 
