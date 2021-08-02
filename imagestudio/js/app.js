@@ -54,6 +54,10 @@ if (iconMenu != null) {
 function menu_close() {
 	let iconMenu = document.querySelector(".icon-menu");
 	let menuBody = document.querySelector(".nav__body");
+	subMenuShow = menuBody.querySelectorAll('._show');
+	for (let i = 0; i < subMenuShow.length; i++) {
+		subMenuShow[i].classList.remove('show');	
+	}
 	iconMenu.classList.remove("_active");
 	menuBody.classList.remove("_active");
 }
@@ -737,8 +741,6 @@ document.addEventListener('DOMContentLoaded', () => {
    // Actions (делигирование события)
    function documentActions(e) {
       const targetElement = e.target;
-
-      // burger menu
       if (targetElement.classList.contains('nav__icon-submenu') || targetElement.closest('.nav__icon-submenu')) {
          targetElement.closest('.nav__item').classList.add('_show');
       }

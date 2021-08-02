@@ -3341,7 +3341,9 @@ body.ie ._ibg img {
   }
 
   .icon-menu._active {
-    right: 5%;
+    -webkit-transform: translateX(-100%);
+        -ms-transform: translateX(-100%);
+            transform: translateX(-100%);
     background-color: var(--color-classic-brown-60);
   }
 
