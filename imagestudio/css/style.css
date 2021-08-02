@@ -2593,10 +2593,6 @@ body.ie ._ibg img {
   position: relative;
 }
 
-.single-content__body p {
-  font-size: 14px;
-}
-
 .single-content__body p:not(:last-child) {
   margin-bottom: 24px;
 }
