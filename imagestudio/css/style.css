@@ -490,7 +490,7 @@ a {
   max-width: 325px;
   padding: 18px 8px;
   text-align: center;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 500;
   line-height: 1.4;
   border: 1px solid var(--button-primary-bg-color);
@@ -536,7 +536,7 @@ a {
   max-width: 325px;
   padding: 18px 8px;
   text-align: center;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 500;
   line-height: 1.45;
   background-color: var(--button-second-bg-color);
@@ -2783,6 +2783,14 @@ body.ie ._ibg img {
 @media (min-width: 767.98px) {
   body {
     font-size: 14px;
+  }
+
+  .button-primary {
+    font-size: 18px;
+  }
+
+  .button-second {
+    font-size: 18px;
   }
 
   .contacts-widget__list {
