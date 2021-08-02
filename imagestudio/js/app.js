@@ -670,11 +670,37 @@ const price_slider = new Swiper('#price-slider', {
 
 });
 
-
 let portfolio_slider;
 let inst_slider;
 
-if (window.innerWidth >= 768) {
+if (document.querySelector('#portfolio-slider') || document.querySelector('#inst-slider')) {
+
+
+	if (window.innerWidth  >= 768) {
+		initSlider();
+	}
+
+	window.addEventListener('resize', () => {
+		let windowWidth = window.innerWidth;
+
+		if (windowWidth >= 768 && portfolio_slider == undefined) {
+
+			initSlider();
+
+		} else if (windowWidth <= 768 && portfolio_slider != undefined) {
+
+			portfolio_slider.destroy();
+			inst_slider.destroy();
+			portfolio_slider = undefined;
+			inst_slider = undefined;
+		}
+		
+	})
+}
+
+
+function initSlider() {
+
 	portfolio_slider = new Swiper('#portfolio-slider', {
 		observer: true,
 		observeParents: true,
@@ -727,9 +753,8 @@ if (window.innerWidth >= 768) {
 				slidesPerView: 5,
 			},
 		},
-
-
 	});
+
 }
 document.addEventListener('DOMContentLoaded', () => {
 
