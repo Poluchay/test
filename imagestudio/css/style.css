@@ -3273,8 +3273,10 @@ body.ie ._ibg img {
   }
 
   .nav__inner {
+    position: fixed;
     z-index: 5;
     min-height: 100%;
+    height: 100%;
     padding: 0 20px 0 20px;
     left: -100%;
     visibility: hidden;
