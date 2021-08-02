@@ -48,18 +48,19 @@ if (iconMenu != null) {
 			body_lock(delay);
 			iconMenu.classList.toggle("_active");
 			menuBody.classList.toggle("_active");
+			let subMenuShow = menuBody.querySelectorAll("._show");
+			for (let i = 0; i < subMenuShow.length; i++) {
+				subMenuShow[i].classList.remove('_show');	
+			}
 		}
 	});
 };
 function menu_close() {
 	let iconMenu = document.querySelector(".icon-menu");
 	let menuBody = document.querySelector(".nav__body");
-	let subMenuShow = menuBody.querySelectorAll('._show');
-	for (let i = 0; i < subMenuShow.length; i++) {
-		subMenuShow[i].classList.remove('show');	
-	}
 	iconMenu.classList.remove("_active");
 	menuBody.classList.remove("_active");
+
 }
 //=================
 //BodyLock
