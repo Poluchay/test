@@ -54,10 +54,8 @@ if (iconMenu != null) {
 function menu_close() {
 	let iconMenu = document.querySelector(".icon-menu");
 	let menuBody = document.querySelector(".nav__body");
-	subMenuShow = menuBody.querySelectorAll('._show');
-	for (let i = 0; i < subMenuShow.length; i++) {
-		subMenuShow[i].classList.remove('show');	
-	}
+	let subMenuShow = menuBody.querySelector('._show');
+	subMenuShow.classList.remove('show');		
 	iconMenu.classList.remove("_active");
 	menuBody.classList.remove("_active");
 }
