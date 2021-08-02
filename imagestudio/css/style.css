@@ -1685,9 +1685,9 @@ body.ie ._ibg img {
 }
 
 .cover__content {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 auto;
-          flex: 1 1 auto;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 100%;
+          flex: 0 0 100%;
   text-align: center;
 }
 
@@ -3300,6 +3300,9 @@ body.ie ._ibg img {
   }
 
   .cover__content {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 auto;
+            flex: 1 1 auto;
     text-align: left;
     padding-top: 70px;
     padding-bottom: 70px;
@@ -3605,10 +3608,6 @@ body.ie ._ibg img {
   }
 
   .cover__body {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
