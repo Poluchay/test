@@ -821,6 +821,8 @@ a {
 
 .breadcrumb {
   padding: 11px 0 13px;
+  background: rgba(243, 238, 232, 0.2);
+  border-top: 1px solid #EEEEEE;
 }
 
 .breadcrumb__content {
