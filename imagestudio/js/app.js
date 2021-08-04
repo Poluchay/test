@@ -843,6 +843,9 @@ if (slider_range) {
 
 		slider_range.querySelector(".noUi-value[data-value=" + `'${maxPos}'` + "]").classList.add('_active');
 	});
+
+	let pips = slider_range.querySelectorAll('.noUi-value');
+	addEventPips(pips, slider_range);
 }
 
 
@@ -883,17 +886,13 @@ if (slider_range_two) {
 
 		slider_range_two.querySelector(".noUi-value[data-value=" + `'${maxPos}'` + "]").classList.add('_active');
 	});
+
+
+	let pips = slider_range_two.querySelectorAll('.noUi-value');
+	addEventPips(pips, slider_range_two);
 }
 
 
-
-// slider pips
-
-let pips = slider_range.querySelectorAll('.noUi-value');
-addEventPips(pips, slider_range);
-
-pips = slider_range_two.querySelectorAll('.noUi-value');
-addEventPips(pips, slider_range_two);
 
 function addEventPips(pips, slider) {
 	for (let i = 0; i < pips.length; i++) {
