@@ -1,6 +1,26 @@
 var ua = window.navigator.userAgent;
 var msie = ua.indexOf("MSIE ");
-var isMobile = { Android: function () { return navigator.userAgent.match(/Android/i); }, BlackBerry: function () { return navigator.userAgent.match(/BlackBerry/i); }, iOS: function () { return navigator.userAgent.match(/iPhone|iPad|iPod/i); }, Opera: function () { return navigator.userAgent.match(/Opera Mini/i); }, Windows: function () { return navigator.userAgent.match(/IEMobile/i); }, any: function () { return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows()); } };
+var isMobile = {
+	Android: function () {
+		return navigator.userAgent.match(/Android/i);
+	},
+	BlackBerry: function () {
+		return navigator.userAgent.match(/BlackBerry/i);
+	},
+	iOS: function () {
+		return navigator.userAgent.match(/iPhone|iPad|iPod/i);
+	},
+	Opera: function () {
+		return navigator.userAgent.match(/Opera Mini/i);
+	},
+	Windows: function () {
+		return navigator.userAgent.match(/IEMobile/i);
+	},
+	any: function () {
+		return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
+	}
+};
+
 function isIE() {
 	ua = navigator.userAgent;
 	var is_ie = ua.indexOf("MSIE ") > -1 || ua.indexOf("Trident/") > -1;
@@ -50,11 +70,12 @@ if (iconMenu != null) {
 			menuBody.classList.toggle("_active");
 			let subMenuShow = menuBody.querySelectorAll("._show");
 			for (let i = 0; i < subMenuShow.length; i++) {
-				subMenuShow[i].classList.remove('_show');	
+				subMenuShow[i].classList.remove('_show');
 			}
 		}
 	});
 };
+
 function menu_close() {
 	let iconMenu = document.querySelector(".icon-menu");
 	let menuBody = document.querySelector(".nav__body");
@@ -72,6 +93,7 @@ function body_lock(delay) {
 		body_lock_add(delay);
 	}
 }
+
 function body_lock_remove(delay) {
 	let body = document.querySelector("body");
 	if (unlock) {
@@ -91,6 +113,7 @@ function body_lock_remove(delay) {
 		}, delay);
 	}
 }
+
 function body_lock_add(delay) {
 	let body = document.querySelector("body");
 	if (unlock) {
@@ -213,6 +236,7 @@ if (spollersArray.length > 0) {
 			});
 		}
 	}
+
 	function setSpollerAction(e) {
 		const el = e.target;
 		if (el.hasAttribute('data-spoller') || el.closest('[data-spoller]')) {
@@ -229,6 +253,7 @@ if (spollersArray.length > 0) {
 			e.preventDefault();
 		}
 	}
+
 	function hideSpollersBody(spollersBlock) {
 		const spollerActiveTitle = spollersBlock.querySelector('[data-spoller]._active');
 		if (spollerActiveTitle) {
@@ -260,6 +285,7 @@ for (let index = 0; index < popups.length; index++) {
 		}
 	});
 }
+
 function popup_open(item, video = '') {
 	let activePopup = document.querySelectorAll('.popup._active');
 	if (activePopup.length > 0) {
@@ -278,6 +304,7 @@ function popup_open(item, video = '') {
 		history.pushState('', '', '#' + item);
 	}
 }
+
 function popup_close(item, bodyUnlock = true) {
 	if (unlock) {
 		if (!item) {
@@ -383,7 +410,27 @@ let _slideToggle = (target, duration = 500) => {
 		return _slideUp(target, duration);
 	}
 }
-
+//=================
+//Tabs
+let tabs = document.querySelectorAll("._tabs");
+for (let index = 0; index < tabs.length; index++) {
+	let tab = tabs[index];
+	let tabs_items = tab.querySelectorAll("._tabs-item");
+	let tabs_blocks = tab.querySelectorAll("._tabs-block");
+	for (let index = 0; index < tabs_items.length; index++) {
+		let tabs_item = tabs_items[index];
+		tabs_item.addEventListener("click", function (e) {
+			for (let index = 0; index < tabs_items.length; index++) {
+				let tabs_item = tabs_items[index];
+				tabs_item.classList.remove('_active');
+				tabs_blocks[index].classList.remove('_active');
+			}
+			tabs_item.classList.add('_active');
+			tabs_blocks[index].classList.add('_active');
+			e.preventDefault();
+		});
+	}
+}
 // Dynamic Adapt v.1
 // HTML data-da="where(uniq class name),when(breakpoint),position(digi)"
 // e.x. data-da=".item,992,2"
@@ -676,7 +723,7 @@ let inst_slider;
 if (document.querySelector('#portfolio-slider') || document.querySelector('#inst-slider')) {
 
 
-	if (window.innerWidth  >= 768) {
+	if (window.innerWidth >= 768) {
 		initSlider();
 	}
 
@@ -756,6 +803,110 @@ function initSlider() {
 	});
 
 }
+
+// price range
+
+//slider
+const slider_range = document.getElementById('price-range-1');
+
+if (slider_range) {
+	const slider_range_current_number = slider_range.closest('.price-range__body').querySelector('.current');
+
+	noUiSlider.create(slider_range, {
+		start: 1,
+		connect: true,
+		step: 1,
+		format: {
+			to: (v) => parseFloat(v).toFixed(0),
+			from: (v) => parseFloat(v).toFixed(0)
+		},
+		range: {
+			'min': 1,
+			'max': 3
+		},
+		pips: {
+			mode: 'steps',
+			density: 50,
+		}
+	});
+
+	slider_range.noUiSlider.on('update', function (values, handle) {
+		slider_range_current_number.innerHTML = values[handle];
+
+		let active_number = slider_range.querySelector('.noUi-value._active');
+
+		if (active_number) {
+			active_number.classList.remove('_active')
+		}
+
+		let maxPos = Math.max(values);
+
+		slider_range.querySelector(".noUi-value[data-value=" + `'${maxPos}'` + "]").classList.add('_active');
+	});
+}
+
+
+
+// slider
+const slider_range_two = document.getElementById('price-range-2');
+
+if (slider_range_two) {
+	const slider_range_current_number = slider_range_two.closest('.price-range__body').querySelector('.current');
+
+	noUiSlider.create(slider_range_two, {
+		start: 1,
+		connect: true,
+		step: 1,
+		format: {
+			to: (v) => parseFloat(v).toFixed(0),
+			from: (v) => parseFloat(v).toFixed(0)
+		},
+		range: {
+			'min': 1,
+			'max': 8
+		},
+		pips: {
+			mode: 'steps',
+			density: 50,
+		}
+	});
+
+	slider_range_two.noUiSlider.on('update', function (values, handle) {
+		slider_range_current_number.innerHTML = values[handle];
+		let active_number = slider_range_two.querySelector('.noUi-value._active');
+
+		if (active_number) {
+			active_number.classList.remove('_active')
+		}
+
+		let maxPos = Math.max(values);
+
+		slider_range_two.querySelector(".noUi-value[data-value=" + `'${maxPos}'` + "]").classList.add('_active');
+	});
+}
+
+
+
+// slider pips
+
+let pips = slider_range.querySelectorAll('.noUi-value');
+addEventPips(pips, slider_range);
+
+pips = slider_range_two.querySelectorAll('.noUi-value');
+addEventPips(pips, slider_range_two);
+
+function addEventPips(pips, slider) {
+	for (let i = 0; i < pips.length; i++) {
+		pips[i].style.cursor = 'pointer';
+		pips[i].addEventListener('click', (e) => {
+			targetElement = e.target;
+			// targetElement.classList.add('_active');
+
+			let value = Number(targetElement.dataset.value);
+			slider.noUiSlider.set(value);
+		});
+	}
+}
 document.addEventListener('DOMContentLoaded', () => {
 
    // First we get the viewport height and we multiple it by 1% to get a value for a vh unit
@@ -801,21 +952,27 @@ document.addEventListener('DOMContentLoaded', () => {
       });
    };
 
-   const input = document.querySelectorAll('#input-time');
+   const input_time = document.querySelector('#input-time');
+   const input_date = document.querySelector('#input-date');
 
-   for (let i = 0; i < input.length; i++) {
-      dateInputMask(input[i]);
+   if (input_time) {
+      for (let i = 0; i < input_time.length; i++) {
+         dateInputMask(input_time[i]);
+      }
    }
 
-   const picker = datepicker('#input-date', {
-      formatter: (input, date, instance) => {
-         const value = date.toLocaleDateString()
-         input.value = value // => '1/1/2099'
-      },
-      startDay: 0, // Calendar week starts on a Monday.
-      customDays: ['Пн', 'Вт', 'Ср', 'Чт', 'Пт', 'Сб', 'Вс'],
-      customMonths: ['Янв', 'Фев', 'Мар', 'Апр', 'Май', 'Июн', 'Июл', 'Авг', 'Сеп', 'Окт', 'Нов', 'Дек'],
-   })
+   if (input_date) {
+      const picker = datepicker(input_date, {
+         formatter: (input, date, instance) => {
+            const value = date.toLocaleDateString()
+            input.value = value // => '1/1/2099'
+         },
+         startDay: 0, // Calendar week starts on a Monday.
+         customDays: ['Пн', 'Вт', 'Ср', 'Чт', 'Пт', 'Сб', 'Вс'],
+         customMonths: ['Янв', 'Фев', 'Мар', 'Апр', 'Май', 'Июн', 'Июл', 'Авг', 'Сеп', 'Окт', 'Нов', 'Дек'],
+      })
+   }
+
 
 })
 
