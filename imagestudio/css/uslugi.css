@@ -2698,6 +2698,24 @@ body.ie ._ibg img {
   color: #fff;
 }
 
+.cover-badges__title {
+  margin-bottom: 20px;
+}
+
+.cover-badges__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0 -16px -16px 0;
+}
+
+.cover-badges__item {
+  margin-right: 16px;
+  margin-bottom: 16px;
+}
+
 .price__header:not(:last-child) {
   margin-bottom: 40px;
 }
@@ -4444,6 +4462,21 @@ body.ie ._ibg img {
 
   .cover__content:not(:last-child) {
     margin-bottom: 60px;
+  }
+
+  .cover-badges__list {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+  .cover-badges__item {
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.253);
+    border: 1px solid var(--color-classic-brown-50);
   }
 }
 
