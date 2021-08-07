@@ -7060,13 +7060,10 @@ body.ie ._ibg img {
             justify-content: center;
   }
 
-  .page__section:first-child {
-    position: relative;
-  }
-
-  .page__section:first-child::before {
+  .page::before {
     content: "";
     position: absolute;
+    z-index: 0;
     top: 0;
     left: 0;
     width: 100%;
