@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('_head.html',{
+"title":"Главная"
+})
+
+<body>
+	<div class="wrapper">
+		@@include('_header.html',{})
+		<main class="page">
+			@@include('_home.html',{})
+			<!-- @@include('_uslugi.html',{}) -->
+			<!-- @@include('_o-nas.html',{}) -->
+			<!-- @@include('_podarochnye-sertifikaty.html',{}) -->
+			<!-- @@include('_pravila-fotostudii.html',{}) -->
+			<!-- @@include('_contacts.html',{}) -->
+			<!-- @@include('_otzyvy.html',{}) -->
+			<!-- @@include('_arenda-fotostudii.html',{}) -->
+			@@include('_portfolio.html',{})
+			<!-- @@include('_single-portfolio.html',{}) -->
+			<div class="breadcrumb">
+				<div class="breadcrumb__content _container">
+					<ul class="breadcrumb__list">
+						<li>Главная</li>
+						<li><a href="#">Услуги</a></li>
+						<li><a href="#">Фотостудия в одессе</a></li>
+					</ul>
+				</div>
+			</div>
+		</main>
+		@@include('_footer.html',{})
+	</div>
+	@@include('_popup.html',{})
+	@@include('_js.html',{})
+</body>
+
+</html>
