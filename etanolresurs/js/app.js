@@ -478,8 +478,8 @@ const product_slider = new Swiper('.product-slider__slider', {
 
    // Navigation arrows
    navigation: {
-      nextEl: '.services-slider__btn-next',
-      prevEl: '.services-slider__btn-prev',
+      nextEl: '.product-slider__btn-next',
+      prevEl: '.product-slider__btn-prev',
    },
 
    breakpoints: {
