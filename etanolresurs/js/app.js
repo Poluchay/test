@@ -422,6 +422,9 @@ let _slideToggle = (target, duration = 500) => {
 	}
 }
 
+const doc = document;
+const win = window;
+
 const cover_slider = new Swiper('.cover__slider-container', {
    // Optional parameters
    loop: true,
@@ -468,8 +471,93 @@ const services_slider = new Swiper('.services-slider__body', {
 
 });
 
-const doc = document;
-const win = window;
+const product_slider = new Swiper('.product-slider__slider', {
+   // Optional parameters
+   speed: 600,
+   // loop: true,
+
+   // Navigation arrows
+   navigation: {
+      nextEl: '.services-slider__btn-next',
+      prevEl: '.services-slider__btn-prev',
+   },
+
+   breakpoints: {
+      200: {
+         slidesPerView: 1,
+         spaceBetween: 15
+      },
+
+      540: {
+         slidesPerView: 3,
+         spaceBetween: 15
+      },
+
+      992: {
+         slidesPerView: 4,
+         spaceBetween: 30
+      }
+   }
+
+});
+
+const mySwiper = new Swiper('.coverf-slider', {
+   loop: true,
+   speed: 1000,
+   effect: 'coverflow',
+   grabCursor: true,
+   slidesPerView: 2,
+   spaceBetween: 20,
+   coverflowEffect: {
+      rotate: 0,
+      stretch: 0,
+      depth: 0,
+      scale: 1,
+      modifier: 1,
+      slideShadows: false,
+   },
+   breakpoints: {
+      500: {
+         centeredSlides: true,
+         spaceBetween: 0,
+         slidesPerView: 3,
+         coverflowEffect: {
+            depth: 100,
+            scale: 0.7,
+         },
+      },
+      992: {
+         centeredSlides: true,
+         spaceBetween: 0,
+         slidesPerView: 3,
+         coverflowEffect: {
+            stretch: 80,
+            scale: 0.8,
+         },
+      }
+   }
+
+})
+
+//card - slider
+
+const slider_block = new Swiper('.slider-block', {
+   spaceBetween: 10,
+   slidesPerView: 1,
+});
+
+const slider_nav_items = doc.querySelectorAll('.card-slider__nav-item');
+slider_nav_items.forEach((el, index) => {
+   el.setAttribute('data-index', index);
+   el.addEventListener('click', (e) => {
+      if (e.target.dataset.index) {
+         const index = parseInt(e.target.dataset.index);
+      } else {
+         const index = parseInt(e.target.closest('.card-slider__nav-item').dataset.index);
+      }
+      slider_block.slideTo(index);
+   })
+})
 
 const submenu_icons = doc.querySelectorAll('.nav__icon-submenu');
 const submenu_btns_down = doc.querySelectorAll('.nav__down');
@@ -544,5 +632,15 @@ function documentActive(e) {
             navElementActive[i].classList.remove('_active');
          }
       }
+   }
+}
+
+// input range 
+const input_range = document.getElementById("range-height");
+if (input_range) {
+   input_range.oninput = function setRange(e) {
+      const input_value = doc.getElementById('input-range-value');
+      if (input_value)
+         input_value.innerHTML = this.value;
    }
 }
