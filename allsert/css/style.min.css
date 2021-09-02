@@ -155,7 +155,7 @@ section {
 html {
   font-size: 12px;
 }
-@media (min-width: 350.98px) {
+@media (min-width: 340.98px) {
   html {
     font-size: 14px;
   }
@@ -955,12 +955,12 @@ body.ie ._ibg img {
   display: flex;
   align-items: center;
 }
-@media (min-width: 479.98px) {
+@media (min-width: 340.98px) {
   .header__bottom-line-inner {
     height: 35px;
   }
 }
-@media (min-width: 767.98px) {
+@media (min-width: 479.98px) {
   .header__bottom-line-inner {
     height: 40px;
   }
@@ -1031,12 +1031,12 @@ body.ie ._ibg img {
   border-radius: 5px;
   margin-right: 10px;
 }
-@media (min-width: 479.98px) {
+@media (min-width: 340.98px) {
   .header__burger {
     width: 35px;
   }
 }
-@media (min-width: 767.98px) {
+@media (min-width: 479.98px) {
   .header__burger {
     width: 40px;
   }
