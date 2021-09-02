@@ -155,7 +155,7 @@ section {
 html {
   font-size: 12px;
 }
-@media (min-width: 479.98px) {
+@media (min-width: 350.98px) {
   html {
     font-size: 14px;
   }
