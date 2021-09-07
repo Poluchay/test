@@ -782,6 +782,14 @@ textarea.input {
   align-items: center;
   color: #d6263b;
 }
+.slider-nav--display {
+  display: flex;
+}
+@media (min-width: 1270px) {
+  .slider-nav--display {
+    display: none;
+  }
+}
 .slider-nav__btn-prev {
   margin-right: 10px;
 }
@@ -838,7 +846,6 @@ textarea.input {
 .btn-prev i::before {
     transition: color 0.3s ease 0s;
     font-size: 20px;
-    color: #d6263b;
   }
 }
 
