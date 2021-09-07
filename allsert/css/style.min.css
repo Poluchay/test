@@ -1713,7 +1713,6 @@ body.ie ._ibg img {
   font-weight: 400;
   line-height: 1.2;
   min-width: 45px;
-  text-align: center;
 }
 @media (min-width: 1023.98px) {
   .slider-about__pagination {
