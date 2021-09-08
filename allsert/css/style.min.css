@@ -2162,6 +2162,11 @@ body.ie ._ibg img {
 }
 @media (min-width: 340.98px) {
   .specialists-slider__text span {
+    font-size: 14px;
+  }
+}
+@media (min-width: 767.98px) {
+  .specialists-slider__text span {
     font-size: 15px;
   }
 }
