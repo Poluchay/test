@@ -2157,8 +2157,13 @@ body.ie ._ibg img {
   margin-bottom: 5px;
 }
 .specialists-slider__text span {
-  font-size: 15px;
+  font-size: 13px;
   font-weight: 700;
+}
+@media (min-width: 340.98px) {
+  .specialists-slider__text span {
+    font-size: 15px;
+  }
 }
 @media (min-width: 1270px) {
   .specialists-slider__text {
@@ -2176,7 +2181,7 @@ body.ie ._ibg img {
   display: flex;
   align-items: center;
   margin-bottom: 10px;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.1;
   transition: color 0.3s ease 0s;
 }
@@ -2195,6 +2200,11 @@ body.ie ._ibg img {
   }
   .specialists-slider__link:hover::before {
     color: #111;
+  }
+}
+@media (min-width: 340.98px) {
+  .specialists-slider__link {
+    font-size: 14px;
   }
 }
 @media (min-width: 1270px) {
