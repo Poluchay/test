@@ -2955,6 +2955,7 @@ body.ie ._ibg img {
 }
 .form-widget__title {
   max-width: 170px;
+  margin-bottom: 15px;
   font-size: 15px;
   font-weight: 700;
   line-height: 1.4;
@@ -2967,7 +2968,6 @@ body.ie ._ibg img {
 @media (min-width: 767.98px) {
   .form-widget__title {
     font-size: 22px;
-    margin-bottom: 15px;
   }
 }
 @media (min-width: 1023.98px) {
