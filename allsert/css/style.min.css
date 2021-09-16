@@ -3175,9 +3175,25 @@ body.ie ._ibg img {
   margin-bottom: 15px;
 }
 .lt-article__header {
-  margin-bottom: 40px;
+  margin-bottom: 15px;
+}
+@media (min-width: 767.98px) {
+  .lt-article__header {
+    margin-bottom: 25px;
+  }
+}
+@media (min-width: 1023.98px) {
+  .lt-article__header {
+    margin-bottom: 35px;
+  }
+}
+@media (min-width: 1270px) {
+  .lt-article__header {
+    margin-bottom: 50px;
+  }
 }
 .lt-article__nav {
+  width: 100%;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -3191,8 +3207,10 @@ body.ie ._ibg img {
     display: flex;
   }
 }
-.lt-article__breadcrumb {
-  flex: 0 0 80%;
+@media (min-width: 767.98px) {
+  .lt-article__breadcrumb {
+    flex: 0 0 80%;
+  }
 }
 .lt-article__body {
   display: flex;
@@ -3661,16 +3679,36 @@ body.ie ._ibg img {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 15px 25px;
+  padding: 8px 14px;
+  font-size: 13px;
+  line-height: 1.2;
+  border-radius: 5px 5px 0 0;
   cursor: pointer;
 }
 .tabs-slider__slide._active {
-  border-radius: 5px 5px 0 0;
   background-color: #d6263b;
   color: #ffffff;
-  font-size: 20px;
   font-weight: 700;
-  line-height: 1.2;
+}
+@media (min-width: 479.98px) {
+  .tabs-slider__slide {
+    padding: 10px 25px;
+    font-size: 15px;
+  }
+}
+@media (min-width: 1023.98px) {
+  .tabs-slider__slide {
+    font-size: 17px;
+  }
+}
+@media (min-width: 1270px) {
+  .tabs-slider__slide {
+    font-size: 20px;
+    padding: 15px 25px;
+  }
+  .tabs-slider__slide._active {
+    margin-right: 20px;
+  }
 }
 
 .documents-slider {
@@ -4318,6 +4356,44 @@ body.ie ._ibg img {
     padding-bottom: 50px;
   }
   .page__section:last-child {
+    margin-bottom: 50px;
+  }
+}
+.page__header {
+  padding-top: 35px;
+  padding-bottom: 20px;
+}
+.page__header:last-child {
+  margin-bottom: 20px;
+}
+@media (min-width: 340.98px) {
+  .page__header {
+    padding-top: 40px;
+    padding-bottom: 25px;
+  }
+  .page__header:last-child {
+    margin-bottom: 25px;
+  }
+}
+@media (min-width: 767.98px) {
+  .page__header {
+    padding-top: 48px;
+  }
+}
+@media (min-width: 1023.98px) {
+  .page__header {
+    padding-bottom: 30px;
+  }
+  .page__header:last-child {
+    margin-bottom: 30px;
+  }
+}
+@media (min-width: 1270px) {
+  .page__header {
+    padding-top: 63px;
+    padding-bottom: 50px;
+  }
+  .page__header:last-child {
     margin-bottom: 50px;
   }
 }
