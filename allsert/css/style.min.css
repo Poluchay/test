@@ -3213,6 +3213,11 @@ body.ie ._ibg img {
     margin-bottom: 25px;
   }
 }
+@media (min-width: 1270px) {
+  .lt-article__header-title {
+    max-width: 640px;
+  }
+}
 .lt-article__nav {
   width: 100%;
   display: flex;
