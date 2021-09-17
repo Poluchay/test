@@ -2216,16 +2216,9 @@ body.ie ._ibg img {
   display: flex;
   align-items: center;
 }
-.slider-about__btn-prev {
-  margin-right: 10px;
-}
-@media (min-width: 1270px) {
-  .slider-about__btn-prev {
-    margin-right: 15px;
-  }
-}
 .slider-about__pagination {
-  margin-right: 10px;
+  display: flex;
+  align-items: center;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.2;
