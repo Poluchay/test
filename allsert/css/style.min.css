@@ -3134,36 +3134,21 @@ body.ie ._ibg img {
 }
 @media (min-width: 340.98px) {
   .form-widget__checkbox-label {
-    font-size: 11px;
-  }
-}
-@media (min-width: 479.98px) {
-  .form-widget__checkbox-label {
-    font-size: 12px;
-  }
-}
-@media (min-width: 1023.98px) {
-  .form-widget__checkbox-label {
-    font-size: 14px;
-  }
-}
-@media (min-width: 340.98px) {
-  .form-widget__checkbox-label--fs14 {
     font-size: 9px;
   }
 }
 @media (min-width: 479.98px) {
-  .form-widget__checkbox-label--fs14 {
+  .form-widget__checkbox-label {
     font-size: 10px;
   }
 }
 @media (min-width: 767.98px) {
-  .form-widget__checkbox-label--fs14 {
+  .form-widget__checkbox-label {
     font-size: 11px;
   }
 }
 @media (min-width: 1270px) {
-  .form-widget__checkbox-label--fs14 {
+  .form-widget__checkbox-label {
     font-size: 14px;
   }
 }
