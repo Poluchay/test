@@ -2223,11 +2223,16 @@ body.ie ._ibg img {
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.2;
-  min-width: 45px;
+  min-width: 38px;
+}
+@media (min-width: 479.98px) {
+  .slider-about__pagination {
+    min-width: 45px;
+  }
 }
 @media (min-width: 1023.98px) {
   .slider-about__pagination {
-    min-width: 60px;
+    min-width: 75px;
   }
 }
 .slider-about__btn-next i::before, .slider-about__btn-prev i::before {
