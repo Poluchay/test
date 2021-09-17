@@ -3432,6 +3432,9 @@ body.ie ._ibg img {
   content: "-";
   margin-right: 3px;
 }
+.lt-article__content ol:not([class]) {
+  list-style-position: inside;
+}
 .lt-article__text + .lt-article__text {
   margin-top: 17px;
 }
