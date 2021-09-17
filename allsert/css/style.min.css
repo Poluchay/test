@@ -2072,6 +2072,9 @@ body.ie ._ibg img {
   display: flex;
   align-items: center;
 }
+.lt-section__breadcrumb {
+  margin-bottom: 10px;
+}
 .lt-section__title:not(:last-child) {
   margin-right: 10px;
 }
