@@ -1557,7 +1557,7 @@ body.ie ._ibg img {
   justify-content: space-between;
   font-size: 10px;
 }
-@media (max-width: 375px) {
+@media (max-width: 375.98px) {
   .footer-nav {
     flex-direction: column;
   }
@@ -1574,7 +1574,7 @@ body.ie ._ibg img {
 .footer-nav__list li:last-child {
   margin-bottom: 0;
 }
-@media (min-width: 375px) and (max-width: 991.98px) {
+@media (min-width: 375.98px) and (max-width: 991.98px) {
   .footer-nav__list:nth-child(2n+2) {
     text-align: right;
   }
@@ -1741,7 +1741,7 @@ body.ie ._ibg img {
   flex-wrap: wrap;
   margin-bottom: -40px;
 }
-@media (min-width: 375px) {
+@media (min-width: 375.98px) {
   .about__items {
     margin-bottom: -60px;
   }
@@ -1757,7 +1757,7 @@ body.ie ._ibg img {
   font-family: "Rubik";
   margin-bottom: 40px;
 }
-@media (min-width: 375px) {
+@media (min-width: 375.98px) {
   .about__item {
     margin-bottom: 60px;
   }
@@ -1768,7 +1768,7 @@ body.ie ._ibg img {
   font-weight: 900;
   color: #333333;
 }
-@media (min-width: 375px) {
+@media (min-width: 375.98px) {
   .about__number {
     font-size: 55px;
     margin-bottom: 39px;
@@ -1780,7 +1780,7 @@ body.ie ._ibg img {
   color: #ff0000;
   line-height: 1.2;
 }
-@media (min-width: 375px) {
+@media (min-width: 375.98px) {
   .about__text {
     font-size: 20px;
   }
@@ -2168,7 +2168,7 @@ body.ie ._ibg img {
   color: #333333;
   background-color: #ffc844;
 }
-@media (min-width: 375px) {
+@media (min-width: 375.98px) {
   .card-link {
     max-width: 400px;
     min-height: 280px;
