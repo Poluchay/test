@@ -934,6 +934,7 @@ textarea.input {
 }
 
 .btn-primary {
+  position: relative;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -954,17 +955,35 @@ textarea.input {
     background-color: #e74b4b;
   }
 }
+.btn-primary::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(40%, -40%);
+  background-image: url(../img/logo-decor.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 25px;
+  height: 25px;
+}
 .btn-primary--small {
   text-transform: none;
   padding: 11px 20px;
   font-size: 12px;
   min-width: unset;
 }
+.btn-primary--small::before {
+  display: none;
+}
 .btn-primary--medium {
   font-size: 16px;
 }
 .btn-primary--large {
   font-size: 22px;
+}
+.btn-primary--decor-not::before {
+  display: none;
 }
 
 .title-primary {
@@ -1076,6 +1095,56 @@ textarea.input {
 .info-block__list li::before {
   content: "–";
   margin-right: 5px;
+}
+
+.decor-block__img-left {
+  display: none;
+}
+@media (min-width: 991.98px) {
+  .decor-block__img-left {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 124px;
+    height: auto;
+  }
+}
+.decor-block__img-right {
+  display: none;
+}
+@media (min-width: 991.98px) {
+  .decor-block__img-right {
+    position: absolute;
+    top: -100px;
+    right: 0;
+    display: block;
+    width: 280px;
+    height: auto;
+    opacity: 0.4;
+  }
+}
+@media (min-width: 1500px) {
+  .decor-block__img-right {
+    opacity: 1;
+  }
+}
+.decor-block__circle {
+  display: none;
+}
+@media (min-width: 1250px) {
+  .decor-block__circle {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(50%);
+  }
+  .decor-block__circle--small {
+    transform: translate(0);
+    top: 50%;
+    right: 100px;
+  }
 }
 
 ._ibg {
@@ -1731,7 +1800,12 @@ body.ie ._ibg img {
 }
 
 .cover {
+  position: relative;
   padding-top: 18px;
+}
+.cover__container {
+  position: relative;
+  z-index: 1;
 }
 @media (min-width: 767.98px) {
   .cover__row {
@@ -1893,6 +1967,13 @@ body.ie ._ibg img {
   }
 }
 
+.lt-section--decor {
+  position: relative;
+}
+.lt-section__container--index-high {
+  position: relative;
+  z-index: 1;
+}
 .lt-section__header {
   margin-bottom: 60px;
 }
