@@ -552,16 +552,8 @@ template {
 }
 
 body {
-  background-image: url(../img/bg-mob.jpg);
   background-color: #f2dfc1;
-  background-repeat: repeat-y;
-  background-size: 100%;
   color: #000;
-}
-@media (min-width: 479.98px) {
-  body {
-    background-image: url(../img/bg.jpg);
-  }
 }
 body._lock {
   overflow: hidden;
