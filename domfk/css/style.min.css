@@ -552,9 +552,16 @@ template {
 }
 
 body {
+  background-image: url(../img/bg-mob.jpg);
+  background-color: #f2dfc1;
   background-repeat: repeat-y;
   background-size: 100%;
   color: #000;
+}
+@media (min-width: 479.98px) {
+  body {
+    background-image: url(../img/bg.jpg);
+  }
 }
 body._lock {
   overflow: hidden;
@@ -1204,12 +1211,16 @@ body.ie ._ibg img {
 }
 
 .header {
+  z-index: 50;
   padding-bottom: 10px;
 }
 @media (max-width: 767.98px) {
   .header {
     padding-top: 40px;
   }
+}
+.header__container {
+  position: relative;
 }
 @media (max-width: 767.98px) {
   .header__container {
@@ -1274,23 +1285,54 @@ body.ie ._ibg img {
     margin-right: 39px;
   }
 }
+.header__nav-mob {
+  display: none;
+}
+@media (max-width: 991.98px) {
+  .header__nav-mob {
+    overflow: hidden;
+    display: block;
+    min-width: 171px;
+    position: absolute;
+    top: 100%;
+    right: 20px;
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+    background-color: #333333;
+    border-radius: 5px;
+    transition: opacity 0.3s, visibility 0.3s;
+  }
+  .header__nav-mob._active {
+    opacity: 1;
+    pointer-events: all;
+    visibility: visible;
+  }
+}
 .header__nav {
   display: none;
-  margin-right: 5px;
 }
 @media (min-width: 991.98px) {
   .header__nav {
     display: flex;
+    margin-right: 5px;
   }
 }
 .header__list {
   display: flex;
 }
-.header__item {
-  margin-right: 15px;
+@media (max-width: 991.98px) {
+  .header__list {
+    flex-direction: column;
+  }
 }
-.header__item:last-child {
-  margin-right: 0;
+@media (min-width: 991.98px) {
+  .header__item {
+    margin-right: 15px;
+  }
+  .header__item:last-child {
+    margin-right: 0;
+  }
 }
 @media (min-width: 1250px) {
   .header__item {
@@ -1298,21 +1340,35 @@ body.ie ._ibg img {
   }
 }
 .header__link {
-  display: inline-block;
-  padding: 3px 0;
-  font-weight: 500;
-  color: #333333;
+  display: block;
+  width: 100%;
+  padding: 10px 15px;
+  text-align: left;
+  line-height: 1.4;
+  color: #fff;
   transition: color 0.3s;
+}
+.header__link._active {
+  background-color: #ffc844;
+  color: #333333;
+  font-weight: 600;
 }
 @media (any-hover: hover) {
   .header__link:hover {
     color: #ff0000;
   }
 }
+@media (min-width: 991.98px) {
+  .header__link {
+    font-weight: 500;
+    padding: 3px 0;
+    color: #333333;
+  }
+}
 .header__user {
   display: none;
 }
-@media (min-width: 767.98px) {
+@media (min-width: 991.98px) {
   .header__user {
     display: block;
     margin-left: 25px;
@@ -1325,12 +1381,12 @@ body.ie ._ibg img {
 }
 
 .search {
+  position: relative;
   max-width: 226px;
   width: 100%;
 }
 .search__input-block {
-  position: relative;
-  display: none;
+  display: flex;
   align-items: center;
   border: 1px solid #333333;
   border-radius: 5px;
@@ -1345,9 +1401,23 @@ body.ie ._ibg img {
     border-color: #ff0000;
   }
 }
-@media (min-width: 767.98px) {
+@media (max-width: 767.98px) {
   .search__input-block {
     display: flex;
+    position: absolute;
+    top: 140%;
+    right: -50%;
+    min-width: 220px;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: opacity 0.3s, visibility 0.3s;
+    background-color: #fff;
+  }
+  .search__input-block._active {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: all;
   }
 }
 .search__inner {
@@ -1408,6 +1478,39 @@ body.ie ._ibg img {
 }
 .header-user__arrow {
   font-size: 11px;
+}
+.header-user__body {
+  overflow: hidden;
+  display: block;
+  min-width: 171px;
+  position: absolute;
+  top: 100%;
+  right: 20px;
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+  background-color: #333333;
+  border-radius: 5px;
+  transition: opacity 0.3s, visibility 0.3s;
+}
+.header-user__body._active {
+  opacity: 1;
+  pointer-events: all;
+  visibility: visible;
+}
+.header-user__link {
+  display: block;
+  width: 100%;
+  padding: 10px 15px;
+  text-align: left;
+  line-height: 1.4;
+  color: #fff;
+  transition: color 0.3s;
+}
+.header-user__link._active {
+  background-color: #ffc844;
+  color: #333333;
+  font-weight: 600;
 }
 
 .icon-menu {
@@ -1584,7 +1687,7 @@ body.ie ._ibg img {
     margin-right: 80px;
   }
 }
-@media (max-width: 375px) {
+@media (max-width: 375.98px) {
   .footer-nav__list {
     margin-bottom: 30px;
   }

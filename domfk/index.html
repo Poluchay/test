@@ -11,19 +11,19 @@
 	<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
-	<body style="background-image: url(img/bg.jpg); background-color: #F2DFC1;">
+	<body>
 		<div class="wrapper">
 			<header class="header">
 	<div class="header__container _container">
 		<div class="header__top-line">
-			<div class="header__search search">
-				<div class="search__input-block">
+			<div class="header__search search _dropdown">
+				<div class="search__input-block _dropdown-body">
 					<div class="search__inner">
 						<input type="text" class="search__input" placeholder="Поиск...">
 					</div>
 					<button class="search__btn"><img src="img/icons/search.svg" alt="search"></button>
 				</div>
-				<div class="search__btn-show">
+				<div class="search__btn-show _dropdown-button">
 					<img src="img/icons/search.svg" alt="search">
 				</div>
 			</div>
@@ -71,12 +71,50 @@
 					</li>
 				</ul>
 			</nav>
+			<nav class="header__nav-mob">
+				<ul class="header__list">
+					<li class="header__item">
+						<a class="header__link" href="#">Мой профиль</a>
+					</li>
+					<li class="header__item">
+						<a class="header__link" href="#">Тест-драйв</a>
+					</li>
+					<li class="header__item">
+						<a class="header__link" href="#">О нас</a>
+					</li>
+					<li class="header__item">
+						<a class="header__link" href="#">Центры</a>
+					</li>
+					<li class="header__item">
+						<a class="header__link" href="#">Клубные карты</a>
+					</li>
+					<li class="header__item">
+						<a class="header__link" href="#">Тренировки</a>
+					</li>
+					<li class="header__item">
+						<a class="header__link" href="#">Команда</a>
+					</li>
+					<li class="header__item">
+						<a class="header__link" href="#">Новости</a>
+					</li>
+					<li class="header__item">
+						<a class="header__link" href="#">Контакты</a>
+					</li>
+				</ul>
+				<div class="header__item">
+					<button class="header__link _active">Выйти</button>
+				</div>
+			</nav>
 			<div class="header__user header-user _dropdown">
-				<div class="header-user__head">
+				<div class="header-user__head _dropdown-button">
 					<!-- <img class="header-user__icon" src="img/icons/user.svg" alt="user" height="22" width="22"> -->
 					<i class="header-user__icon _icon-user"></i>
 					<i class="header-user__arrow _icon-arrow-down"></i>
 				</div>
+				<ul class="header-user__body _dropdown-body">
+					<li><a class="header-user__link" href="#">Мой Профиль</a></li>
+					<li><button class="header-user__link _active">Выход</button></li>
+				</ul>
 			</div>
 		</div>
 	</div>
@@ -89,8 +127,9 @@
             <h1 class="cover__title title-primary">
                ХОЧЕШЬ ПОКОРЯТЬ <br> ВЕРШИНЫ?
             </h1>
-            <img class="cover__img cover__img--transform" src="img/cover/sport.png" width="711" height="139"
-               alt="sport">
+            <img class=" cover__img cover__img--transform lazyload"
+               src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+               data-src="img/cover/sport.png" alt="sport" data-sizes="auto">
             <div class="cover__content">
                <p>Сеть фитнес-центров в Краснодаре предлагает тебе широкий спектр занятий.</p>
                <p>Получи <i class="accent">скидку 10%</i> при покупке клубной карты на нашем сайте!</p>
@@ -99,7 +138,8 @@
          </div>
          <div class="cover__column cover__column--right">
             <div class="cover__bg-img _ibg">
-               <img src="img/cover/cover-img.png" alt="cover-img">
+               <img class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                  data-src="img/cover/cover-img.png" alt="cover-img" data-sizes="auto">
             </div>
          </div>
       </div>
@@ -155,7 +195,9 @@
          <div class="swiper-wrapper slider__wrapper">
             <a href="#" class="swiper-slide slider__slide">
                <div class="slider__img _ibg">
-                  <img src="img/programm/img-1.jpg" alt="Бассейны">
+                  <img class=" cover__img cover__img--transform lazyload"
+                     src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                     data-src="img/programm/img-1.jpg" alt="Бассейны" data-sizes="auto">
                   <div class="slider__img-text">
                      Бассейны
                   </div>
@@ -163,7 +205,8 @@
             </a>
             <a href="#" class="swiper-slide slider__slide">
                <div class="slider__img _ibg">
-                  <img src="img/programm/img-2.jpg" alt="Групповые занятия">
+                  <img class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                     data-src="img/programm/img-2.jpg" alt="Групповые занятия" data-sizes="auto">
                   <div class="slider__img-text">
                      Групповые занятия
                   </div>
@@ -171,7 +214,8 @@
             </a>
             <a href="#" class="swiper-slide slider__slide">
                <div class="slider__img _ibg">
-                  <img src="img/programm/img-3.jpg" alt="Тренажерный зал">
+                  <img class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                     data-src="img/programm/img-3.jpg" alt="Тренажерный зал" data-sizes="auto">
                   <div class="slider__img-text">
                      Тренажерный зал
                   </div>
@@ -283,7 +327,8 @@
 <div class="page__section widget-line">
    <div class="widget-line__title">
       <div class="widget-line__img">
-         <img src="img/logo-mini.svg" alt="logo-mini">
+         <img class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+            data-src="img/logo-mini.svg" alt="logo-mini" data-sizes="auto">
       </div>
       Дом-физкультурника
    </div>
@@ -301,7 +346,8 @@
          <div class="lt-columns">
             <div class="lt-columns__item card-info">
                <div class="card-info__icon">
-                  <img src="img/card/card-1.png" alt="Восточка">
+                  <img class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                     data-src="img/card/card-1.png" alt="Восточка" data-sizes="auto">
                </div>
                <h3 class="card-info__title">#Восточка</h3>
                <div class="card-info__text">
@@ -312,7 +358,8 @@
             </div>
             <div class="lt-columns__item card-info">
                <div class="card-info__icon">
-                  <img src="img/card/card-2.png" alt="Мачуги">
+                  <img class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                     data-src="img/card/card-2.png" alt="Мачуги" data-sizes="auto">
                </div>
                <h3 class="card-info__title">#мачуги</h3>
                <div class="card-info__text">
@@ -339,7 +386,8 @@
          <div class="swiper-wrapper slider__wrapper">
             <a href="#" class="swiper-slide slider__slide">
                <div class="slider__img _ibg">
-                  <img src="img/programm/img-1.jpg" alt="Бассейны">
+                  <img class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                     data-src="img/programm/img-1.jpg" alt="Бассейны" data-sizes="auto">
                </div>
                <div class="slider__body">
                   <h3 class="slider__title">
@@ -354,7 +402,8 @@
             </a>
             <a href="#" class="swiper-slide slider__slide">
                <div class="slider__img _ibg">
-                  <img src="img/programm/img-2.jpg" alt="Групповые занятия">
+                  <img class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                     data-src="img/programm/img-2.jpg" alt="Бассейны" data-sizes="auto">
                </div>
                <div class="slider__body">
                   <h3 class="slider__title">
@@ -369,7 +418,8 @@
             </a>
             <a href="#" class="swiper-slide slider__slide">
                <div class="slider__img _ibg">
-                  <img src="img/programm/img-3.jpg" alt="Тренажерный зал">
+                  <img class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                     data-src="img/programm/img-3.jpg" alt="Бассейны" data-sizes="auto">
                </div>
                <div class="slider__body">
                   <h3 class="slider__title">
@@ -465,17 +515,20 @@
          <div class="swiper-wrapper slider__wrapper">
             <a href="#" class="swiper-slide slider__slide">
                <div class="slider__img _ibg">
-                  <img src="img/programm/img-1.jpg" alt="Бассейны">
+                  <img class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                     data-src="img/programm/img-1.jpg" alt="Бассейны" data-sizes="auto">
                </div>
             </a>
             <a href="#" class="swiper-slide slider__slide">
                <div class="slider__img _ibg">
-                  <img src="img/programm/img-2.jpg" alt="Групповые занятия">
+                  <img class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                     data-src="img/programm/img-2.jpg" alt="Бассейны" data-sizes="auto">
                </div>
             </a>
             <a href="#" class="swiper-slide slider__slide">
                <div class="slider__img _ibg">
-                  <img src="img/programm/img-3.jpg" alt="Тренажерный зал">
+                  <img class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                     data-src="img/programm/img-3.jpg" alt="Бассейны" data-sizes="auto">
                </div>
             </a>
          </div>
