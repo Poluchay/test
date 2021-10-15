@@ -1507,10 +1507,17 @@ body.ie ._ibg img {
   color: #fff;
   transition: color 0.3s;
 }
-.header-user__link._active {
+.header-user__link._show {
   background-color: #ffc844;
   color: #333333;
   font-weight: 600;
+}
+@media (any-hover: hover) {
+  .header-user__link:hover {
+    background-color: #ffc844;
+    color: #333333;
+    font-weight: 600;
+  }
 }
 
 .icon-menu {
@@ -2295,10 +2302,8 @@ body.ie ._ibg img {
   opacity: 0;
   transition: opacity 0.3s;
 }
-@media (any-hover: hover) {
-  .card-link__overlay:hover {
-    opacity: 1;
-  }
+.card-link__overlay:hover {
+  opacity: 1;
 }
 .card-link__bg {
   position: absolute;
