@@ -1764,8 +1764,9 @@ body.ie ._ibg img {
     flex: 1 1 auto;
   }
 }
-.cover__column--right {
+.cover__column-right {
   min-width: unset;
+  margin: auto 0;
   flex: 1 0 50%;
 }
 .cover__title:not(:last-child) {
