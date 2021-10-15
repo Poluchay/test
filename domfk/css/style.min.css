@@ -1295,7 +1295,7 @@ body.ie ._ibg img {
     min-width: 171px;
     position: absolute;
     top: 100%;
-    right: 20px;
+    right: -100%;
     opacity: 0;
     pointer-events: none;
     visibility: hidden;
@@ -1304,6 +1304,7 @@ body.ie ._ibg img {
     transition: opacity 0.3s, visibility 0.3s;
   }
   .header__nav-mob._active {
+    right: 20px;
     opacity: 1;
     pointer-events: all;
     visibility: visible;
