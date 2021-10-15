@@ -973,12 +973,12 @@ textarea.input {
   line-height: 1.25;
   font-size: 25px;
 }
-@media (min-width: 375px) {
+@media (min-width: 375px) and (max-width: 767.98px) {
   .title-primary {
     font-size: 32px;
   }
 }
-@media (min-width: 767.98px) {
+@media (min-width: 767.98px) and (max-width: 1250px) {
   .title-primary {
     font-size: 45px;
   }
