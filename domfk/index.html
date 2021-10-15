@@ -120,16 +120,20 @@
 	</div>
 </header>
 			<main class="page">
-				<!-- <section class="page__header cover">
+				<section class="page__header cover">
    <div class="cover__container _container">
       <div class="cover__row">
          <div class="cover__column">
             <h1 class="cover__title title-primary">
                ХОЧЕШЬ ПОКОРЯТЬ <br> ВЕРШИНЫ?
             </h1>
-            <img class=" cover__img cover__img--transform lazyload"
-               src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-               data-src="img/cover/sport.png" alt="sport" data-sizes="auto">
+            <img class=" cover__img cover__img--transform" src="img/cover/sport.png" alt="sport" data-sizes="auto">
+            <picture>
+               <source data-srcset="img/cover/sport-mob.webp" media="(max-width: 550px)" type="image/webp" />
+               <source data-srcset="img/cover/sport-mob.png" media="(max-width: 550px)" />
+               <source data-srcset="img/cover/sport.webp" type="image/webp" />
+               <img src="img/cover/sport.png" alt="cover-img">
+            </picture>
             <div class="cover__content">
                <p>Сеть фитнес-центров в Краснодаре предлагает тебе широкий спектр занятий.</p>
                <p>Получи <i class="accent">скидку 10%</i> при покупке клубной карты на нашем сайте!</p>
@@ -140,14 +144,13 @@
             <div class="cover__bg-img _ibg">
                <picture>
                   <source data-srcset="img/cover/cover-img-mob.png" media="(max-width: 550px)" />
-                  <img class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-                     data-src="img/cover/cover-img.png" alt="cover-img" data-sizes="auto">
+                  <img src="img/cover/cover-img.png" alt="cover-img" data-sizes="auto">
                </picture>
             </div>
          </div>
       </div>
    </div>
-</section> -->
+</section>
 
 <div class="page__section">
    <div class="_container">
@@ -198,8 +201,7 @@
          <div class="swiper-wrapper slider__wrapper">
             <a href="#" class="swiper-slide slider__slide">
                <div class="slider__img _ibg">
-                  <img class="lazyload"
-                     src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                  <img class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
                      data-src="img/programm/img-1.jpg" alt="Бассейны" data-sizes="auto">
                   <div class="slider__img-text">
                      Бассейны
