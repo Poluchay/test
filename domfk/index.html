@@ -138,8 +138,13 @@
          </div>
          <div class="cover__column cover__column--right">
             <div class="cover__bg-img _ibg">
-               <img class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-                  data-src="img/cover/cover-img.png" alt="cover-img" data-sizes="auto">
+               <picture>
+                  <source data-srcset="img/cover/cover-img-mob.webp" media="(max-width: 550px)" type="image/webp"/>
+                  <source data-srcset="img/cover/cover-img.png" media="(max-width: 550px)" />
+                  <source data-srcset="img/cover/cover-img.webp" type="image/webp"/>
+                  <img class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                     data-src="img/cover/cover-img.png" alt="cover-img" data-sizes="auto">
+               </picture>
             </div>
          </div>
       </div>
@@ -438,7 +443,7 @@
    </div>
 </section>
 
-<section class="page__section stock" style="background-image: url(img/stock/bg-stock.jpg);">
+<section class="page__section stock">
    <div class="stock__container _container">
       <div class="stock__body">
          <h2 class="stock__title">Акция!</h2>
@@ -451,6 +456,10 @@
          </div>
          <button class="stock__btn btn-primary btn-primary--medium">Получить подарок</button>
       </div>
+   </div>
+   <div class="stock__bg _ibg">
+      <img class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+         data-src="img/stock/bg-stock.jpg" alt="bg" data-sizes="auto">
    </div>
 </section>
 
