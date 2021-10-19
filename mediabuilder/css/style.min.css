@@ -1667,6 +1667,16 @@ body.ie ._ibg img {
     margin-bottom: 20px;
   }
 }
+@media (max-width: 350px) {
+  .cover__bg {
+    width: 290px;
+    height: 223px;
+    padding-bottom: unset;
+  }
+  .cover__bg:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
 @media (min-width: 479.98px) {
   .cover__bg {
     position: absolute;
