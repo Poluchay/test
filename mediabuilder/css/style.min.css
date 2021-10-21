@@ -902,11 +902,16 @@ textarea.input {
   line-height: 1.2;
   transition: background-color 0.3s, color 0.3s;
 }
-.btn-primary i:last-child {
+.btn-primary i:not(.btn-primary__down):last-child {
   margin-left: 13px;
 }
-.btn-primary i::before {
+.btn-primary i:not(.btn-primary__down)::before {
   font-size: 14px;
+}
+.btn-primary__down {
+  margin-left: 0;
+  margin-right: 16px;
+  font-size: 24px;
 }
 @media (any-hover: hover) {
   .btn-primary:hover {
@@ -957,21 +962,31 @@ textarea.input {
 .primary-title {
   font-size: 55px;
   line-height: 1.32;
+  font-weight: 700;
 }
 @media (max-width: 1192px) {
   .primary-title {
     font-size: calc(28px + 27 * ((100vw - 320px) / 872));
   }
 }
-.primary-title b {
-  font-weight: 700;
-}
 .primary-title span {
+  font-weight: 400;
+}
+.primary-title i {
   font-weight: 600;
   color: transparent;
   background-image: linear-gradient(180deg, #29AAEC 0%, #1DA1F2 26.57%, #2A87F0 63.07%, #0066FF 100.02%);
   -webkit-background-clip: text;
   background-clip: text;
+  font-style: normal;
+}
+.primary-title--large {
+  font-size: 100px;
+}
+@media (max-width: 1192px) {
+  .primary-title--large {
+    font-size: calc(45px + 55 * ((100vw - 320px) / 872));
+  }
 }
 
 .section-title {
@@ -1089,7 +1104,7 @@ textarea.input {
   align-items: center;
   justify-content: space-between;
   padding: 12px;
-  background-color: #25D366;
+  background-color: #25d366;
   color: #fff;
   border-radius: 8px;
   font-size: 16px;
@@ -1119,7 +1134,7 @@ textarea.input {
   }
 }
 .contacts-link--telegramm {
-  background-color: #29AAEC;
+  background-color: #29aaec;
 }
 @media (any-hover: hover) {
   .contacts-link--telegramm:hover {
@@ -1127,7 +1142,7 @@ textarea.input {
   }
 }
 .contacts-link--mail {
-  background-color: #0066FF;
+  background-color: #0066ff;
 }
 @media (any-hover: hover) {
   .contacts-link--mail:hover {
@@ -1835,6 +1850,14 @@ body.ie ._ibg img {
 @media (min-width: 991.98px) {
   .cover {
     padding-top: 20px;
+  }
+}
+.cover--single-cover {
+  padding-bottom: 0;
+}
+@media (min-width: 991.98px) {
+  .cover--single-cover {
+    padding-top: 0;
   }
 }
 .cover__contnainer {
