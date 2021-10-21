@@ -2443,6 +2443,14 @@ body.ie ._ibg img {
   font-weight: 600;
   font-size: 18px;
 }
+.lt-article__date:not(:last-child) {
+  margin-bottom: 25px;
+}
+@media (min-width: 479.98px) {
+  .lt-article__date:not(:last-child) {
+    margin-bottom: 15px;
+  }
+}
 .lt-article__title {
   font-size: 24px;
   font-weight: 700;
