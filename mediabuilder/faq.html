@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="ru">
+	 <head>
+	<title>Главная</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<link rel="stylesheet" href="css/style.min.css">
+	<link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+	<link rel="shortcut icon" href="favicon.ico">
+	<meta name="robots" content="noindex, nofollow">
+	<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+	<body>
+		<div class="wrapper">
+			<header class="header">
+	<div class="header__container _container">
+		<div class="header__line">
+			<a class="header__logo" href="index.html">
+				<picture>
+					<source media="(max-width: 479.98px)" srcset="img/logo-mob.svg">
+					<img class="logo" src="img/logo.svg" alt="logo">
+				</picture>
+			</a>
+			<nav class="header__soc-nav social-nav _dropdown">
+				<ul class="social-nav__list">
+					<li class="social-nav__item">
+						<a href="socialnaya-set.html" class="social-nav__link">
+							<svg class="icon">
+								<use xlink:href="img/social/soc-sprite.svg#vk"></use>
+							</svg>
+						</a>
+					</li>
+					<li class="social-nav__item">
+						<a href="socialnaya-set.html" class="social-nav__link">
+							<svg class="icon">
+								<use xlink:href="img/social/soc-sprite.svg#tg"></use>
+							</svg>
+						</a>
+					</li>
+					<li class="social-nav__item">
+						<a href="socialnaya-set.html" class="social-nav__link">
+							<svg class="icon">
+								<use xlink:href="img/social/soc-sprite.svg#ytb"></use>
+							</svg>
+						</a>
+					</li>
+					<li class="social-nav__item">
+						<a href="socialnaya-set.html" class="social-nav__link">
+							<svg class="icon">
+								<use xlink:href="img/social/soc-sprite.svg#tiktok"></use>
+							</svg>
+						</a>
+					</li>
+					<li class="social-nav__item">
+						<a href="socialnaya-set.html" class="social-nav__link">
+							<svg class="icon">
+								<use xlink:href="img/social/soc-sprite.svg#inst"></use>
+							</svg>
+						</a>
+					</li>
+					<li class="social-nav__item">
+						<a href="socialnaya-set.html" class="social-nav__link">
+							<svg class="icon">
+								<use xlink:href="img/social/soc-sprite.svg#fb"></use>
+							</svg>
+						</a>
+					</li>
+					<li class="social-nav__item">
+						<a href="socialnaya-set.html" class="social-nav__link">
+							<svg class="icon">
+								<use xlink:href="img/social/soc-sprite.svg#pnt"></use>
+							</svg>
+						</a>
+					</li>
+					<li class="social-nav__item">
+						<a href="socialnaya-set.html" class="social-nav__link">
+							<svg class="icon">
+								<use xlink:href="img/social/soc-sprite.svg#dzen"></use>
+							</svg>
+						</a>
+					</li>
+					<li class="social-nav__item">
+						<button class="social-nav__link _dropdown-button">
+							<i class="social-nav__icon _icon-chevron-down"></i>
+						</button>
+						<ul class="social-nav__sub-list _dropdown-body">
+							<li class="social-nav__sub-item">
+								<a href="socialnaya-set.html" class="social-nav__sub-link">
+									<svg class="social-nav__sub-icon">
+										<use xlink:href="img/social/soc-sprite.svg#ytb"></use>
+									</svg>
+									Ютуб
+								</a>
+							</li>
+							<li class="social-nav__sub-item">
+								<a href="socialnaya-set.html" class="social-nav__sub-link _active">
+									<svg class="social-nav__sub-icon">
+										<use xlink:href="img/social/soc-sprite.svg#tg"></use>
+									</svg>
+									Телеграм
+								</a>
+							</li>
+							<li class="social-nav__sub-item">
+								<a href="socialnaya-set.html" class="social-nav__sub-link">
+									<svg class="social-nav__sub-icon">
+										<use xlink:href="img/social/soc-sprite.svg#pnt"></use>
+									</svg>
+									Pinterest
+								</a>
+							</li>
+							<li class="social-nav__sub-item">
+								<a href="socialnaya-set.html" class="social-nav__sub-link">
+									<svg class="social-nav__sub-icon">
+										<use xlink:href="img/social/soc-sprite.svg#dzen"></use>
+									</svg>
+									Дзен
+								</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</nav>
+			<a href="#" class="header__user-btn btn-primary btn-primary--small">Личный кабинет</a>
+			<!-- <button class="header__logout btn-primary btn-primary--small">Выход <i class="_icon-open-in-new"></i></button> -->
+			<div class="icon-menu">
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+		</div>
+		<nav class="header__nav">
+			<div class="header__user-list user-list" data-spollers>
+				<div class="user-list__profile" data-spoller>
+					<div class="user-list__profile-img _ibg">
+						<img src="img/profile/avatar.png" alt="avatar">
+					</div>
+					<span class="user-list__login">Логин <i class="_icon-chevron-down"></i></span>
+				</div>
+				<div class="user-list__body-spoller">
+					<ul class="user-list__info">
+						<li class="user-list__info-item ">
+							<i class="user-list__icon _icon-cash-100"></i>
+							Баланс: <span>200₽</span>
+						</li>
+						<li class="user-list__info-item">
+							<i class="user-list__icon _icon-star"></i>
+							Бонусы: <span>200</span>
+						</li>
+					</ul>
+					<ul class="user-list__items">
+						<li class="user-list__item _active">
+							<a class="user-list__link" href="#"><i class="user-list__icon _icon-profile"></i>Личный кабинет</a>
+						</li>
+						<li class="user-list__item">
+							<a class="user-list__link" href="#"><i class="user-list__icon _icon-cash-100"></i>Пополнить
+								баланс</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<ul class="header__list">
+				<li class="header__item">
+					<a class="header__link" href="#">Каталог</a>
+				</li>
+				<li class="header__item">
+					<a class="header__link" href="#">Пакеты</a>
+				</li>
+				<li class="header__item">
+					<a class="header__link" href="#">Калькулятор</a>
+				</li>
+				<li class="header__item">
+					<a class="header__link" href="#">Новости</a>
+				</li>
+				<li class="header__item">
+					<a class="header__link" href="#">Акции</a>
+				</li>
+				<li class="header__item">
+					<a class="header__link" href="faq.html">FAQ</a>
+				</li>
+				<li class="header__item">
+					<a class="header__link" href="#">Партнёрам</a>
+				</li>
+				<li class="header__item">
+					<a class="header__link" href="#">Контакты</a>
+				</li>
+				<li class="header__item">
+					<a class="header__link" href="#">Любая другая ссылка</a>
+				</li>
+			</ul>
+		</nav>
+	</div>
+</header>
+			<main class="page">
+				
+				<div class="cover">
+   <div class="cover__contnainer _container">
+      <div class="cover__content">
+         <h1 class="cover__title primary-title"><b>Качественное продвижение</b> любой <span>соцсети</span></h1>
+         <span class="cover__sub-title">по самым низким ценам!</span>
+         <div class="cover__btn-block">
+            <a href="#" class="btn-primary btn-primary--large">
+               Попробовать бесплатно
+            </a>
+         </div>
+      </div>
+      <div class="cover__bg">
+         <img src="img/cover/faq-cover.svg" alt="bg" width="500" height="500">
+      </div>
+      <div class="cover__btn-mob">
+         <a href="#" class="btn-primary">Попробовать бесплатно</a>
+      </div>
+   </div>
+</div>
+
+<section class="page__section lt-section">
+   <div class="lt-section__container _container">
+      <div class="lt-section__header">
+         <h2 class="lt-section__title section-title">Ответы на частые вопросы</h2>
+      </div>
+      <div class="lt-section__body">
+         <div class="faq" data-spollers data-one-spoller>
+            <div class="faq__item">
+               <h3 class="faq__header" data-spoller>
+                  Что такое Media-Building? <span class="faq__icon"></span>
+               </h3>
+               <div class="faq__content">
+                  <p>Что такое Media-Building?</p>
+               </div>
+            </div>
+            <div class="faq__item">
+               <h3 class="faq__header" data-spoller>
+                  Проблема с заказом, что делать? <span class="faq__icon"></span>
+               </h3>
+               <div class="faq__content">
+                  <p> Перед оформлением заказа, внимательно читайте информацию. Все заказы поступают в обработку
+                     автоматически, но некоторым требуется больше времени. Как правило, все заказы выполняются в срок,
+                     но
+                     также при большом спросе и повышении нагрузки, время ожидания может быть увеличено. В случае, если
+                     заказ оформлен правильно, а услуга так и не стартовала, спустя сутки (для некоторых услуг дольше)
+                     обратитесь в тех. поддержку - обязательно решим проблему.</p>
+               </div>
+            </div>
+            <div class="faq__item">
+               <h3 class="faq__header" data-spoller>
+                  Есть ли у вас партнерская программа? <span class="faq__icon"></span>
+               </h3>
+               <div class="faq__content">
+                  <p>Есть ли у вас партнерская программа?</p>
+               </div>
+            </div>
+            <div class="faq__item">
+               <h3 class="faq__header" data-spoller>
+                  У вас живые подписчики?
+               </h3>
+               <div class="faq__content">
+                  <p>Да, но не на всех услугах. Под каждой услугой есть подробное описание. При заказе его следует
+                     внимательно прочитать!</p>
+               </div>
+            </div>
+            <div class="faq__item">
+               <h3 class="faq__header" data-spoller>
+                  Эконом, Стандарт, Премиум - это что? <span class="faq__icon"></span>
+               </h3>
+               <div class="faq__content">
+                  <p>Эконом, Стандарт, Премиум - это что?</p>
+               </div>
+            </div>
+            <div class="faq__item">
+               <h3 class="faq__header" data-spoller>
+                  Что значит с гарантией и без гарантии? <span class="faq__icon"></span>
+               </h3>
+               <div class="faq__content">
+                  <p>Что значит с гарантией и без гарантии?</p>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</section>
+			</main>
+			<footer class="footer">
+	<div class="footer__container _container">
+		<div class="footer__top-line">
+			<div class="footer__columns">
+				<div class="footer__column footer__column--column-four">
+					<a href="#" class="footer__logo">
+						<img class="logo" src="img/logo-white.svg" alt="logo">
+					</a>
+					<div class="footer__text">
+						<p>Мы обеспечиваем пользователей по всему миру наиболее эффективным, надежным и экономичным решением
+							из доступных на рынке продвижения в соц. сетях.</p>
+					</div>
+					<a href="#" class="footer__pay-link">
+						<img class="lazyload"
+                           src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                           data-src="img/footer/pay.png" alt="pay" data-sizes="auto">
+					</a>
+				</div>
+				<div class="footer__column footer__column--column-auto">
+					<nav class="footer__nav footer-nav">
+						<ul class="footer-nav__list">
+							<li class="footer-nav__list-title">
+								Навигация
+							</li>
+							<li class="footer-nav__item">
+								<a href="#" class="footer-nav__link">Главная</a>
+							</li>
+							<li class="footer-nav__item">
+								<a href="#" class="footer-nav__link">О Нас</a>
+							</li>
+							<li class="footer-nav__item">
+								<a href="#" class="footer-nav__link">Контакты</a>
+							</li>
+							<li class="footer-nav__item">
+								<a href="#" class="footer-nav__link">Акции</a>
+							</li>
+							<li class="footer-nav__item">
+								<a href="#" class="footer-nav__link">FAQ</a>
+							</li>
+						</ul>
+						<ul class="footer-nav__list">
+							<li class="footer-nav__list-title">
+								Сообщество
+							</li>
+							<li class="footer-nav__item">
+								<a href="#" class="footer-nav__link">Партнерам</a>
+							</li>
+							<li class="footer-nav__item">
+								<a href="#" class="footer-nav__link">Правила сервиса</a>
+							</li>
+							<li class="footer-nav__item">
+								<a href="#" class="footer-nav__link">Публичная оферта</a>
+							</li>
+							<li class="footer-nav__item">
+								<a href="#" class="footer-nav__link">Политика конфедициальности</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+				<div class="footer__column">
+					<div class="footer__icon-block">
+						<img class="footer__icon" src="img/footer/garant.png" alt="garant">
+						100% ГАРАНТИЯ ВОЗВРАТА ДЕНЕГ
+					</div>
+					<div class="footer__text">
+						<p>Мы единственные на рынке, кто предоставляет гарантию возврата средств. Мы гарантируем что вернем
+							вам деньги, если заказ не будет выполнен. Ваше спокойствие для нас в приоритете.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<article class="footer__bottom-line">
+			<h2>«СЕОшный текст для поисковиков про сайт и чем сайт занимается на 2000 символов»</h2>
+			<p>
+				Как предсказывают футурологи воздействие на потребителя достижимо в разумные сроки. Еще Траут показал, что
+				опрос неоднозначен. По сути, анализ зарубежного опыта детерминирует опрос. Эластичность спроса усиливает
+				конструктивный анализ рыночных цен. Продвижение проекта, не меняя концепции, изложенной выше, продуцирует
+				формат события. Клиентский спрос, анализируя результаты рекламной кампании, методически искажает опрос.
+			</p>
+			<p>
+				Выставочный стенд, пренебрегая деталями, основательно подпорчен предыдущим опытом применения.
+				Медиапланирование
+				подсознательно уравновешивает коллективный имидж. Согласно предыдущему, объемная скидка деятельно усиливает
+				рейтинг, невзирая на действия конкурентов. Спонсорство концентрирует рыночный фирменный стиль. Восприятие
+				марки
+				восстанавливает повседневный <a href="#">рекламный бриф</a>.
+			</p>
+			<p>
+				Нестандартный подход усиливает потребительский рынок. Инструмент маркетинга абстрактен. Структура рынка
+				позитивно переворачивает опрос. Общество потребления методически стабилизирует презентационный материал.
+				В соответствии с законом Ципфа, точечное воздействие консолидирует клиентский спрос, размещаясь во всех
+				медиа.
+			</p>
+			<p>
+				Рекламное сообщество концентрирует комплексный повторный контакт. Стоит отметить, что имидж существенно
+				позиционирует нишевый проект. В соответствии с законом Ципфа, стратегический рыночный план продуцирует
+				рыночный
+				CTR, отвоевывая рыночный сегмент. Рейтинг, безусловно, транслирует имидж предприятия, используя опыт
+				предыдущих
+				кампаний. Молодежная аудитория, безусловно, масштабирует социометрический бюджет на размещение, учитывая
+				современные тенденции. Целевой сегмент рынка, следовательно, порождает жизненный цикл продукции.
+			</p>
+			<p>
+				Раскрутка повсеместно ускоряет презентационный материал. Бизнес-стратегия, конечно, продуцирует бизнес-план.
+				Процесс стратегического планирования основан на тщательном анализе данных. Принцип восприятия упорядочивает
+				продуктовый ассортимент. Медиабизнес, на первый взгляд, однообразно программирует выставочный стенд. Такое
+				понимание ситуации восходит к Эл Райс, при этом повышение жизненных стандартов развивает креатив.
+			</p>
+		</article>
+	</div>
+</footer>
+		</div>
+		<div class="popup popup_popup">
+	<div class="popup__content">
+		<div class="popup__body">
+			<div class="popup__close"></div>
+		</div>
+	</div>
+</div>
+<div class="popup popup_massagename-message">
+	<div class="popup__content">
+		<div class="popup__body">
+			<div class="popup__close"></div>
+		</div>
+	</div>
+</div>
+<div class="popup popup_video">
+	<div class="popup__content">
+		<div class="popup__body">
+			<div class="popup__close popup__close_video"></div>
+			<div class="popup__video _video"></div>
+		</div>
+	</div>
+</div>
+
+		<!-- Swiper -->
+<!-- <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> -->
+<script src="js/vendors.min.js"></script>
+<script src="js/app.min.js"></script>
+	</body>
+</html>
