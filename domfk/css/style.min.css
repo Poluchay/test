@@ -2408,7 +2408,12 @@ body.ie ._ibg img {
 }
 
 .lt-article__header:not(:last-child) {
-  margin-bottom: 40px;
+  margin-bottom: 25px;
+}
+@media (min-width: 479.98px) {
+  .lt-article__header:not(:last-child) {
+    margin-bottom: 40px;
+  }
 }
 .lt-article__img {
   padding-bottom: 63%;
@@ -2439,8 +2444,13 @@ body.ie ._ibg img {
   font-size: 18px;
 }
 .lt-article__title {
-  font-size: 30px;
+  font-size: 24px;
   font-weight: 700;
+}
+@media (min-width: 479.98px) {
+  .lt-article__title {
+    font-size: 30px;
+  }
 }
 @media (min-width: 767.98px) {
   .lt-article__title {
