@@ -955,7 +955,7 @@ textarea.input {
   .btn-primary--small {
     min-width: unset;
     padding: 5px 14.5px;
-    font-size: 12px;
+    font-size: 14px;
   }
 }
 
@@ -1882,10 +1882,19 @@ body.ie ._ibg img {
   display: flex;
   justify-content: center;
   flex-direction: column;
+  min-height: 200px;
 }
 @media (max-width: 479.98px) {
+  .cover__content {
+    min-height: unset;
+  }
   .cover__content:not(:last-child) {
     margin-bottom: 20px;
+  }
+}
+@media (min-width: 767.98px) {
+  .cover__content--height-large {
+    min-height: 400px;
   }
 }
 .cover__title {
