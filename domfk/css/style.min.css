@@ -964,8 +964,8 @@ textarea.input {
   background-image: url(../img/logo-decor.svg);
   background-repeat: no-repeat;
   background-size: contain;
-  width: 25px;
-  height: 25px;
+  width: 45px;
+  height: 45px;
 }
 .btn-primary--small {
   text-transform: none;
@@ -1774,7 +1774,7 @@ body.ie ._ibg img {
   }
 }
 .footer__social:not(:last-child) {
-  margin-bottom: 50px;
+  margin-bottom: 35px;
 }
 .footer__contacts {
   text-align: end;
@@ -1867,12 +1867,11 @@ body.ie ._ibg img {
 }
 
 .social__link:not(:last-child) {
-  margin-right: 25px;
+  margin-right: 15px;
 }
 .social__icon {
-  width: auto;
-  max-width: 32px;
-  height: 24px;
+  width: 35px;
+  height: 35px;
   transition: fill 0.3s;
 }
 
@@ -1884,7 +1883,7 @@ body.ie ._ibg img {
   position: relative;
   z-index: 1;
 }
-@media (min-width: 767.98px) {
+@media (min-width: 991.98px) {
   .cover__row {
     display: flex;
     flex-direction: row;
@@ -1955,7 +1954,7 @@ body.ie ._ibg img {
 }
 @media (min-width: 767.98px) {
   .cover__img {
-    width: 100%;
+    width: 500px;
   }
 }
 @media (min-width: 1250px) {
