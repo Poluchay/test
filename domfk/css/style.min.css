@@ -1436,6 +1436,14 @@ body.ie ._ibg img {
   .header__item:last-child {
     margin-right: 0;
   }
+  .header__item:hover::before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 160%;
+    height: 30px;
+  }
   .header__item:hover .header__sub-list {
     visibility: visible;
     opacity: 1;
@@ -1484,7 +1492,6 @@ body.ie ._ibg img {
   min-width: 200px;
   background-color: #ffc844;
   border-radius: 8px;
-  overflow: hidden;
 }
 .header__sub-list li:not(:last-child) {
   border-bottom: 1px solid #F3AC00;
