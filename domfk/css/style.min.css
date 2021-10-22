@@ -1337,28 +1337,16 @@ body.ie ._ibg img {
     justify-content: stretch;
   }
 }
-.header__logo {
-  margin-right: auto;
-}
-@media (min-width: 1250px) {
-  .header__logo {
-    margin-right: 55px;
-  }
-}
-.header__btn {
-  display: none;
-}
 @media (min-width: 991.98px) {
-  .header__btn {
-    display: block;
-    margin-right: 39px;
+  .header__menu {
+    flex: 1 1 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
-}
-.header__nav-mob {
-  display: none;
 }
 @media (max-width: 991.98px) {
-  .header__nav-mob {
+  .header__menu {
     overflow: hidden;
     display: block;
     min-width: 171px;
@@ -1372,15 +1360,56 @@ body.ie ._ibg img {
     border-radius: 5px;
     transition: opacity 0.3s, visibility 0.3s;
   }
-  .header__nav-mob._active {
+  .header__menu._active {
     right: 20px;
     opacity: 1;
     pointer-events: all;
     visibility: visible;
   }
 }
-.header__nav {
-  display: none;
+.header__logo {
+  margin-right: 35px;
+}
+@media (min-width: 1250px) {
+  .header__logo {
+    margin-right: 55px;
+  }
+}
+@media (max-width: 991.98px) {
+  .header__btn {
+    display: block;
+    width: 100%;
+    padding: 10px 15px;
+    text-align: left;
+    line-height: 1.4;
+    color: #fff;
+  }
+}
+@media (min-width: 991.98px) {
+  .header__btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 11px 20px;
+    font-size: 12px;
+    color: #fff;
+    font-weight: 800;
+    background-color: #ff0000;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-right: 15px;
+  }
+}
+@media (min-width: 1250px) {
+  .header__btn {
+    margin-right: 39px;
+  }
+}
+@media (any-hover: hover) {
+  .header__btn:hover {
+    background-color: #e74b4b;
+  }
 }
 @media (min-width: 991.98px) {
   .header__nav {
@@ -1390,11 +1419,15 @@ body.ie ._ibg img {
 }
 .header__list {
   display: flex;
+  flex-wrap: wrap;
 }
 @media (max-width: 991.98px) {
   .header__list {
     flex-direction: column;
   }
+}
+.header__item {
+  position: relative;
 }
 @media (min-width: 991.98px) {
   .header__item {
@@ -1402,6 +1435,11 @@ body.ie ._ibg img {
   }
   .header__item:last-child {
     margin-right: 0;
+  }
+  .header__item:hover .header__sub-list {
+    visibility: visible;
+    opacity: 1;
+    pointer-events: all;
   }
 }
 @media (min-width: 1250px) {
@@ -1435,13 +1473,37 @@ body.ie ._ibg img {
     color: #333333;
   }
 }
-.header__user {
-  display: none;
+.header__sub-list {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 0.3s, visibility 0.3s;
+  position: absolute;
+  top: 140%;
+  left: 0;
+  min-width: 200px;
+  background-color: #ffc844;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.header__sub-list li:not(:last-child) {
+  border-bottom: 1px solid #F3AC00;
+}
+.header__sub-link {
+  display: block;
+  padding: 12px;
+  color: #fff;
+  line-height: 1.3;
+  transition: background-color 0.3s;
+}
+@media (any-hover: hover) {
+  .header__sub-link:hover {
+    background-color: #F3AC00;
+  }
 }
 @media (min-width: 991.98px) {
   .header__user {
-    display: block;
-    margin-left: 25px;
+    margin-left: 10px;
   }
 }
 @media (min-width: 1250px) {
@@ -1525,13 +1587,18 @@ body.ie ._ibg img {
 }
 
 .header-user__head {
-  display: flex;
-  align-items: center;
-  padding: 7px 14px;
-  cursor: pointer;
-  background-color: #ff0000;
-  border-radius: 5px;
-  transition: background-color 0.3s;
+  display: none;
+}
+@media (min-width: 991.98px) {
+  .header-user__head {
+    display: flex;
+    align-items: center;
+    padding: 7px 14px;
+    cursor: pointer;
+    background-color: #ff0000;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
 }
 @media (any-hover: hover) {
   .header-user__head:hover {
@@ -1549,24 +1616,26 @@ body.ie ._ibg img {
 .header-user__arrow {
   font-size: 11px;
 }
-.header-user__body {
-  overflow: hidden;
-  display: block;
-  min-width: 171px;
-  position: absolute;
-  top: 100%;
-  right: 20px;
-  opacity: 0;
-  pointer-events: none;
-  visibility: hidden;
-  background-color: #333333;
-  border-radius: 5px;
-  transition: opacity 0.3s, visibility 0.3s;
-}
-.header-user__body._active {
-  opacity: 1;
-  pointer-events: all;
-  visibility: visible;
+@media (min-width: 991.98px) {
+  .header-user__body {
+    overflow: hidden;
+    display: block;
+    min-width: 171px;
+    position: absolute;
+    top: 100%;
+    right: 20px;
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+    background-color: #333333;
+    border-radius: 5px;
+    transition: opacity 0.3s, visibility 0.3s;
+  }
+  .header-user__body._active {
+    opacity: 1;
+    pointer-events: all;
+    visibility: visible;
+  }
 }
 .header-user__link {
   display: block;
