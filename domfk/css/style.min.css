@@ -1492,6 +1492,7 @@ body.ie ._ibg img {
   min-width: 200px;
   background-color: #ffc844;
   border-radius: 8px;
+  overflow: hidden;
 }
 .header__sub-list li:not(:last-child) {
   border-bottom: 1px solid #F3AC00;
