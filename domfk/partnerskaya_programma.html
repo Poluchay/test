@@ -34,11 +34,8 @@
 		</div>
 		<div class="header__bottom-line">
 			<a href="#" class="header__logo">
-				<img src="img/logo.png" alt="logo" width="104" height="79">
+				<img src="img/logo.svg" alt="logo" width="104" height="79">
 			</a>
-			<div class="header__btn btn-primary btn-primary--small">
-				Тест-драйв
-			</div>
 			<div data-da=".header__top-line, 767, 1" class="icon-menu">
 				<div class="icon-menu__inner">
 					<span></span>
@@ -46,75 +43,73 @@
 					<span></span>
 				</div>
 			</div>
-			<nav class="header__nav">
-				<ul class="header__list">
-					<li class="header__item">
-						<a class="header__link" href="#">О нас</a>
-					</li>
-					<li class="header__item">
-						<a class="header__link" href="#">Центры</a>
-					</li>
-					<li class="header__item">
-						<a class="header__link" href="#">Клубные карты</a>
-					</li>
-					<li class="header__item">
-						<a class="header__link" href="#">Тренировки</a>
-					</li>
-					<li class="header__item">
-						<a class="header__link" href="#">Команда</a>
-					</li>
-					<li class="header__item">
-						<a class="header__link" href="#">Новости</a>
-					</li>
-					<li class="header__item">
-						<a class="header__link" href="#">Контакты</a>
-					</li>
-				</ul>
-			</nav>
-			<nav class="header__nav-mob">
-				<ul class="header__list">
-					<li class="header__item">
-						<a class="header__link" href="#">Мой профиль</a>
-					</li>
-					<li class="header__item">
-						<a class="header__link" href="#">Тест-драйв</a>
-					</li>
-					<li class="header__item">
-						<a class="header__link" href="#">О нас</a>
-					</li>
-					<li class="header__item">
-						<a class="header__link" href="#">Центры</a>
-					</li>
-					<li class="header__item">
-						<a class="header__link" href="#">Клубные карты</a>
-					</li>
-					<li class="header__item">
-						<a class="header__link" href="#">Тренировки</a>
-					</li>
-					<li class="header__item">
-						<a class="header__link" href="#">Команда</a>
-					</li>
-					<li class="header__item">
-						<a class="header__link" href="#">Новости</a>
-					</li>
-					<li class="header__item">
-						<a class="header__link" href="#">Контакты</a>
-					</li>
-				</ul>
-				<div class="header__item">
-					<button class="header__link _active">Выйти</button>
+			<div class="header__menu">
+				<a href="#" class="header__btn">
+					Тест-драйв
+				</a>
+				<nav class="header__nav">
+					<ul class="header__list">
+						<li class="header__item">
+							<a class="header__link" href="#">О нас</a>
+							<ul class="header__sub-list">
+								<li>
+									<a href="#" class="header__sub-link">Команда</a>
+								</li>
+								<li>
+									<a href="#" class="header__sub-link">Вакансии</a>
+								</li>
+								<li>
+									<a href="#" class="header__sub-link">Контакты</a>
+								</li>
+							</ul>
+						</li>
+						<li class="header__item">
+							<a class="header__link" href="#">Центры</a>
+							<ul class="header__sub-list">
+								<li>
+									<a href="#" class="header__sub-link">Клуб на Восточно-Кругликовской</a>
+								</li>
+								<li>
+									<a href="#" class="header__sub-link">Клуб на Мачуги</a>
+								</li>
+							</ul>
+						</li>
+						<li class="header__item">
+							<a class="header__link" href="#">Клубные карты</a>
+							<ul class="header__sub-list">
+								<li>
+									<a href="#" class="header__sub-link">1</a>
+								</li>
+								<li>
+									<a href="#" class="header__sub-link">2</a>
+								</li>
+								<li>
+									<a href="#" class="header__sub-link">3</a>
+								</li>
+							</ul>
+						</li>
+						<li class="header__item">
+							<a class="header__link" href="#">Тренировки</a>
+						</li>
+						<li class="header__item">
+							<a class="header__link" href="#">Новости</a>
+						</li>
+						<li class="header__item">
+							<a class="header__link" href="#">Контакты</a>
+						</li>
+					</ul>
+				</nav>
+				<div class="header__user header-user _dropdown">
+					<div class="header-user__head _dropdown-button">
+						<!-- <img class="header-user__icon" src="img/icons/user.svg" alt="user" height="22" width="22"> -->
+						<i class="header-user__icon _icon-user"></i>
+						<i class="header-user__arrow _icon-arrow-down"></i>
+					</div>
+					<ul class="header-user__body _dropdown-body">
+						<li><a class="header-user__link" href="#">Мой Профиль</a></li>
+						<li><button class="header-user__link _show">Выход</button></li>
+					</ul>
 				</div>
-			</nav>
-			<div class="header__user header-user _dropdown">
-				<div class="header-user__head _dropdown-button">
-					<!-- <img class="header-user__icon" src="img/icons/user.svg" alt="user" height="22" width="22"> -->
-					<i class="header-user__icon _icon-user"></i>
-					<i class="header-user__arrow _icon-arrow-down"></i>
-				</div>
-				<ul class="header-user__body _dropdown-body">
-					<li><a class="header-user__link" href="#">Мой Профиль</a></li>
-					<li><button class="header-user__link _show">Выход</button></li>
-				</ul>
 			</div>
 		</div>
 	</div>
