@@ -1293,6 +1293,9 @@ body.ie ._ibg img {
   border-bottom: 1px solid rgba(0, 0, 0, 0.274);
   background-color: #ffc844;
 }
+.header._scroll .header__menu {
+  padding: 120px 15px 20px 0;
+}
 @media (min-width: 767.98px) {
   .header {
     min-height: 130px;
@@ -1397,7 +1400,7 @@ body.ie ._ibg img {
   .header__menu {
     min-height: 100vh;
     height: 100%;
-    padding: 120px 15px 20px 0;
+    padding: 140px 15px 20px 0;
     overflow-y: scroll;
     overflow-x: hidden;
     position: absolute;
@@ -1413,6 +1416,11 @@ body.ie ._ibg img {
     opacity: 1;
     pointer-events: all;
     visibility: visible;
+  }
+}
+@media (max-width: 767.98px) {
+  .header__menu {
+    padding: 120px 15px 20px 0;
   }
   .header__menu::before {
     content: "";
