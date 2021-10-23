@@ -1293,8 +1293,10 @@ body.ie ._ibg img {
   border-bottom: 1px solid rgba(0, 0, 0, 0.274);
   background-color: #ffc844;
 }
-.header._scroll .header__menu {
-  padding: 120px 15px 20px 0;
+@media (max-width: 991.98px) {
+  .header._scroll .header__menu {
+    padding: 120px 15px 20px 0;
+  }
 }
 @media (min-width: 767.98px) {
   .header {
