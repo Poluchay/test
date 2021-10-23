@@ -1290,6 +1290,7 @@ body.ie ._ibg img {
   min-height: 110px;
 }
 .header._scroll .header__bottom-line {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.274);
   background-color: #ffc844;
 }
 @media (min-width: 767.98px) {
@@ -1365,7 +1366,8 @@ body.ie ._ibg img {
   top: 0;
   left: 0;
   width: 100%;
-  transition: background-color 0.3s;
+  border-bottom: 1px solid transparent;
+  transition: background-color 0.3s, border-color 0.3s;
 }
 @media (min-width: 767.98px) {
   .header__bottom-line {
@@ -1402,7 +1404,7 @@ body.ie ._ibg img {
     display: block;
     min-width: 171px;
     position: absolute;
-    top: 100%;
+    top: 110%;
     right: -100%;
     opacity: 0;
     pointer-events: none;
