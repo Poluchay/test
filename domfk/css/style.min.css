@@ -2033,6 +2033,11 @@ body.ie ._ibg img {
     padding-bottom: 103%;
   }
 }
+@media (max-width: 479.98px) {
+  .cover__btn {
+    text-align: center;
+  }
+}
 
 .about {
   max-width: 1038px;
