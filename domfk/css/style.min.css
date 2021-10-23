@@ -2505,12 +2505,39 @@ body.ie ._ibg img {
 .card-info__text a {
   color: inherit;
 }
+.cards__items:not(:last-child) {
+  margin-bottom: 25px;
+}
 @media (min-width: 550px) {
   .cards__items {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     margin-right: -30px;
+  }
+}
+@media (min-width: 767.98px) {
+  .cards__items:not(:last-child) {
+    margin-bottom: 50px;
+  }
+}
+.cards__list-title {
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20px;
+  text-align: center;
+  display: block;
+}
+.cards__list-title:not(:last-child) {
+  margin-bottom: 25px;
+}
+@media (min-width: 767.98px) {
+  .cards__list-title {
+    font-size: 18px;
+  }
+  .cards__list-title:not(:last-child) {
+    margin-bottom: 50px;
   }
 }
 .cards__item {
