@@ -1390,12 +1390,14 @@ body.ie ._ibg img {
     justify-content: stretch;
   }
 }
+.header__menu {
+  width: 100%;
+}
 @media (max-width: 991.98px) {
   .header__menu {
     min-height: 100vh;
     height: 100%;
     padding: 120px 15px 20px 0;
-    width: 100%;
     overflow-y: scroll;
     overflow-x: hidden;
     position: absolute;
