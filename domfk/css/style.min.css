@@ -1285,12 +1285,23 @@ body.ie ._ibg img {
 }
 
 .header {
+  position: relative;
   z-index: 50;
-  padding-bottom: 10px;
+  min-height: 90px;
 }
-@media (max-width: 767.98px) {
+.header._scroll .header__bottom-line {
+  background-color: #ffc844;
+}
+@media (min-width: 767.98px) {
   .header {
-    padding-top: 40px;
+    min-height: 130px;
+  }
+  .header._scroll .header__bottom-line {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #ffc844;
   }
 }
 .header__container {
@@ -1320,8 +1331,26 @@ body.ie ._ibg img {
 .header__contacts-link:not(:last-child) {
   margin-right: 22px;
 }
+.header__search {
+  display: none;
+}
 .header__search:not(:last-child) {
   margin-right: 20px;
+}
+@media (min-width: 767.98px) {
+  .header__search {
+    display: block;
+  }
+}
+.header__search-mob {
+  display: block;
+  margin-left: auto;
+  margin-right: 30px;
+}
+@media (min-width: 767.98px) {
+  .header__search-mob {
+    display: none;
+  }
 }
 .header__contacts {
   display: none;
@@ -1332,13 +1361,25 @@ body.ie ._ibg img {
   }
 }
 .header__bottom-line {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  transition: background-color 0.3s;
+}
+@media (min-width: 767.98px) {
+  .header__bottom-line {
+    position: static;
+  }
+}
+.header__inner {
   display: flex;
   align-items: center;
-  min-height: 80px;
+  padding: 5px 0;
   justify-content: space-between;
 }
 @media (min-width: 1250px) {
-  .header__bottom-line {
+  .header__inner {
     justify-content: stretch;
   }
 }
@@ -1497,6 +1538,7 @@ body.ie ._ibg img {
   min-width: 200px;
   background-color: #ffc844;
   border-radius: 8px;
+  border: 1px solid #f3ac00;
   overflow: hidden;
 }
 .header__sub-list li:not(:last-child) {
@@ -1520,10 +1562,10 @@ body.ie ._ibg img {
 
 .search {
   position: relative;
-  max-width: 226px;
-  width: 100%;
 }
 .search__input-block {
+  max-width: 226px;
+  width: 100%;
   display: flex;
   align-items: center;
   border: 1px solid #333333;
@@ -1592,6 +1634,9 @@ body.ie ._ibg img {
   }
 }
 
+.header-user {
+  position: relative;
+}
 .header-user__head {
   display: none;
 }
@@ -1628,8 +1673,8 @@ body.ie ._ibg img {
     display: block;
     min-width: 171px;
     position: absolute;
-    top: 100%;
-    right: 20px;
+    top: 140%;
+    right: 0;
     opacity: 0;
     pointer-events: none;
     visibility: hidden;
@@ -2521,6 +2566,7 @@ body.ie ._ibg img {
   min-height: 37px;
   font-weight: 600;
   font-size: 18px;
+  border-radius: 8px;
 }
 .lt-article__date:not(:last-child) {
   margin-bottom: 25px;
