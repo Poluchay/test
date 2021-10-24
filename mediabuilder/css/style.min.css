@@ -1799,7 +1799,7 @@ body.ie ._ibg img {
     position: relative;
     display: block;
     width: 39px;
-    height: 12px;
+    height: 34px;
     cursor: pointer;
     z-index: 5;
   }
@@ -1813,10 +1813,10 @@ body.ie ._ibg img {
     background-color: #000;
   }
   .icon-menu span:first-child {
-    top: 0px;
+    top: 25%;
   }
   .icon-menu span:last-child {
-    top: auto;
+    top: 65%;
     bottom: 0px;
   }
 }
