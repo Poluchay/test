@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="ru">
+	 <head>
+	<title>Главная</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<link rel="stylesheet" href="css/style.min.css">
+	<link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+	<link rel="shortcut icon" href="favicon.ico">
+	<meta name="robots" content="noindex, nofollow">
+	<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+	<body>
+		<div class="wrapper">
+			<header class="header">
+	<div class="header__container _container">
+		<div class="header__line">
+			<a class="header__logo" href="index.html">
+				<picture>
+					<source media="(max-width: 479.98px)" srcset="img/logo-mob.svg">
+					<img class="logo" src="img/logo.svg" alt="logo">
+				</picture>
+			</a>
+			<nav class="header__soc-nav social-nav _dropdown">
+				<ul class="social-nav__list">
+					<li class="social-nav__item">
+						<a href="soc-vk.html" class="social-nav__link">
+							<svg class="icon">
+								<use xlink:href="img/social/soc-sprite.svg#vk"></use>
+							</svg>
+						</a>
+					</li>
+					<li class="social-nav__item">
+						<a href="socialnaya-set.html" class="social-nav__link">
+							<svg class="icon">
+								<use xlink:href="img/social/soc-sprite.svg#tg"></use>
+							</svg>
+						</a>
+					</li>
+					<li class="social-nav__item">
+						<a href="socialnaya-set.html" class="social-nav__link">
+							<svg class="icon">
+								<use xlink:href="img/social/soc-sprite.svg#ytb"></use>
+							</svg>
+						</a>
+					</li>
+					<li class="social-nav__item">
+						<a href="socialnaya-set.html" class="social-nav__link">
+							<svg class="icon">
+								<use xlink:href="img/social/soc-sprite.svg#tiktok"></use>
+							</svg>
+						</a>
+					</li>
+					<li class="social-nav__item">
+						<a href="socialnaya-set.html" class="social-nav__link">
+							<svg class="icon">
+								<use xlink:href="img/social/soc-sprite.svg#inst"></use>
+							</svg>
+						</a>
+					</li>
+					<li class="social-nav__item">
+						<a href="socialnaya-set.html" class="social-nav__link">
+							<svg class="icon">
+								<use xlink:href="img/social/soc-sprite.svg#fb"></use>
+							</svg>
+						</a>
+					</li>
+					<li class="social-nav__item">
+						<a href="socialnaya-set.html" class="social-nav__link">
+							<svg class="icon">
+								<use xlink:href="img/social/soc-sprite.svg#pnt"></use>
+							</svg>
+						</a>
+					</li>
+					<li class="social-nav__item">
+						<a href="socialnaya-set.html" class="social-nav__link">
+							<svg class="icon">
+								<use xlink:href="img/social/soc-sprite.svg#dzen"></use>
+							</svg>
+						</a>
+					</li>
+					<li class="social-nav__item">
+						<button class="social-nav__link _dropdown-button">
+							<i class="social-nav__icon _icon-chevron-down"></i>
+						</button>
+						<ul class="social-nav__sub-list _dropdown-body">
+							<li class="social-nav__sub-item">
+								<a href="socialnaya-set.html" class="social-nav__sub-link">
+									<svg class="social-nav__sub-icon">
+										<use xlink:href="img/social/soc-sprite.svg#ytb"></use>
+									</svg>
+									Ютуб
+								</a>
+							</li>
+							<li class="social-nav__sub-item">
+								<a href="socialnaya-set.html" class="social-nav__sub-link _active">
+									<svg class="social-nav__sub-icon">
+										<use xlink:href="img/social/soc-sprite.svg#tg"></use>
+									</svg>
+									Телеграм
+								</a>
+							</li>
+							<li class="social-nav__sub-item">
+								<a href="socialnaya-set.html" class="social-nav__sub-link">
+									<svg class="social-nav__sub-icon">
+										<use xlink:href="img/social/soc-sprite.svg#pnt"></use>
+									</svg>
+									Pinterest
+								</a>
+							</li>
+							<li class="social-nav__sub-item">
+								<a href="socialnaya-set.html" class="social-nav__sub-link">
+									<svg class="social-nav__sub-icon">
+										<use xlink:href="img/social/soc-sprite.svg#dzen"></use>
+									</svg>
+									Дзен
+								</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</nav>
+			<a href="#" class="header__user-btn btn-primary btn-primary--small">Личный кабинет</a>
+			<!-- <button class="header__logout btn-primary btn-primary--small">Выход <i class="_icon-open-in-new"></i></button> -->
+			<div class="icon-menu">
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+		</div>
+		<nav class="header__nav">
+			<div class="header__user-list user-list" data-spollers>
+				<div class="user-list__profile" data-spoller>
+					<div class="user-list__profile-img _ibg">
+						<img src="img/profile/avatar.png" alt="avatar">
+					</div>
+					<span class="user-list__login">Логин <i class="_icon-chevron-down"></i></span>
+				</div>
+				<div class="user-list__body-spoller">
+					<ul class="user-list__info">
+						<li class="user-list__info-item ">
+							<i class="user-list__icon _icon-cash-100"></i>
+							Баланс: <span>200₽</span>
+						</li>
+						<li class="user-list__info-item">
+							<i class="user-list__icon _icon-star"></i>
+							Бонусы: <span>200</span>
+						</li>
+					</ul>
+					<ul class="user-list__items">
+						<li class="user-list__item _active">
+							<a class="user-list__link" href="#"><i class="user-list__icon _icon-profile"></i>Личный кабинет</a>
+						</li>
+						<li class="user-list__item">
+							<a class="user-list__link" href="#"><i class="user-list__icon _icon-cash-100"></i>Пополнить
+								баланс</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<ul class="header__list">
+				<li class="header__item">
+					<a class="header__link" href="#">Каталог</a>
+				</li>
+				<li class="header__item">
+					<a class="header__link" href="#">Пакеты</a>
+				</li>
+				<li class="header__item">
+					<a class="header__link" href="#">Калькулятор</a>
+				</li>
+				<li class="header__item">
+					<a class="header__link" href="blog.html">Новости</a>
+				</li>
+				<li class="header__item">
+					<a class="header__link" href="#">Акции</a>
+				</li>
+				<li class="header__item">
+					<a class="header__link" href="faq.html">FAQ</a>
+				</li>
+				<li class="header__item">
+					<a class="header__link" href="partnerskaya-programma.html">Партнёрам</a>
+				</li>
+				<li class="header__item">
+					<a class="header__link" href="#">Контакты</a>
+				</li>
+				<li class="header__item">
+					<a class="header__link" href="#">Любая другая ссылка</a>
+				</li>
+			</ul>
+		</nav>
+	</div>
+</header>
+			<main class="page">
+				
+				
+				
+				<article class="page__article lt-article">
+   <div class="lt-article__container _container">
+      <div class="lt-article__header">
+         <div class="lt-article__breadcrumb">
+            <div class="breadcrumb">
+               <ul class="breadcrumb__list">
+                  <li>
+                     <a href="#">Главная</a>
+                  </li>
+                  <li>
+                     <a href="#">Блог</a>
+                  </li>
+                  <li>
+                     <span>Как анализировать конкуренцию в Google</span>
+                  </li>
+               </ul>
+            </div>
+         </div>
+         <div class="lt-article__header-img _ibg">
+            <img src="img/single/google-blog.jpg" alt="google-blog">
+         </div>
+         <time datetime="2021-10-19 10:36:05" class="date">19.10.2021</time>
+      </div>
+      <div class="lt-article__single-content">
+         <h1>Как анализировать конкуренцию в Google?</h1>
+         <p>Анализ конкуренции Google помогает улучшить веб-сайт во многих отношениях. Прежде всего, это позволяет
+            увидеть его слабые стороны и выявить недостатки конкурентов. Кроме того, он предлагает результаты новых
+            решений, которые улучшают органическое поиск. </p>
+         <h2>Как анализировать конкуренцию в Google?</h2>
+         <p>Анализ конкуренции в Google особенно важен сейчас, поскольку все больше и больше людей переводят свой бизнес
+            в онлайн. Чтобы стать лидером отрасли, вам нужно не только принимать правильные меры SEO и избегать ошибок
+            конкурентов, но и предлагать своим клиентам большее большее. Как анализировать конкуренцию в Google? Какие
+            инструменты пригодятся в этом процессе? </p>
+         <h2>Как определить, кто ваш конкурент?</h2>
+         <p>
+            Первый шаг, который вам нужно сделать, - это определить, кто ваши конкуренты. Начните с поиска так
+            называемого
+            эталона, то есть страницы, которая является лидером поисковой системы в вашей отрасли. Часто эталоном
+            является
+            крупнейшая компания в стране, регионе или городе. Затем подготовьте список ключевых слов, по которым вы
+            будете
+            позиционировать свой сайт. На этом этапе ситуация становится более сложной.
+         </p>
+
+         <p>
+            Определите, какие ключевые слова вы считаете наиболее важными. Введите их в поисковую систему Google и
+            посмотрите, какие страницы находятся выше и ниже результатов поиска. Однако избегайте сайтов сравнения цен,
+            крупных торговых сайтов и компаний, использующих Google Рекламу. Вы не сможете конкурировать с ними на
+            равных,
+            пока не станете лидером в своей отрасли. Подумайте, какие продукты из списка вы знаете, ассоциируете ли вы
+            их
+            продукты.
+         </p>
+
+         <p>
+            Второй шаг - подготовить список информации, которую вам нужно собрать. Обязательно проверьте, какие ключевые
+            слова поставьте ваши конкуренты. Обратите внимание на оптимизацию сайтов компаний из вашего списка.
+            Ознакомьтесь с использованием и способом его представления, а также с кодом веб-сайта. Ссылки конкурентов,
+            указывающие на внешние веб-сайты, будут особенно важны - как эти страницы ранжируются в поисковой системе
+            Google, каковы их мнения и количество просмотров. Благодаря этим вы видите, где конкуренты приобретают новых
+            клиентов и как они работают над ими своих брендов. Также обратите внимание на активность конкурентов в
+            социальных сетях - где они публикуют, как часто и какой контент.
+         </p>
+         <h2>Анализ конкуренции в Google - полезные инструменты </h2>
+         <p>Вы можете использовать инструмент Google Alerts для наблюдения за поисковой системой. Он поможет вам
+            наблюдать и анализировать активность ваших конкурентов в поисковой системе Google, а также позволит
+            настроить уведомление по интересующим вас темам. Вы можете выбрать частоту уведомлений, интересующие вас
+            ключевые слова и источник публикации. Инструмент бесплатный. Анализ конкуренции Google поможет вам улучшить
+            свой веб-сайт и его позиции в результатах поиска. Помните, однако, что также меняется и тестирует новые
+            решения для SEO. Поэтому старайтесь проводить анализ регулярно. Чтобы расширить свои знания о конкурентах,
+            также стоит провести SEO-аудит вашего сайта и конкурирующих сайтов.</p>
+      </div>
+      <div class="lt-article__btn">
+         <a href="#" class="btn-primary btn-primary--small"><i class="btn-primary__down _icon-chevron-left"></i>
+            Вернуться назад</a>
+      </div>
+   </div>
+</article>
+				
+				
+			</main>
+			<footer class="footer">
+	<div class="footer__container _container">
+		<div class="footer__top-line">
+			<div class="footer__columns">
+				<div class="footer__column footer__column--column-four">
+					<a href="#" class="footer__logo">
+						<img class="logo" src="img/logo-white.svg" alt="logo">
+					</a>
+					<div class="footer__text">
+						<p>Мы обеспечиваем пользователей по всему миру наиболее эффективным, надежным и экономичным решением
+							из доступных на рынке продвижения в соц. сетях.</p>
+					</div>
+					<a href="#" class="footer__pay-link">
+						<img class="lazyload"
+                           src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                           data-src="img/footer/pay.png" alt="pay" data-sizes="auto">
+					</a>
+				</div>
+				<div class="footer__column footer__column--column-auto">
+					<nav class="footer__nav footer-nav">
+						<ul class="footer-nav__list">
+							<li class="footer-nav__list-title">
+								Навигация
+							</li>
+							<li class="footer-nav__item">
+								<a href="#" class="footer-nav__link">Главная</a>
+							</li>
+							<li class="footer-nav__item">
+								<a href="#" class="footer-nav__link">О Нас</a>
+							</li>
+							<li class="footer-nav__item">
+								<a href="#" class="footer-nav__link">Контакты</a>
+							</li>
+							<li class="footer-nav__item">
+								<a href="#" class="footer-nav__link">Акции</a>
+							</li>
+							<li class="footer-nav__item">
+								<a href="#" class="footer-nav__link">FAQ</a>
+							</li>
+						</ul>
+						<ul class="footer-nav__list">
+							<li class="footer-nav__list-title">
+								Сообщество
+							</li>
+							<li class="footer-nav__item">
+								<a href="#" class="footer-nav__link">Партнерам</a>
+							</li>
+							<li class="footer-nav__item">
+								<a href="#" class="footer-nav__link">Правила сервиса</a>
+							</li>
+							<li class="footer-nav__item">
+								<a href="#" class="footer-nav__link">Публичная оферта</a>
+							</li>
+							<li class="footer-nav__item">
+								<a href="#" class="footer-nav__link">Политика конфедициальности</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+				<div class="footer__column">
+					<div class="footer__icon-block">
+						<img class="footer__icon" src="img/footer/garant.png" alt="garant">
+						100% ГАРАНТИЯ ВОЗВРАТА ДЕНЕГ
+					</div>
+					<div class="footer__text">
+						<p>Мы единственные на рынке, кто предоставляет гарантию возврата средств. Мы гарантируем что вернем
+							вам деньги, если заказ не будет выполнен. Ваше спокойствие для нас в приоритете.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<article class="footer__bottom-line">
+			<h2>«СЕОшный текст для поисковиков про сайт и чем сайт занимается на 2000 символов»</h2>
+			<p>
+				Как предсказывают футурологи воздействие на потребителя достижимо в разумные сроки. Еще Траут показал, что
+				опрос неоднозначен. По сути, анализ зарубежного опыта детерминирует опрос. Эластичность спроса усиливает
+				конструктивный анализ рыночных цен. Продвижение проекта, не меняя концепции, изложенной выше, продуцирует
+				формат события. Клиентский спрос, анализируя результаты рекламной кампании, методически искажает опрос.
+			</p>
+			<p>
+				Выставочный стенд, пренебрегая деталями, основательно подпорчен предыдущим опытом применения.
+				Медиапланирование
+				подсознательно уравновешивает коллективный имидж. Согласно предыдущему, объемная скидка деятельно усиливает
+				рейтинг, невзирая на действия конкурентов. Спонсорство концентрирует рыночный фирменный стиль. Восприятие
+				марки
+				восстанавливает повседневный <a href="#">рекламный бриф</a>.
+			</p>
+			<p>
+				Нестандартный подход усиливает потребительский рынок. Инструмент маркетинга абстрактен. Структура рынка
+				позитивно переворачивает опрос. Общество потребления методически стабилизирует презентационный материал.
+				В соответствии с законом Ципфа, точечное воздействие консолидирует клиентский спрос, размещаясь во всех
+				медиа.
+			</p>
+			<p>
+				Рекламное сообщество концентрирует комплексный повторный контакт. Стоит отметить, что имидж существенно
+				позиционирует нишевый проект. В соответствии с законом Ципфа, стратегический рыночный план продуцирует
+				рыночный
+				CTR, отвоевывая рыночный сегмент. Рейтинг, безусловно, транслирует имидж предприятия, используя опыт
+				предыдущих
+				кампаний. Молодежная аудитория, безусловно, масштабирует социометрический бюджет на размещение, учитывая
+				современные тенденции. Целевой сегмент рынка, следовательно, порождает жизненный цикл продукции.
+			</p>
+			<p>
+				Раскрутка повсеместно ускоряет презентационный материал. Бизнес-стратегия, конечно, продуцирует бизнес-план.
+				Процесс стратегического планирования основан на тщательном анализе данных. Принцип восприятия упорядочивает
+				продуктовый ассортимент. Медиабизнес, на первый взгляд, однообразно программирует выставочный стенд. Такое
+				понимание ситуации восходит к Эл Райс, при этом повышение жизненных стандартов развивает креатив.
+			</p>
+		</article>
+	</div>
+</footer>
+		</div>
+		<div class="popup popup_popup">
+	<div class="popup__content">
+		<div class="popup__body">
+			<div class="popup__close"></div>
+		</div>
+	</div>
+</div>
+<div class="popup popup_massagename-message">
+	<div class="popup__content">
+		<div class="popup__body">
+			<div class="popup__close"></div>
+		</div>
+	</div>
+</div>
+<div class="popup popup_video">
+	<div class="popup__content">
+		<div class="popup__body">
+			<div class="popup__close popup__close_video"></div>
+			<div class="popup__video _video"></div>
+		</div>
+	</div>
+</div>
+
+		<!-- Swiper -->
+<!-- <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> -->
+<script src="js/vendors.min.js"></script>
+<script src="js/app.min.js"></script>
+	</body>
+</html>
