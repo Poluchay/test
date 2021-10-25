@@ -2216,7 +2216,6 @@ body.ie ._ibg img {
   }
 }
 .slider__tabs-nav {
-  padding-top: 70px;
   display: flex;
   flex-wrap: wrap;
 }
@@ -2227,6 +2226,7 @@ body.ie ._ibg img {
 }
 @media (min-width: 991.98px) {
   .slider__tabs-nav {
+    padding-top: 70px;
     padding-right: 30px;
     flex: 0 0 33%;
     flex-direction: column;
