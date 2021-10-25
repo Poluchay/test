@@ -1683,6 +1683,40 @@ body.ie ._ibg img {
   font-size: 36px;
 }
 
+.social-nav-mob {
+  display: block;
+  padding: 30px 16px;
+}
+@media (min-width: 991.98px) {
+  .social-nav-mob {
+    display: none;
+  }
+}
+.social-nav-mob__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.social-nav-mob__item {
+  flex: 0 0 calc(50% - 16px);
+}
+.social-nav-mob__item:not(:last-child) {
+  margin-bottom: 10px;
+}
+.social-nav-mob__link {
+  display: flex;
+  align-items: center;
+}
+.social-nav-mob__link * + * {
+  margin-left: 8px;
+}
+.social-nav-mob__link svg, .social-nav-mob__link img {
+  width: 20px;
+  height: 20px;
+}
+.social-nav-mob__link i::before {
+  font-size: 20px;
+}
 @media (min-width: 479.98px) {
   .user-list {
     min-width: 225px;
@@ -2123,7 +2157,7 @@ body.ie ._ibg img {
 .card-services {
   position: relative;
   display: block;
-  padding: 24px 16px 16px;
+  padding: 10px 16px;
   background-color: #fff;
   border: 1px solid #eee;
   box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.08);
@@ -2132,7 +2166,7 @@ body.ie ._ibg img {
 }
 @media (min-width: 767.98px) {
   .card-services {
-    padding: 10px 16px;
+    padding: 24px 16px 16px;
   }
 }
 .card-services__header {
@@ -2896,8 +2930,8 @@ body.ie ._ibg img {
   margin-bottom: 21px;
 }
 .page-profile__user-img {
-  width: 120px;
-  height: 120px;
+  width: 150px;
+  height: 150px;
 }
 .page-profile__add {
   position: absolute;
