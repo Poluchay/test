@@ -2651,7 +2651,9 @@ body.ie ._ibg img {
 }
 .blog__title {
   display: block;
+  max-width: 386px;
   font-size: 18px;
+  line-height: 1.2;
   font-weight: 700;
 }
 .blog__title:not(:last-child) {
@@ -2672,6 +2674,7 @@ body.ie ._ibg img {
 }
 .blog__text {
   font-size: 12px;
+  line-height: 1.2;
 }
 .blog__text:not(:last-child) {
   margin-bottom: 10px;
