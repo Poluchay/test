@@ -1299,9 +1299,6 @@ body.ie ._ibg img {
   }
 }
 @media (min-width: 767.98px) {
-  .header {
-    min-height: 130px;
-  }
   .header._scroll .header__bottom-line {
     position: fixed;
     top: 0;
@@ -1337,16 +1334,8 @@ body.ie ._ibg img {
 .header__contacts-link:not(:last-child) {
   margin-right: 22px;
 }
-.header__search {
-  display: none;
-}
 .header__search:not(:last-child) {
   margin-right: 20px;
-}
-@media (min-width: 767.98px) {
-  .header__search {
-    display: block;
-  }
 }
 .header__search-mob {
   display: block;
@@ -1382,17 +1371,11 @@ body.ie ._ibg img {
 .header__inner {
   display: flex;
   align-items: center;
-  justify-content: space-between;
   padding: 15px 0;
 }
 @media (min-width: 767.98px) {
   .header__inner {
     padding: 5px 0;
-  }
-}
-@media (min-width: 1250px) {
-  .header__inner {
-    justify-content: stretch;
   }
 }
 .header__menu {
@@ -1449,14 +1432,23 @@ body.ie ._ibg img {
   .header__menu-inner {
     flex: 1 1 auto;
     display: flex;
-    justify-content: space-between;
     align-items: center;
+  }
+}
+@media (min-width: 1250px) {
+  .header__menu-inner {
+    justify-content: space-between;
   }
 }
 .header__logo {
   position: relative;
   z-index: 3;
-  margin-right: 35px;
+  margin-right: auto;
+}
+@media (min-width: 991.98px) {
+  .header__logo {
+    margin-right: 35px;
+  }
 }
 @media (min-width: 1250px) {
   .header__logo {
@@ -1502,7 +1494,12 @@ body.ie ._ibg img {
 @media (min-width: 991.98px) {
   .header__nav {
     display: flex;
-    margin-right: 5px;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 1250px) {
+  .header__nav {
+    margin: 0px 5px 0px 0px;
   }
 }
 .header__list {
@@ -1598,15 +1595,11 @@ body.ie ._ibg img {
     background-color: #f3ac00;
   }
 }
-.header__user {
-  margin-left: auto;
-}
-
 .search {
   position: relative;
 }
 .search__input-block {
-  max-width: 226px;
+  min-width: 220px;
   width: 100%;
   display: flex;
   align-items: center;
@@ -1623,17 +1616,18 @@ body.ie ._ibg img {
     border-color: #ff0000;
   }
 }
-@media (max-width: 767.98px) {
+@media (max-width: 1250px) {
   .search__input-block {
     display: flex;
     position: absolute;
-    top: 140%;
+    z-index: 50;
+    top: 80px;
     right: -50%;
-    min-width: 220px;
+    min-height: 35px;
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
-    transition: opacity 0.3s, visibility 0.3s;
+    transition: opacity 0.3s, visibility 0.3s, max-width 0.3s;
     background-color: #fff;
   }
   .search__input-block._active {
@@ -1670,7 +1664,7 @@ body.ie ._ibg img {
   width: 35px;
   height: 35px;
 }
-@media (min-width: 767.98px) {
+@media (min-width: 1250px) {
   .search__btn-show {
     display: none;
   }
