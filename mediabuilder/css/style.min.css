@@ -2207,7 +2207,7 @@ body.ie ._ibg img {
   .card-services__badge {
     font-size: 18px;
     top: 20px;
-    right: 50px;
+    right: 62px;
     transform: translate(50%, 100%) rotate(45deg);
   }
 }
@@ -2354,9 +2354,6 @@ body.ie ._ibg img {
   .slider__body {
     max-width: 365px;
   }
-}
-.slider__body.swiper {
-  padding: 10px;
 }
 .slider__prev {
   left: 5px;
