@@ -2196,15 +2196,6 @@ body.ie ._ibg img {
   overflow: hidden;
   padding-bottom: 61%;
 }
-@media (any-hover: hover) {
-  .slider__img:hover img {
-    transform: scale(1.03);
-  }
-}
-.slider__img img {
-  transform: scale(1);
-  transition: transform 0.7s;
-}
 .slider__img-text {
   position: absolute;
   top: 0;
@@ -2224,17 +2215,18 @@ body.ie ._ibg img {
     display: flex;
   }
 }
-.slider__nav {
+.slider__tabs-nav {
+  padding-top: 70px;
   display: flex;
   flex-wrap: wrap;
 }
 @media (max-width: 991.98px) {
-  .slider__nav:not(:last-child) {
+  .slider__tabs-nav:not(:last-child) {
     margin-bottom: 15px;
   }
 }
 @media (min-width: 991.98px) {
-  .slider__nav {
+  .slider__tabs-nav {
     padding-right: 30px;
     flex: 0 0 33%;
     flex-direction: column;
