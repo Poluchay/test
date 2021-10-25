@@ -2031,11 +2031,6 @@ body.ie ._ibg img {
     flex-direction: row;
   }
 }
-@media (min-width: 991.98px) {
-  .cover__contnainer {
-    min-height: 435px;
-  }
-}
 .cover__content {
   flex: 0 0 70%;
   position: relative;
@@ -2060,7 +2055,7 @@ body.ie ._ibg img {
 }
 @media (min-width: 767.98px) {
   .cover__content--height-large {
-    min-height: 400px;
+    min-height: 420px;
   }
 }
 .cover__title {
