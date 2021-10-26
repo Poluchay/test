@@ -1825,23 +1825,57 @@ body.ie ._ibg img {
 @media (min-width: 767.98px) {
   .footer__columns {
     flex-direction: row;
+    align-items: flex-start;
   }
+}
+.footer__column {
+  margin-bottom: 40px;
+}
+.footer__column:not(:last-child) {
+  margin-right: 10px;
 }
 @media (max-width: 991.98px) {
   .footer__column {
     flex: 1 1 50%;
   }
-  .footer__column:not(:last-child) {
-    margin-bottom: 40px;
+}
+.footer__column--flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+.footer__contacts-column {
+  flex: 1 1 100%;
+  border-radius: 8px;
+  border: 1px solid #ffc844;
+  padding: 16px;
+}
+.footer__contacts-column:not(:last-child) {
+  margin-bottom: 20px;
+}
+@media (min-width: 767.98px) {
+  .footer__contacts-column {
+    flex: 1 1 calc(50% - 10px);
+    max-width: 210px;
+  }
+  .footer__contacts-column:not(:last-child) {
+    margin-bottom: 0;
+    margin-right: 20px;
   }
 }
-.footer__column--position-end {
-  text-align: end;
+.footer__column-title {
+  display: block;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 600;
+}
+.footer__column-title:not(:last-child) {
+  margin-bottom: 25px;
 }
 .footer__logo {
   display: block;
   width: 168px;
   height: 128px;
+  margin-bottom: 45px;
 }
 .footer__logo img {
   width: 100%;
@@ -1849,29 +1883,37 @@ body.ie ._ibg img {
 }
 @media (max-width: 767.98px) {
   .footer__logo {
-    margin: 0 auto;
+    margin: 0 auto 20px auto;
   }
+}
+.footer__social {
+  text-align: center;
 }
 .footer__social:not(:last-child) {
   margin-bottom: 35px;
 }
-.footer__contacts {
-  text-align: end;
+.footer__contacts:not(:last-child) {
+  margin-bottom: 32px;
 }
 .footer__contacts-link {
   display: flex;
-  justify-content: flex-end;
+  align-items: center;
   transition: color 0.3s;
+  font-size: 10px;
   font-weight: 600;
 }
 .footer__contacts-link:not(:last-child) {
   margin-bottom: 21px;
 }
 .footer__contacts-link::before {
-  order: 1;
-  margin-left: 10px;
+  margin-right: 10px;
   color: #ffc844;
   transition: color 0.3s;
+}
+.footer__contacts-link img {
+  display: block;
+  width: 18px;
+  margin-right: 10px;
 }
 @media (any-hover: hover) {
   .footer__contacts-link:hover {
@@ -1882,10 +1924,27 @@ body.ie ._ibg img {
   }
 }
 .footer__bottom-line {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
   font-size: 13px;
 }
 .footer__bottom-line p + p {
   margin-top: 10px;
+}
+.footer__info {
+  margin-bottom: 10px;
+  margin-right: 10px;
+}
+.footer__dev {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+.footer__dev img {
+  margin-left: 20px;
+  flex: 0 0 112px;
+  height: 39px;
 }
 
 .footer-nav {
