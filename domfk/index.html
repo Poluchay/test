@@ -53,9 +53,10 @@
 							Тест-драйв
 						</a>
 						<nav class="header__nav">
-							<ul class="header__list">
+							<ul class="header__list" data-spollers="992,max" data-one-spoller>
 								<li class="header__item">
 									<a class="header__link" href="#">О нас</a>
+									<span class="header__icon _icon-arrow-down" data-spoller></span>
 									<ul class="header__sub-list">
 										<li>
 											<a href="#" class="header__sub-link">Команда</a>
@@ -70,6 +71,7 @@
 								</li>
 								<li class="header__item">
 									<a class="header__link" href="#">Центры</a>
+									<span class="header__icon _icon-arrow-down" data-spoller></span>
 									<ul class="header__sub-list">
 										<li>
 											<a href="#" class="header__sub-link">Клуб на Восточно-Кругликовской</a>
@@ -81,6 +83,7 @@
 								</li>
 								<li class="header__item">
 									<a class="header__link" href="#">Клубные карты</a>
+									<span class="header__icon _icon-arrow-down" data-spoller></span>
 									<ul class="header__sub-list">
 										<li>
 											<a href="#" class="header__sub-link">1</a>
@@ -170,7 +173,7 @@
       <div class="about">
          <div class="about__items">
             <div class="about__item">
-               <span class="about__number">
+               <span class="about__number" data-letters="2399">
                   2399
                </span>
                <div class="about__text">
@@ -179,7 +182,7 @@
                </div>
             </div>
             <div class="about__item">
-               <span class="about__number">
+               <span class="about__number" data-letters="150">
                   150
                </span>
                <div class="about__text">
@@ -188,7 +191,7 @@
                </div>
             </div>
             <div class="about__item">
-               <span class="about__number">
+               <span class="about__number" data-letters="5350">
                   5350
                </span>
                <div class="about__text">
@@ -206,43 +209,98 @@
       <div class="lt-section__header lt-section__header--m-small">
          <h2 class="lt-section__title section-title">Наши программы</h2>
       </div>
-      <div class="lt-section__body slider">
-         <div class="lt-section__slider-nav">
-            <div class="lt-section__btn-prev slider-nav-prev _icon-arrow-left"></div>
-            <div class="slider-nav-next _icon-arrow-right"></div>
-         </div>
-         <div class="swiper slider__body">
-            <div class="swiper-wrapper slider__wrapper">
-               <a href="#" class="swiper-slide slider__slide">
-                  <div class="slider__img _ibg">
-                     <img class="lazyload"
-                        src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-                        data-src="img/programm/img-1.jpg" alt="Бассейны" data-sizes="auto">
-                     <div class="slider__img-text">
-                        Бассейны
+      <div class="lt-section__body slider slider--view-two">
+         <div class="slider__inner _tabs">
+            <div class="slider__tabs-nav">
+               <div class="slider__nav-item">
+                  <span class="slider__tab _tabs-item _active">
+                     Клуб на Мачуги
+                  </span>
+                  <a href="#" class="slider__tab-link">Смотреть
+                     все</a>
+               </div>
+               <div class="slider__nav-item">
+                  <span class="slider__tab _tabs-item">
+                     Клуб на Восточно-Кругликовской
+                  </span>
+                  <a href="#" class="slider__tab-link">Смотреть все</a>
+               </div>
+            </div>
+            <div class="swiper slider__body _tabs-block _active">
+               <div class="lt-section__slider-nav">
+                  <div class="lt-section__btn-prev slider-nav-prev _icon-arrow-left"></div>
+                  <div class="slider-nav-next _icon-arrow-right"></div>
+               </div>
+               <div class="swiper-wrapper slider__wrapper">
+                  <a href="#" class="swiper-slide slider__slide">
+                     <div class="slider__img _ibg">
+                        <img class="lazyload"
+                           src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                           data-src="img/programm/img-1.jpg" alt="Бассейны" data-sizes="auto">
+                        <div class="slider__img-text">
+                           Бассейны
+                        </div>
                      </div>
-                  </div>
-               </a>
-               <a href="#" class="swiper-slide slider__slide">
-                  <div class="slider__img _ibg">
-                     <img class="lazyload"
-                        src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-                        data-src="img/programm/img-2.jpg" alt="Групповые занятия" data-sizes="auto">
-                     <div class="slider__img-text">
-                        Групповые занятия
+                  </a>
+                  <a href="#" class="swiper-slide slider__slide">
+                     <div class="slider__img _ibg">
+                        <img class="lazyload"
+                           src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                           data-src="img/programm/img-2.jpg" alt="Групповые занятия" data-sizes="auto">
+                        <div class="slider__img-text">
+                           Групповые занятия
+                        </div>
                      </div>
-                  </div>
-               </a>
-               <a href="#" class="swiper-slide slider__slide">
-                  <div class="slider__img _ibg">
-                     <img class="lazyload"
-                        src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-                        data-src="img/programm/img-3.jpg" alt="Тренажерный зал" data-sizes="auto">
-                     <div class="slider__img-text">
-                        Тренажерный зал
+                  </a>
+                  <a href="#" class="swiper-slide slider__slide">
+                     <div class="slider__img _ibg">
+                        <img class="lazyload"
+                           src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                           data-src="img/programm/img-3.jpg" alt="Тренажерный зал" data-sizes="auto">
+                        <div class="slider__img-text">
+                           Тренажерный зал
+                        </div>
                      </div>
-                  </div>
-               </a>
+                  </a>
+               </div>
+            </div>
+            <div class="swiper slider__body _tabs-block">
+               <div class="lt-section__slider-nav">
+                  <div class="lt-section__btn-prev slider-nav-prev _icon-arrow-left"></div>
+                  <div class="slider-nav-next _icon-arrow-right"></div>
+               </div>
+               <div class="swiper-wrapper slider__wrapper">
+                  <a href="#" class="swiper-slide slider__slide">
+                     <div class="slider__img _ibg">
+                        <img class="lazyload"
+                           src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                           data-src="img/programm/img-2.jpg" alt="Бассейны" data-sizes="auto">
+                        <div class="slider__img-text">
+                           Бассейны
+                        </div>
+                     </div>
+                  </a>
+                  <a href="#" class="swiper-slide slider__slide">
+                     <div class="slider__img _ibg">
+                        <img class="lazyload"
+                           src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                           data-src="img/programm/img-3.jpg" alt="Групповые занятия" data-sizes="auto">
+                        <div class="slider__img-text">
+                           Групповые занятия
+                        </div>
+                     </div>
+                  </a>
+                  <a href="#" class="swiper-slide slider__slide">
+                     <div class="slider__img _ibg">
+                        <img class="lazyload"
+                           src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                           data-src="img/programm/img-3.jpg" alt="Тренажерный зал" data-sizes="auto">
+                        <div class="slider__img-text">
+                           Тренажерный зал
+                        </div>
+                     </div>
+                  </a>
+               </div>
             </div>
          </div>
       </div>
@@ -373,8 +431,12 @@
          <div class="lt-columns">
             <div class="lt-columns__item card-info">
                <div class="card-info__icon">
-                  <img class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-                     data-src="img/card/card-1.png" alt="Восточка" data-sizes="auto">
+                  <picture>
+                     <source data-srcset="img/card/card-1.png 550w" media="(max-width: 550px)" />
+                     <img class="lazyload"
+                        src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                        data-src="img/card/card-1-pc.png" alt="Восточка" data-sizes="auto">
+                  </picture>
                </div>
                <h3 class="card-info__title">#Восточка</h3>
                <div class="card-info__text">
@@ -385,8 +447,12 @@
             </div>
             <div class="lt-columns__item card-info">
                <div class="card-info__icon">
-                  <img class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-                     data-src="img/card/card-2.png" alt="Мачуги" data-sizes="auto">
+                  <picture>
+                     <source data-srcset="img/card/card-2.png" media="(max-width: 550px)" />
+                     <img class="lazyload"
+                        src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                        data-src="img/card/card-2-pc.png" alt="Мачуги" data-sizes="auto">
+                  </picture>
                </div>
                <h3 class="card-info__title">#мачуги</h3>
                <div class="card-info__text">
@@ -414,7 +480,8 @@
             <div class="swiper-wrapper slider__wrapper">
                <a href="#" class="swiper-slide slider__slide">
                   <div class="slider__img _ibg">
-                     <img class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                     <img class="lazyload"
+                        src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
                         data-src="img/programm/img-1.jpg" alt="Бассейны" data-sizes="auto">
                   </div>
                   <div class="slider__body-slide">
@@ -430,7 +497,8 @@
                </a>
                <a href="#" class="swiper-slide slider__slide">
                   <div class="slider__img _ibg">
-                     <img class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                     <img class="lazyload"
+                        src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
                         data-src="img/programm/img-2.jpg" alt="Бассейны" data-sizes="auto">
                   </div>
                   <div class="slider__body-slide">
@@ -446,7 +514,8 @@
                </a>
                <a href="#" class="swiper-slide slider__slide">
                   <div class="slider__img _ibg">
-                     <img class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                     <img class="lazyload"
+                        src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
                         data-src="img/programm/img-3.jpg" alt="Бассейны" data-sizes="auto">
                   </div>
                   <div class="slider__body-slide">
@@ -635,11 +704,18 @@
          </div> -->
          <div class="slider__inner _tabs">
             <div class="slider__tabs-nav">
-               <div class="slider__nav-item _tabs-item _active">
-                  Клуб на Мачуги
+               <div class="slider__nav-item">
+                  <span class="slider__tab _tabs-item _active">
+                     Клуб на Мачуги
+                  </span>
+                  <a href="#" class="slider__tab-link">Смотреть
+                     все</a>
                </div>
-               <div class="slider__nav-item _tabs-item">
-                  Клуб на Восточно-Кругликовской
+               <div class="slider__nav-item">
+                  <span class="slider__tab _tabs-item">
+                     Клуб на Восточно-Кругликовской
+                  </span>
+                  <a href="#" class="slider__tab-link">Смотреть все</a>
                </div>
             </div>
             <div class="swiper slider__body _tabs-block _active">
@@ -745,6 +821,9 @@
 							<li><a class="footer-nav__link" href="#"> ПОЛИТИКА КОНФИДЕНЦИАЛЬНОСТИ</a> </li>
 							<li><a class="footer-nav__link" href="#"> ОТКАЗ ОТ УСЛУГИ</a> </li>
 							<li><a class="footer-nav__link" href="#"> ОПИСАНИЕ УСЛУГ</a> </li>
+							<li><a class="footer-nav__link" href="#"> ДОГОВОР ПУБЛИЧНОЙ ОФЕРТЫ</a> </li>
+							<li><a class="footer-nav__link" href="#"> РЕКВИЗИТЫ ООО ВСВ-Спорт</a> </li>
+
 						</ul>
 					</nav>
 				</div>
@@ -802,10 +881,14 @@
 			<div class="footer__info">
 				<p>© 2017-2019 Дом Физкультурника, Краснодар |</p>
 				<p>ООО «ВСВ-СПОРТ»</p>
+				<p>ИНН 2311158499</p>
 			</div>
-			<div class="footer__dev">
-				Разработка сайта:
-				<a href="#"><img src="img/footer/dev.png" alt="wbs"></a>
+			<div class="footer__right footer-right">
+				<a class="footer-right__link" href="#"><img src="img/footer/duns.png" alt="wbs"></a>
+				<div class="dev">
+					Разработка сайта:
+					<a class="dev__link" href="#"><img src="img/footer/dev.png" alt="wbs"></a>
+				</div>
 			</div>
 		</div>
 	</div>
