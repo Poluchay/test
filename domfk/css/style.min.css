@@ -1003,7 +1003,15 @@ textarea.input {
   background-color: #fff;
   border: 2px solid #333333;
   cursor: pointer;
-  transition: background-color 0.3s;
+  transition: background-color 0.3s, opacity 0.3s, visibility 0.3s;
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+}
+.btn-down._show {
+  opacity: 1;
+  pointer-events: all;
+  visibility: visible;
 }
 @media (any-hover: hover) {
   .btn-down:hover {
