@@ -574,6 +574,12 @@ body._lock {
   display: flex;
   flex-direction: column;
 }
+.wrapper__social-block {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+}
+
 ._container {
   max-width: 1238px;
   margin: 0 auto;
@@ -984,6 +990,24 @@ textarea.input {
 }
 .btn-primary--decor-not::before {
   display: none;
+}
+
+.btn-down {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 41px;
+  height: 50px;
+  border-radius: 8px;
+  background-color: #fff;
+  border: 2px solid #333333;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+@media (any-hover: hover) {
+  .btn-down:hover {
+    background-color: #ffc844;
+  }
 }
 
 .title-primary {
