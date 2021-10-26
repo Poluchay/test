@@ -2492,7 +2492,20 @@ body.ie ._ibg img {
   text-align: center;
 }
 .form-widget__header:not(:last-child) {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+}
+@media (min-width: 767.98px) {
+  .form-widget__header:not(:last-child) {
+    margin-bottom: 50px;
+  }
+}
+@media (max-width: 479.98px) {
+  .form-widget__title {
+    display: block;
+    margin: 0 auto;
+    max-width: 320px;
+    padding: 0 10px;
+  }
 }
 .form-widget__body {
   max-width: 1040px;
@@ -2510,7 +2523,7 @@ body.ie ._ibg img {
   }
 }
 .form-widget__input {
-  margin-bottom: 32px;
+  margin-bottom: 20px;
 }
 @media (min-width: 767.98px) {
   .form-widget__input {
