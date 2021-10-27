@@ -2881,13 +2881,32 @@ body.ie ._ibg img {
 @media (min-width: 550px) {
   .cards__item {
     flex: 1 0 calc(50% - 30px);
+    max-width: 50%;
     margin-right: 30px;
   }
 }
 @media (min-width: 991.98px) {
   .cards__item {
     flex: 0 0 calc(25% - 30px);
+    max-width: 25%;
     margin-bottom: 0;
+  }
+}
+.cards__item--mob-hidden {
+  display: none;
+}
+@media (min-width: 767.98px) {
+  .cards__item--mob-hidden {
+    display: block;
+  }
+}
+.cards__btn-mob {
+  display: block;
+  text-align: center;
+}
+@media (min-width: 767.98px) {
+  .cards__btn-mob {
+    display: none;
   }
 }
 
