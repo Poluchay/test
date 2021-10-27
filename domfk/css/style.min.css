@@ -2793,14 +2793,8 @@ body.ie ._ibg img {
   margin-bottom: 10px;
 }
 .card-info__icon img {
-  width: 170px;
-  max-height: 170px;
-}
-@media (min-width: 550px) {
-  .card-info__icon img {
-    width: 122px;
-    max-height: 122px;
-  }
+  width: 122px;
+  max-height: 122px;
 }
 .card-info__title {
   margin-bottom: 14px;
