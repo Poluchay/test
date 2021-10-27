@@ -1003,8 +1003,8 @@ textarea.input {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 31px;
-  height: 40px;
+  width: 36px;
+  height: 45px;
   border-radius: 8px;
   background-color: #fff;
   border: 2px solid #333333;
@@ -1020,8 +1020,8 @@ textarea.input {
   visibility: visible;
 }
 .btn-down svg {
-  width: 12px;
-  height: 19px;
+  width: 14px;
+  height: 21px;
 }
 @media (min-width: 767.98px) {
   .btn-down {
