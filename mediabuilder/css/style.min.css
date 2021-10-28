@@ -2041,7 +2041,7 @@ body.ie ._ibg img {
   overflow: hidden;
   transition: background-color 0.3s;
 }
-.social-nav__link svg {
+.social-nav__link img, .social-nav__link svg {
   flex: 0 0 75%;
   height: 75%;
 }
@@ -3861,4 +3861,7 @@ body.ie ._ibg img {
   .page__article {
     padding-bottom: calc(60px + 40 * ((100vw - 320px) / 859));
   }
+}
+.page__single {
+  padding: 50px 0;
 }
