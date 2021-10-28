@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>Главная</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<link rel="stylesheet" href="css/style.min.css">
+	<link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+	<link rel="shortcut icon" href="favicon.ico">
+	<meta name="robots" content="noindex, nofollow">
+	<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container _container">
+				<div class="header__line">
+					<a class="header__logo" href="index.html">
+						<picture>
+							<source media="(max-width: 479.98px)" srcset="img/logo-mob.svg">
+							<img class="logo" src="img/logo.svg" alt="logo">
+						</picture>
+					</a>
+					<nav class="header__soc-nav social-nav _dropdown">
+						<ul class="social-nav__list">
+							<li class="social-nav__item">
+								<a href="soc-vk.html" class="social-nav__link">
+									<svg class="icon">
+										<use xlink:href="img/social/soc-sprite.svg#vk"></use>
+									</svg>
+								</a>
+							</li>
+							<li class="social-nav__item">
+								<a href="socialnaya-set.html" class="social-nav__link">
+									<svg class="icon">
+										<use xlink:href="img/social/soc-sprite.svg#tg"></use>
+									</svg>
+								</a>
+							</li>
+							<li class="social-nav__item">
+								<a href="socialnaya-set.html" class="social-nav__link">
+									<svg class="icon">
+										<use xlink:href="img/social/soc-sprite.svg#ytb"></use>
+									</svg>
+								</a>
+							</li>
+							<li class="social-nav__item">
+								<a href="socialnaya-set.html" class="social-nav__link">
+									<svg class="icon">
+										<use xlink:href="img/social/soc-sprite.svg#tiktok"></use>
+									</svg>
+								</a>
+							</li>
+							<li class="social-nav__item">
+								<a href="socialnaya-set.html" class="social-nav__link">
+									<svg class="icon">
+										<use xlink:href="img/social/soc-sprite.svg#inst"></use>
+									</svg>
+								</a>
+							</li>
+							<li class="social-nav__item">
+								<a href="socialnaya-set.html" class="social-nav__link">
+									<svg class="icon">
+										<use xlink:href="img/social/soc-sprite.svg#fb"></use>
+									</svg>
+								</a>
+							</li>
+							<li class="social-nav__item">
+								<a href="socialnaya-set.html" class="social-nav__link">
+									<svg class="icon">
+										<use xlink:href="img/social/soc-sprite.svg#pnt"></use>
+									</svg>
+								</a>
+							</li>
+							<li class="social-nav__item">
+								<a href="socialnaya-set.html" class="social-nav__link">
+									<svg class="icon">
+										<use xlink:href="img/social/soc-sprite.svg#dzen"></use>
+									</svg>
+								</a>
+							</li>
+							<li class="social-nav__item">
+								<button class="social-nav__link _dropdown-button">
+									<i class="social-nav__icon _icon-chevron-down"></i>
+								</button>
+								<ul class="social-nav__sub-list _dropdown-body">
+									<li class="social-nav__sub-item">
+										<a href="socialnaya-set.html" class="social-nav__sub-link">
+											<svg class="social-nav__sub-icon">
+												<use xlink:href="img/social/soc-sprite.svg#ytb"></use>
+											</svg>
+											Ютуб
+										</a>
+									</li>
+									<li class="social-nav__sub-item">
+										<a href="socialnaya-set.html" class="social-nav__sub-link _active">
+											<svg class="social-nav__sub-icon">
+												<use xlink:href="img/social/soc-sprite.svg#tg"></use>
+											</svg>
+											Телеграм
+										</a>
+									</li>
+									<li class="social-nav__sub-item">
+										<a href="socialnaya-set.html" class="social-nav__sub-link">
+											<svg class="social-nav__sub-icon">
+												<use xlink:href="img/social/soc-sprite.svg#pnt"></use>
+											</svg>
+											Pinterest
+										</a>
+									</li>
+									<li class="social-nav__sub-item">
+										<a href="socialnaya-set.html" class="social-nav__sub-link">
+											<svg class="social-nav__sub-icon">
+												<use xlink:href="img/social/soc-sprite.svg#dzen"></use>
+											</svg>
+											Дзен
+										</a>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</nav>
+					<a href="#" class="header__user-btn btn-primary">Личный кабинет</a>
+					<!-- <button class="header__logout btn-primary btn-primary--small">Выход <i class="_icon-open-in-new"></i></button> -->
+					<div class="icon-menu">
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
+				</div>
+				<nav class="header__nav">
+					<div class="header__user-list user-list" data-spollers>
+						<div class="user-list__profile" data-spoller>
+							<div class="user-list__profile-img _ibg">
+								<img src="img/profile/avatar.png" alt="avatar">
+							</div>
+							<span class="user-list__login">Логин <i class="_icon-chevron-down"></i></span>
+						</div>
+						<div class="user-list__body-spoller">
+							<ul class="user-list__info">
+								<li class="user-list__info-item ">
+									<i class="user-list__icon _icon-cash-100"></i>
+									Баланс: <span>200₽</span>
+								</li>
+								<li class="user-list__info-item">
+									<i class="user-list__icon _icon-star"></i>
+									Бонусы: <span>200</span>
+								</li>
+							</ul>
+							<ul class="user-list__items">
+								<li class="user-list__item _active">
+									<a class="user-list__link" href="#"><i class="user-list__icon _icon-profile"></i>Личный
+										кабинет</a>
+								</li>
+								<li class="user-list__item">
+									<a class="user-list__link" href="#"><i class="user-list__icon _icon-cash-100"></i>Пополнить
+										баланс</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<ul class="header__list">
+						<li class="header__item">
+							<a class="header__link" href="#">Каталог</a>
+						</li>
+						<li class="header__item">
+							<a class="header__link" href="#">Пакеты</a>
+						</li>
+						<li class="header__item">
+							<a class="header__link" href="#">Калькулятор</a>
+						</li>
+						<li class="header__item">
+							<a class="header__link" href="blog.html">Новости</a>
+						</li>
+						<li class="header__item">
+							<a class="header__link" href="#">Акции</a>
+						</li>
+						<li class="header__item">
+							<a class="header__link" href="faq.html">FAQ</a>
+						</li>
+						<li class="header__item">
+							<a class="header__link" href="partnerskaya-programma.html">Партнёрам</a>
+						</li>
+						<li class="header__item">
+							<a class="header__link" href="#">Контакты</a>
+						</li>
+						<li class="header__item">
+							<a class="header__link" href="#">Любая другая ссылка</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+		<main class="page">
+
+
+
+
+
+
+
+<div class="profile">
+   <div class="profile__container _container">
+      <div class="profile__inner">
+         <div class="profile__side">
+            <div class="user-list">
+               <div class="user-list__profile">
+                  <div class="user-list__profile-img _ibg">
+                     <img src="img/profile/avatar.png" alt="avatar">
+                  </div>
+                  <span class="user-list__login">Логин</span>
+               </div>
+               <div class="user-list__body-spoller">
+                  <ul class="user-list__info">
+                     <li class="user-list__info-item">
+                        <i class="user-list__icon _icon-cash-100"></i>
+                        Баланс: <span>200₽</span>
+                     </li>
+                     <li class="user-list__info-item">
+                        <i class="user-list__icon _icon-star"></i>
+                        Бонусы: <span>200</span>
+                     </li>
+                  </ul>
+                  <ul class="user-list__items">
+                     <li class="user-list__item _active">
+                        <a class="user-list__link" href="#"><i class="user-list__icon _icon-profile"></i>Личный
+                           кабинет</a>
+                     </li>
+                     <li class="user-list__item">
+                        <a class="user-list__link" href="#"><i class="user-list__icon _icon-cash-100"></i>Пополнить
+                           баланс</a>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+         <div class="profile__body">
+            <div class="page-profile">
+               <div class="page-profile__header">
+                  <div class="page-profile__title">
+                     Личный кабинет
+                  </div>
+                  <div class="page-profile__user-img _ibg">
+                     <img src="img/profile/avatar.svg" alt="avatar">
+                     <div class="page-profile__add">
+                        Добавить фото
+                     </div>
+                  </div>
+               </div>
+               <form action="#" class="page-profile__body">
+                  <span class="page-profile__item-title">
+                     Настройки профиля
+                  </span>
+                  <div class="page-profile__items">
+                     <div class="page-profile__item form-item">
+                        <input type="text" placeholder="Введите ссылку на профиль" class="form-item__input">             
+                     </div>
+                     <div class="page-profile__item form-item">
+                        <input type="text" placeholder="Введите ссылку на профиль" class="form-item__input">
+                     </div>
+                     <div class="page-profile__item form-item">
+                        <input type="text" placeholder="Введите ссылку на профиль" class="form-item__input">
+                     </div>
+                  </div>
+                  <span class="page-profile__item-title">
+                     Настройки профиля
+                  </span>
+                  <div class="page-profile__items">
+                     <div class="page-profile__item form-item">
+                        <input type="text" placeholder="Введите ссылку на профиль" class="form-item__input">              
+                     </div>
+                     <div class="page-profile__item form-item">
+                        <input type="text" placeholder="Введите ссылку на профиль" class="form-item__input">                 
+                     </div>
+                     <div class="page-profile__item form-item">
+                        <input type="text" placeholder="Введите ссылку на профиль" class="form-item__input">              
+                     </div>
+                     <div class="page-profile__item form-item">
+                        <input type="text" placeholder="Введите ссылку на профиль" class="form-item__input">
+                     </div>
+                  </div>
+                  <div class="page-profile__btn">
+                     <button type="submit" class="btn-second">Сохранить</button>
+                  </div>
+               </form>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
+
+
+
+
+
+</main>
+<footer class="footer">
+	<div class="footer__container _container">
+		<div class="footer__top-line">
+			<div class="footer__columns">
+				<div class="footer__column footer__column--column-four">
+					<a href="#" class="footer__logo">
+						<img class="logo" src="img/logo-white.svg" alt="logo">
+					</a>
+					<div class="footer__text">
+						<p>Мы обеспечиваем пользователей по всему миру наиболее эффективным, надежным и экономичным решением
+							из доступных на рынке продвижения в соц. сетях.</p>
+					</div>
+					<a href="#" class="footer__pay-link">
+						<img class="lazyload"
+                           src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                           data-src="img/footer/pay.png" alt="pay" data-sizes="auto">
+					</a>
+				</div>
+				<div class="footer__column footer__column--column-auto">
+					<nav class="footer__nav footer-nav">
+						<ul class="footer-nav__list">
+							<li class="footer-nav__list-title">
+								Навигация
+							</li>
+							<li class="footer-nav__item">
+								<a href="#" class="footer-nav__link">Главная</a>
+							</li>
+							<li class="footer-nav__item">
+								<a href="#" class="footer-nav__link">О Нас</a>
+							</li>
+							<li class="footer-nav__item">
+								<a href="#" class="footer-nav__link">Контакты</a>
+							</li>
+							<li class="footer-nav__item">
+								<a href="#" class="footer-nav__link">Акции</a>
+							</li>
+							<li class="footer-nav__item">
+								<a href="#" class="footer-nav__link">FAQ</a>
+							</li>
+						</ul>
+						<ul class="footer-nav__list">
+							<li class="footer-nav__list-title">
+								Сообщество
+							</li>
+							<li class="footer-nav__item">
+								<a href="#" class="footer-nav__link">Партнерам</a>
+							</li>
+							<li class="footer-nav__item">
+								<a href="#" class="footer-nav__link">Правила сервиса</a>
+							</li>
+							<li class="footer-nav__item">
+								<a href="#" class="footer-nav__link">Публичная оферта</a>
+							</li>
+							<li class="footer-nav__item">
+								<a href="#" class="footer-nav__link">Политика конфедициальности</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+				<div class="footer__column">
+					<div class="footer__icon-block">
+						<img class="footer__icon" src="img/footer/garant.png" alt="garant">
+						100% ГАРАНТИЯ ВОЗВРАТА ДЕНЕГ
+					</div>
+					<div class="footer__text">
+						<p>Мы единственные на рынке, кто предоставляет гарантию возврата средств. Мы гарантируем что вернем
+							вам деньги, если заказ не будет выполнен. Ваше спокойствие для нас в приоритете.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<article class="footer__bottom-line">
+			<h2>«СЕОшный текст для поисковиков про сайт и чем сайт занимается на 2000 символов»</h2>
+			<p>
+				Как предсказывают футурологи воздействие на потребителя достижимо в разумные сроки. Еще Траут показал, что
+				опрос неоднозначен. По сути, анализ зарубежного опыта детерминирует опрос. Эластичность спроса усиливает
+				конструктивный анализ рыночных цен. Продвижение проекта, не меняя концепции, изложенной выше, продуцирует
+				формат события. Клиентский спрос, анализируя результаты рекламной кампании, методически искажает опрос.
+			</p>
+			<p>
+				Выставочный стенд, пренебрегая деталями, основательно подпорчен предыдущим опытом применения.
+				Медиапланирование
+				подсознательно уравновешивает коллективный имидж. Согласно предыдущему, объемная скидка деятельно усиливает
+				рейтинг, невзирая на действия конкурентов. Спонсорство концентрирует рыночный фирменный стиль. Восприятие
+				марки
+				восстанавливает повседневный <a href="#">рекламный бриф</a>.
+			</p>
+			<p>
+				Нестандартный подход усиливает потребительский рынок. Инструмент маркетинга абстрактен. Структура рынка
+				позитивно переворачивает опрос. Общество потребления методически стабилизирует презентационный материал.
+				В соответствии с законом Ципфа, точечное воздействие консолидирует клиентский спрос, размещаясь во всех
+				медиа.
+			</p>
+			<p>
+				Рекламное сообщество концентрирует комплексный повторный контакт. Стоит отметить, что имидж существенно
+				позиционирует нишевый проект. В соответствии с законом Ципфа, стратегический рыночный план продуцирует
+				рыночный
+				CTR, отвоевывая рыночный сегмент. Рейтинг, безусловно, транслирует имидж предприятия, используя опыт
+				предыдущих
+				кампаний. Молодежная аудитория, безусловно, масштабирует социометрический бюджет на размещение, учитывая
+				современные тенденции. Целевой сегмент рынка, следовательно, порождает жизненный цикл продукции.
+			</p>
+			<p>
+				Раскрутка повсеместно ускоряет презентационный материал. Бизнес-стратегия, конечно, продуцирует бизнес-план.
+				Процесс стратегического планирования основан на тщательном анализе данных. Принцип восприятия упорядочивает
+				продуктовый ассортимент. Медиабизнес, на первый взгляд, однообразно программирует выставочный стенд. Такое
+				понимание ситуации восходит к Эл Райс, при этом повышение жизненных стандартов развивает креатив.
+			</p>
+		</article>
+	</div>
+</footer>
+</div>
+<div class="popup popup_login">
+	<div class="popup__content">
+		<div class="popup__body">
+			<form action="#" class="popup-form">
+				<div class="popup-form__title">Войти</div>
+				<div class="popup-form__body">
+					<div class="popup-form__item">
+						<div class="popup-form__item-title">Логин</div>
+						<div class="popup-form__input form-item">
+							<input type="text" placeholder="example@mail.ru" class="form-item__input">
+						</div>
+					</div>
+					<div class="popup-form__item">
+						<div class="popup-form__item-title">Пароль</div>
+						<div class="popup-form__input form-item">
+							<input type="password" placeholder="***********" class="form-item__input">
+						</div>
+						<a href="vosstanovlenie-parolya.html" class="popup-form__promt">Забыли пароль?</a>
+					</div>
+				</div>
+				<div class="popup-form__footer">
+					<div class="popup-form__item">
+						<button class="popup-form__btn btn-second btn-second--small _fw">Вход</button>
+					</div>
+					<div class="popup-form__text">
+						<span>Новый пользователь?</span>
+						<a href="#reg" class="_popup-link">Зарегистрироваться</a>
+						<p>Или войдите при помощи соц. сетей</p>
+					</div>
+					<div class="popup-social">
+						<div class="popup-social__item">
+							<a href="#" class="popup-social__link"><img src="img/social/vk.svg" alt="ck"></a>
+						</div>
+						<div class="popup-social__item">
+							<a href="#" class="popup-social__link"><img src="img/social/fb.svg" alt="ck"></a>
+						</div>
+					</div>
+				</div>
+			</form>
+			<div class="popup__close"></div>
+		</div>
+	</div>
+</div>
+
+<div class="popup popup_logout">
+	<div class="popup__content">
+		<div class="popup__body">
+			<form action="#" class="popup-form">
+				<div class="popup-form__title">Выход</div>
+				<div class="popup-form__body">
+					<div class="popup-form__text">
+						<p>Вы уверены, что хотите выйти?</p>
+					</div>
+				</div>
+				<div class="popup-form__footer">
+					<div class="popup-form__item popup-form__item--flex">
+						<button class="popup-form__btn btn-primary btn-primary--small">Да</button>
+						<button class="popup-form__btn btn-second btn-second--small">Нет</button>
+					</div>
+				</div>
+			</form>
+			<div class="popup__close"></div>
+		</div>
+	</div>
+</div>
+
+<div class="popup popup_reg">
+	<div class="popup__content">
+		<div class="popup__body">
+			<form action="#" class="popup-form">
+				<div class="popup-form__title">Регистрация</div>
+				<div class="popup-form__body">
+					<div class="popup-form__item">
+						<div class="popup-form__item-title">Логин</div>
+						<div class="popup-form__input form-item">
+							<input type="text" placeholder="Log_in" class="form-item__input">
+						</div>
+					</div>
+					<div class="popup-form__item">
+						<div class="popup-form__item-title">E-mail</div>
+						<div class="popup-form__input form-item">
+							<input type="text" placeholder="example@mail.ru" class="form-item__input">
+						</div>
+					</div>
+					<div class="popup-form__item">
+						<div class="popup-form__item-title">Пароль</div>
+						<div class="popup-form__input form-item">
+							<input type="password" placeholder="***********" class="form-item__input">
+						</div>
+					</div>
+					<div class="popup-form__item">
+						<div class="popup-form__item-title">Подтверждение пароля</div>
+						<div class="popup-form__input form-item">
+							<input type="password" placeholder="***********" class="form-item__input">
+						</div>
+					</div>
+				</div>
+				<div class="popup-form__footer">
+					<div class="popup-form__item">
+						<button class="popup-form__btn btn-second btn-second--small _fw">Зарегистрироваться</button>
+					</div>
+					<div class="popup-form__text">
+						<p>Оплачивая заказ, Вы автоматически соглашаетесь <a href="#">с офертой</a> и <a href="#">правилами</a> использования нашего сервиса.</p>
+					</div>
+				</div>
+			</form>
+			<div class="popup__video _video"></div>
+		</div>
+	</div>
+</div>
+<!-- Swiper -->
+<!-- <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> -->
+<script src="js/vendors.min.js"></script>
+<script src="js/app.min.js"></script>
+</body>
+
+</html>
