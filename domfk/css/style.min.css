@@ -2969,6 +2969,59 @@ body.ie ._ibg img {
     margin-bottom: 50px;
   }
 }
+.cards__nav-tabs:not(:last-child) {
+  margin-bottom: 40px;
+}
+@media (min-width: 767.98px) {
+  .cards__nav-tabs {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+.cards__tab {
+  flex: 0 0 calc(25% - 15px);
+  min-height: 72px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: transparent;
+  border: 2px solid #ffc844;
+  border-radius: 8px;
+  transition: background-color 0.3s;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 4px;
+  margin-bottom: 15px;
+}
+.cards__tab._active {
+  background-color: #ffc844;
+  font-weight: 800;
+  box-shadow: 0px 3px 4px 0px #d09c13b2;
+}
+@media (min-width: 767.98px) {
+  .cards__tab {
+    flex: 0 0 calc(50% - 15px);
+    margin-bottom: 0;
+  }
+  .cards__tab:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+@media (min-width: 991.98px) {
+  .cards__tab {
+    flex: 0 0 calc(25% - 15px);
+    min-height: 72px;
+    font-size: 16px;
+  }
+}
+@media (min-width: 1250px) {
+  .cards__tab {
+    font-size: 18px;
+  }
+}
 .cards__list-title {
   font-family: "Rubik", sans-serif;
   font-size: 16px;
@@ -3005,14 +3058,6 @@ body.ie ._ibg img {
     margin-bottom: 0;
   }
 }
-.cards__item--mob-hidden {
-  display: none;
-}
-@media (min-width: 767.98px) {
-  .cards__item--mob-hidden {
-    display: block;
-  }
-}
 .cards__btn-mob {
   display: block;
   text-align: center;
@@ -3020,6 +3065,45 @@ body.ie ._ibg img {
 @media (min-width: 767.98px) {
   .cards__btn-mob {
     display: none;
+  }
+}
+
+@media (max-width: 992px) {
+  .slider-card {
+    padding-right: 70px;
+  }
+}
+.slider-card__wrapper:not(:last-child) {
+  margin-bottom: 25px;
+}
+@media (min-width: 992px) {
+  .slider-card__wrapper {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-right: -30px;
+  }
+}
+@media (min-width: 767.98px) {
+  .slider-card__wrapper:not(:last-child) {
+    margin-bottom: 50px;
+  }
+}
+.slider-card__slide {
+  margin-bottom: 30px;
+}
+@media (min-width: 992px) {
+  .slider-card__slide {
+    flex: 1 0 calc(50% - 31px);
+    max-width: 50%;
+    margin-right: 30px;
+  }
+}
+@media (min-width: 991.98px) {
+  .slider-card__slide {
+    flex: 0 0 calc(25% - 31px);
+    max-width: 25%;
+    margin-bottom: 15px;
   }
 }
 
