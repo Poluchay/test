@@ -1441,19 +1441,115 @@ body.ie ._ibg img {
   transform: scale(0);
   transition: all 0.3s ease 0s;
   background-color: #fff;
-  padding: 50px;
   width: 100%;
-  max-width: 800px;
+  max-width: 600px;
 }
 .popup__close {
-  width: 15px;
-  height: 15px;
+  width: 25px;
+  height: 25px;
   position: absolute;
-  top: 0px;
-  right: 0px;
+  top: 5px;
+  right: 5px;
   cursor: pointer;
   z-index: 30;
-  background: url("../img/icons/close.svg") 0 0 no-repeat;
+  background-image: url("../img/icons/close.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.popup-form {
+  padding: 35px 0 0;
+}
+.popup-form__header:not(:last-child) {
+  margin-bottom: 40px;
+}
+@media (min-width: 767.98px) {
+  .popup-form__header:not(:last-child) {
+    margin-bottom: 50px;
+  }
+}
+.popup-form__title {
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+}
+.popup-form__body {
+  padding: 0 20px;
+}
+.popup-form__body:not(:last-child) {
+  margin-bottom: 40px;
+}
+@media (min-width: 479.98px) {
+  .popup-form__body {
+    padding: 0 40px;
+  }
+}
+@media (min-width: 767.98px) {
+  .popup-form__body {
+    padding: 0 80px;
+  }
+  .popup-form__body:not(:last-child) {
+    margin-bottom: 80px;
+  }
+}
+.popup-form__item:not(:last-child) {
+  margin-bottom: 30px;
+}
+.popup-form__btn {
+  width: 100%;
+  padding: 23px;
+  background-color: #ff0000;
+  color: #fff;
+  font-weight: 700;
+  text-transform: uppercase;
+  transition: background-color 0.3s;
+}
+@media (any-hover: hover) {
+  .popup-form__btn:hover {
+    background-color: #e74b4b;
+  }
+}
+@media (min-width: 479.98px) {
+  .popup-form__btn {
+    padding: 33px;
+  }
+}
+
+.form-input {
+  position: relative;
+  margin-top: 15px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.274);
+  transition: border-color 0.3s;
+}
+@media (any-hover: hover) {
+  .form-input:hover {
+    border-color: #ffc844;
+  }
+}
+.form-input:focus-within {
+  border-color: #ffc844;
+}
+.form-input:focus-within .form-input__name {
+  top: 0;
+  color: #ffc844;
+}
+.form-input__name {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transition: top 0.3s, color 0.3s;
+  transform: translateY(-50%);
+  font-size: 16px;
+  pointer-events: none;
+}
+.form-input__input {
+  margin-top: 10px;
+  min-height: 35px;
+  width: 100%;
+}
+.form-input__input:valid + .form-input__name {
+  top: 0;
+  color: #ffc844;
 }
 
 .header {

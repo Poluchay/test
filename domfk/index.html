@@ -148,7 +148,7 @@
                <p>Сеть фитнес-центров в Краснодаре предлагает тебе широкий спектр занятий.</p>
                <p>Получи <i class="accent">скидку 10%</i> при покупке клубной карты на нашем сайте!</p>
                <div class="cover__btn">
-                  <button class="btn-primary btn-primary--large">ХОЧУ</button>
+                  <a href="#message" class="btn-primary btn-primary--large _popup-link">ХОЧУ</a>
                </div>
             </div>
          </div>
@@ -1149,9 +1149,37 @@
 	</div>
 </footer>
 	</div>
-	<div class="popup popup_popup">
+	<div class="popup popup_message">
 	<div class="popup__content">
 		<div class="popup__body">
+			<form action="#" class="popup-form">
+				<div class="popup-form__header">
+					<div class="popup-form__title">Форма обратной связи</div>
+				</div>
+				<div class="popup-form__body">
+					<div class="popup-form__item">
+						<div class="form-input">
+							<input type="text" name="name" autocomplete="off" class="form-input__input" required>
+							<div class="form-input__name">Ваше имя</div>
+						</div>
+					</div>
+					<div class="popup-form__item">
+						<div class="form-input">
+							<input type="text" name="email" class="form-input__input" required>
+							<div class="form-input__name">Ваше email</div>
+						</div>
+					</div>
+					<div class="popup-form__item">
+						<div class="form-input">
+							<input type="tel" name="phone" class="form-input__input" required>
+							<div class="form-input__name">Ваше телефон</div>
+						</div>
+					</div>
+				</div>
+				<div class="popup-form__footer">
+					<button type="submit" class="popup-form__btn">Отправить данные</button>
+				</div>
+			</form>
 			<div class="popup__close"></div>
 		</div>
 	</div>
@@ -1171,7 +1199,6 @@
 		</div>
 	</div>
 </div>
-
 	<!-- Swiper -->
 <!-- <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> -->
 <script src="js/vendors.min.js"></script>
