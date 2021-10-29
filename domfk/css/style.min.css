@@ -4959,6 +4959,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   }
 }
 .lt-block__img {
+  flex: 0 0 84px;
   width: 84px;
   height: 84px;
   margin-right: 20px;
@@ -4974,6 +4975,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 }
 @media (min-width: 767.98px) {
   .lt-block__img {
+    flex: 0 0 122px;
     width: 122px;
     height: 122px;
   }
