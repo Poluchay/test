@@ -2629,6 +2629,7 @@ body.ie ._ibg img {
   z-index: 1;
 }
 .lt-section__header {
+  text-align: center;
   margin-bottom: 60px;
 }
 @media (max-width: 1238px) {
@@ -2639,8 +2640,11 @@ body.ie ._ibg img {
 .lt-section__header--m-small {
   margin-bottom: 25px;
 }
-.lt-section__title {
-  text-align: center;
+.lt-section__title:not(:last-child) {
+  margin-bottom: 15px;
+}
+.lt-section__sub-title {
+  line-height: 1.2;
 }
 .lt-section__slider-nav {
   position: relative;
@@ -3173,7 +3177,7 @@ body.ie ._ibg img {
     font-size: 18px;
   }
 }
-.cards__list-title {
+.cards__slider-title {
   font-family: "Rubik", sans-serif;
   font-size: 16px;
   font-weight: 600;
@@ -3181,15 +3185,23 @@ body.ie ._ibg img {
   text-align: center;
   display: block;
 }
-.cards__list-title:not(:last-child) {
+.cards__slider-title:not(:last-child) {
   margin-bottom: 25px;
 }
 @media (min-width: 767.98px) {
-  .cards__list-title {
+  .cards__slider-title {
     font-size: 18px;
   }
-  .cards__list-title:not(:last-child) {
+  .cards__slider-title:not(:last-child) {
     margin-bottom: 50px;
+  }
+}
+.cards__slider:not(:last-child) {
+  margin-bottom: 25px;
+}
+@media (min-width: 767.98px) {
+  .cards__slider:not(:last-child) {
+    margin-bottom: 40px;
   }
 }
 .cards__item {
