@@ -2989,6 +2989,17 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   width: 100%;
   max-width: 600px;
 }
+.popup__video {
+  position: relative;
+  padding-bottom: 56.5%;
+}
+.popup__video iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
 .popup__close {
   width: 25px;
   height: 25px;
@@ -3000,6 +3011,12 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   background-image: url("../img/icons/close.svg");
   background-repeat: no-repeat;
   background-size: 100%;
+}
+.popup__close--video {
+  top: 1px;
+  right: 1px;
+  background-color: #fff;
+  border-radius: 8px;
 }
 
 .popup-form {
@@ -4554,7 +4571,11 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin: -15px;
+}
+@media (min-width: 991.98px) {
+  .lt-columns {
+    margin: -15px;
+  }
 }
 @media (min-width: 991.98px) {
   .lt-columns {
@@ -4600,6 +4621,22 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   .lt-columns__item--columns-three {
     margin: 20px;
     flex: 0 1 calc(33.333% - 40px);
+  }
+}
+.lt-columns__item--columns-two {
+  margin: 0 0 20px;
+  flex: 1 1 100%;
+}
+@media (min-width: 767.98px) {
+  .lt-columns__item--columns-two {
+    flex: 0 1 calc(50% - 20px);
+    margin: 10px;
+  }
+}
+@media (min-width: 991.98px) {
+  .lt-columns__item--columns-two {
+    margin: 20px;
+    flex: 0 1 calc(50% - 40px);
   }
 }
 
@@ -5008,6 +5045,34 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   display: block;
   padding-bottom: 70%;
 }
+.video-card__header:not(:last-child) {
+  margin-bottom: 15px;
+}
+.video-card__title {
+  font-size: 20px;
+  font-weight: 800;
+}
+.video-card__title:not(:last-child) {
+  margin-bottom: 8px;
+}
+.video-card__link {
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding-bottom: 50%;
+}
+.video-card__link::before {
+  content: "";
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 58px;
+  height: 58px;
+  background-image: url(../img/icons/play.svg);
+}
+
 .lt-article__header:not(:last-child) {
   margin-bottom: 25px;
 }
