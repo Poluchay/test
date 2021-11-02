@@ -5030,6 +5030,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   display: flex;
   align-items: center;
   justify-content: center;
+  text-align: center;
   min-height: 45px;
   padding: 10px 0;
   background-color: #ffc844;
@@ -5108,7 +5109,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 }
 @media (max-width: 1238px) {
   .lt-block__body {
-    margin-top: calc(40px + 30 * ((100vw - 320px) / 918));
+    margin-top: calc(20px + 50 * ((100vw - 320px) / 918));
   }
 }
 @media (max-width: 1238px) {
