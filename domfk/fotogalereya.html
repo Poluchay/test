@@ -55,9 +55,12 @@
 						<nav class="header__nav">
 							<ul class="header__list" data-spollers="992,max" data-one-spoller>
 								<li class="header__item">
-									<a class="header__link" href="#">О нас</a>
+									<a class="header__link" href="#">Информация</a>
 									<span class="header__icon _icon-arrow-down" data-spoller></span>
 									<ul class="header__sub-list">
+										<li>
+											<a href="#" class="header__sub-link">О Компании</a>
+										</li>
 										<li>
 											<a href="#" class="header__sub-link">Команда</a>
 										</li>
@@ -70,7 +73,7 @@
 									</ul>
 								</li>
 								<li class="header__item">
-									<a class="header__link" href="#">Центры</a>
+									<a class="header__link" href="#">Клубы</a>
 									<span class="header__icon _icon-arrow-down" data-spoller></span>
 									<ul class="header__sub-list">
 										<li>
@@ -104,7 +107,7 @@
 						<div data-da=".header__inner,992,1" class="header__search search _dropdown">
 							<div class="search__input-block _dropdown-body">
 								<div class="search__inner">
-									<input type="text" class="search__input" placeholder="Поиск...">
+									<input type="text" class="search__input" size="1" placeholder="Поиск...">
 								</div>
 								<button class="search__btn"><img src="img/icons/search.svg" alt="search"></button>
 							</div>
@@ -134,19 +137,25 @@
 			
 			
 			
+			
+			
+			
+			
 			<div class="lt-block">
    <div class="lt-block__header">
       <div class="lt-block__container _container">
-         <div class="lt-block__img">
-            <img class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-               data-src="img/card/card-1-pc.png" alt="Бассейны" data-sizes="auto">
+         <div class="lt-block__inner">
+            <div class="lt-block__title">
+               Фотогалерея 
+            </div>
          </div>
-         <div class="lt-block__title">
-            Фотогалерея
-         </div>
-         <div class="lt-block__img">
-            <img class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-               data-src="img/card/card-2-pc.png" alt="Бассейны" data-sizes="auto">
+         <div class="lt-block__nav">
+            <a href="#" class="lt-block__link"><img class="lazyload"
+                  src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                  data-src="img/card/card-1-pc.png" alt="Бассейны" data-sizes="auto"></a>
+            <a href="#" class="lt-block__link _active"><img class="lazyload"
+                  src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                  data-src="img/card/card-2-pc.png" alt="Бассейны" data-sizes="auto"></a>
          </div>
       </div>
    </div>
@@ -235,10 +244,6 @@
 <div class="lt-block">
    <div class="lt-block__header">
       <div class="lt-block__container _container">
-         <div class="lt-block__img">
-            <img class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-               data-src="img/card/card-2-pc.png" alt="Бассейны" data-sizes="auto">
-         </div>
          <div class="lt-block__title">
             басейн
          </div>
@@ -329,10 +334,6 @@
 <div class="lt-block">
    <div class="lt-block__header">
       <div class="lt-block__container _container">
-         <div class="lt-block__img">
-            <img class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-               data-src="img/card/card-1-pc.png" alt="Бассейны" data-sizes="auto">
-         </div>
          <div class="lt-block__title">
             спортивный зал. бойцовский клуб
          </div>
@@ -419,6 +420,7 @@
       </div>
    </div>
 </div>
+
 		</main>
 		<div class="wrapper__btn-down _lp">
 			<div class="btn-down">
@@ -502,7 +504,7 @@
 							<li><a class="footer-nav__link" href="#">О НАС</a></li>
 							<li><a class="footer-nav__link" href="#">Центры</a></li>
 							<li><a class="footer-nav__link" href="#">Клубные карты</a></li>
-							<li><a class="footer-nav__link" href="#">Приложение</a></li>
+							<li><a class="footer-nav__link footer-nav__link--text-red" href="#">Приложение</a></li>
 							<li><a class="footer-nav__link" href="#">Команда</a></li>
 							<li><a class="footer-nav__link" href="#">Вакансии</a></li>
 							<li><a class="footer-nav__link" href="#">Контакты</a></li>
@@ -640,7 +642,7 @@
 <div class="popup popup_video">
 	<div class="popup__content">
 		<div class="popup__body">
-			<div class="popup__close popup__close_video"></div>
+			<div class="popup__close popup__close--video"></div>
 			<div class="popup__video _video"></div>
 		</div>
 	</div>
