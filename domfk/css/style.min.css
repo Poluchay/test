@@ -5387,12 +5387,25 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   margin-bottom: 10px;
 }
 .block-spollers__spoller-head {
+  display: flex;
+  justify-content: space-between;
   padding: 15px 20px;
   border-radius: 8px;
   font-weight: 600;
   font-size: 16px;
   background-color: #ffc844;
   cursor: pointer;
+}
+.block-spollers__spoller-head::before {
+  order: 1;
+  margin-left: 15px;
+  font-size: 15px;
+  color: #000;
+  transform: rotate(0);
+  transition: transform 0.3s;
+}
+.block-spollers__spoller-head._active::before {
+  transform: rotate(180deg);
 }
 .block-spollers__spoller-body {
   margin-top: 10px;
