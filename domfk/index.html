@@ -861,6 +861,8 @@
 			
 			
 			
+			
+			
 		</main>
 		<div class="wrapper__btn-down _lp">
 			<div class="btn-down">
@@ -1072,13 +1074,98 @@
 		</div>
 	</div>
 </div>
-<div class="popup popup_massagename-message">
+<div class="popup popup_jobs">
 	<div class="popup__content">
 		<div class="popup__body">
+			<form action="#" class="popup-form">
+				<div class="popup-form__header popup-form__header--p-small">
+					<div class="popup-form__title popup-form__title--align-left">Ваше резюме</div>
+					<div class="popup-form__text"> Заполните форму, и мы обязательно вам перезвоним. Много интересного есть в
+						наших центрах.</div>
+				</div>
+				<div class="popup-form__body popup-form__body--p-small">
+					<div class="popup-form__item">
+						<div class="popup-form__input form-input">
+							<select id='jobs-selected'>
+								<option value="1" selected="selected">Интересующая вакансия</option>
+								<option value="2">Инструктор групповых занятий</option>
+								<option value="3">Администратор</option>
+							</select>
+						</div>
+					</div>
+					<div class="popup-form__item">
+						<div class="popup-form__input form-input">
+							<input type="text" name="email" class="form-input__input" required>
+							<div class="form-input__name">ФИО</div>
+						</div>
+					</div>
+					<div class="popup-form__item">
+						<div class="popup-form__input form-input">
+							<input type="tel" name="phone" class="form-input__input" required>
+							<div class="form-input__name">Ваше телефон или email</div>
+						</div>
+					</div>
+					<div class="popup-form__item">
+						<div class="popup-form__input form-input">
+							<input type="tel" name="resume" class="form-input__input" required>
+							<div class="form-input__name">Ссылка на Ваше резюме</div>
+						</div>
+						<div class="cheсkbox">
+							<label class="checkbox__label">
+								<input checked type="checkbox" class="checkbox__input">
+								<span class="checkbox__block _icon-check"></span>
+								<span>Соглашаюсь на обработку <a href="polzovatelskoe-soglashenie.html">персональных
+										данных</a></span></label>
+						</div>
+					</div>
+				</div>
+				<div class="popup-form__footer">
+					<button type="submit" class="popup-form__btn">Отправить данные</button>
+				</div>
+			</form>
 			<div class="popup__close"></div>
 		</div>
 	</div>
 </div>
+
+<div class="popup popup_questions">
+	<div class="popup__content">
+		<div class="popup__body">
+			<form action="#" class="popup-form">
+				<div class="popup-form__header popup-form__header--p-small">
+					<div class="popup-form__title popup-form__title--align-left">Есть вопросы?</div>
+					<div class="popup-form__text"> Заполните форму, и мы обязательно вам перезвоним. Много интересного есть в
+						наших центрах.</div>
+				</div>
+				<div class="popup-form__body popup-form__body--p-small">
+					<div class="popup-form__item">
+						<div class="form-input">
+							<input type="text" name="name" autocomplete="off" class="form-input__input" required>
+							<div class="form-input__name">Ваше имя</div>
+						</div>
+					</div>
+					<div class="popup-form__item">
+						<div class="form-input">
+							<input type="text" name="email" class="form-input__input" required>
+							<div class="form-input__name">Ваше email</div>
+						</div>
+					</div>
+					<div class="popup-form__item">
+						<div class="form-input">
+							<input type="tel" name="phone" class="form-input__input" required>
+							<div class="form-input__name">Ваше телефон</div>
+						</div>
+					</div>
+				</div>
+				<div class="popup-form__footer">
+					<button type="submit" class="popup-form__btn">Отправить данные</button>
+				</div>
+			</form>
+			<div class="popup__close"></div>
+		</div>
+	</div>
+</div>
+
 <div class="popup popup_video">
 	<div class="popup__content">
 		<div class="popup__body">
