@@ -5794,11 +5794,17 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 .contacts__img {
   flex: 0 0 40%;
   width: 100%;
+  order: -1;
 }
 .contacts__img::before {
   content: "";
   display: block;
   padding-bottom: 98%;
+}
+@media (min-width: 991.98px) {
+  .contacts__img {
+    order: unset;
+  }
 }
 @media (min-width: 1250px) {
   .contacts__img {
