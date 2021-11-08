@@ -639,6 +639,7 @@ body._lock {
 
 .form-input {
   position: relative;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -663,8 +664,13 @@ body._lock {
   top: 10px;
   left: 0;
   transition: top 0.3s, color 0.3s;
-  font-size: 16px;
+  font-size: 14px;
   pointer-events: none;
+}
+@media (min-width: 479.98px) {
+  .form-input__name {
+    font-size: 16px;
+  }
 }
 .form-input__input {
   flex: 1 1 100%;
@@ -698,6 +704,8 @@ body._lock {
   color: #ffc844;
 }
 .form-input__file {
+  position: relative;
+  margin-left: 5px;
   flex: 0 0 30%;
   display: flex;
   align-items: center;
@@ -706,6 +714,20 @@ body._lock {
   font-weight: 700;
   height: 100%;
   gap: 10px;
+  font-size: 12px;
+}
+.form-input__file img {
+  width: 12px;
+  height: 16px;
+}
+@media (min-width: 479.98px) {
+  .form-input__file {
+    font-size: 14px;
+  }
+  .form-input__file img {
+    width: 16px;
+    height: 20px;
+  }
 }
 .form-input__file-input {
   position: absolute;
@@ -808,6 +830,8 @@ textarea.input-primary {
 }
 
 .select {
+  flex: none;
+  width: 100%;
   position: relative;
 }
 .select__item {
@@ -6287,12 +6311,12 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 }
 @media (min-width: 991.98px) {
   .news__item {
-    flex: 1 0 calc(33.3333% - 20px);
+    flex: 0 0 calc(33.3333% - 20px);
   }
 }
 @media (min-width: 1250px) {
   .news__item {
-    flex: 1 0 calc(33.3333% - 40px);
+    flex: 0 0 calc(33.3333% - 40px);
   }
 }
 
