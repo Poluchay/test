@@ -4030,6 +4030,9 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 .footer__top-line {
   margin-bottom: 30px;
 }
+.footer__top-line:first-child {
+  padding-top: 30px;
+}
 @media (min-width: 991.98px) {
   .footer__top-line {
     margin-bottom: 5px;
