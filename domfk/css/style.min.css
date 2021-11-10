@@ -1378,6 +1378,7 @@ textarea.input {
   flex: none;
   width: 12px;
   height: 12px;
+  margin: auto 0;
   margin-right: 9px;
   border-radius: 50%;
   background-color: #ffc844;
