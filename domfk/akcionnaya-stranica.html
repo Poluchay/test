@@ -37,7 +37,7 @@
 	<div class="header__bottom-line  _lp">
 		<div class="_container">
 			<div class="header__inner">
-				<a href="#" class="header__logo">
+				<a href="index.html" class="header__logo">
 					<img src="img/logo.svg" alt="logo" width="104" height="79">
 				</a>
 				<div class="icon-menu">
@@ -49,7 +49,7 @@
 				</div>
 				<div class="header__menu">
 					<div class="header__menu-inner">
-						<a href="#" class="header__btn">
+						<a href="#message" class="header__btn _popup-link">
 							Тест-драйв
 						</a>
 						<nav class="header__nav">
@@ -72,13 +72,19 @@
 									</ul>
 								</li>
 								<li class="header__item">
-									<div class="header__link" data-spoller>Клубы<i class="header__icon _icon-arrow-down"></i></div>
+									<div class="header__link" data-spoller>Центры<i class="header__icon _icon-arrow-down"></i></div>
 									<ul class="header__sub-list">
 										<li>
-											<a href="machugi-single.html" class="header__sub-link">Клуб на Восточно-Кругликовской</a>
+											<a href="vostochka-single.html" class="header__sub-link">Центр на Восточно-Кругликовской</a>
 										</li>
 										<li>
-											<a href="machugi-single.html" class="header__sub-link">Клуб на Мачуги</a>
+											<a href="machugi-single.html" class="header__sub-link">Центр на Мачуги</a>
+										</li>
+										<li>
+											<a href="fotogalereya.html" class="header__sub-link">Фотогалерея</a>
+										</li>
+										<li>
+											<a href="video.html" class="header__sub-link">Видео</a>
 										</li>
 									</ul>
 								</li>
@@ -86,10 +92,10 @@
 									<div class="header__link" data-spoller>Клубные карты <i class="header__icon _icon-arrow-down"></i></div>
 									<ul class="header__sub-list">
 										<li>
-											<a href="machugi-single.html" class="header__sub-link">#ВОСТОЧКА</a>
+											<a href="vostochka-single.html#card-link" class="header__sub-link">#ВОСТОЧКА</a>
 										</li>
 										<li>
-											<a href="machugi-single.html" class="header__sub-link">#МАЧУГИ</a>
+											<a href="machugi-single.html#card-link" class="header__sub-link">#МАЧУГИ</a>
 										</li>
 									</ul>
 								</li>
@@ -160,8 +166,8 @@
             <div class="contacts-form__item">
                <select>
                   <option value="1" selected="selected">Удобный филиал</option>
-                  <option value="2">Инструктор групповых занятий</option>
-                  <option value="3">Администратор</option>
+                  <option value="2">#МАЧУГИ</option>
+                  <option value="3">#ВОСТОЧКА</option>
                </select>
                <input type="text" placeholder="Ваше имя" required class="contacts-form__input input-primary">
                <input type="text" placeholder="Контактный телефон" required class="contacts-form__input input-primary">
@@ -192,7 +198,7 @@
                      <li>Спецпредложения при одновременном оформлении вдвоем и более</li>
                   </ul>
                   <div class="text-widget__btn">
-                     <button class="btn-primary btn-primary--fw-mob">Оставить заявку</button>
+                     <a href="#message" class="btn-primary btn-primary--fw-mob _popup-link">Оставить заявку</a>
                   </div>
                </div>
                <div class="text-widget__column-media">
@@ -217,10 +223,11 @@
          <span class="lt-section__sub-title lt-section__sub-title--t-red">Узнайте подробности и оставьте заявку на
             оформление абонемента
             по тел.: 205-15-64</span>
-         <button class="btn-primary btn-primary--fw-mob">Записаться</button>
+         <a href="#message" class="btn-primary btn-primary--fw-mob _popup-link">Записаться</a>
       </div>
    </div>
 </div>
+			
 			
 			
 			
@@ -301,10 +308,10 @@
 		<div class="footer__top-line">
 			<div class="footer__columns">
 				<div class="footer__column">
-					<a href="#" class="footer__logo">
+					<a href="index.html" class="footer__logo">
 						<img src="img/logo-large.png" alt="Дом Физкультурника">
 					</a>
-					<a href="#" class="btn-primary btn-primary--small">Тест-драйв</a>
+					<a href="#message" class="btn-primary btn-primary--small _popup-link">Тест-драйв</a>
 				</div>
 				<div class="footer__column">
 					<nav class="footer-nav">
@@ -318,7 +325,7 @@
 							<li><a class="footer-nav__link" href="#">Контакты</a></li>
 						</ul>
 						<ul class="footer-nav__list">
-							<li><a class="footer-nav__link" href="#"> ПОЛЬЗОВАТЕЛЬСКОЕ СОГЛАШЕНИЕ</a> </li>
+							<li><a class="footer-nav__link" href="polzovatelskoe-soglashenie.html"> ПОЛЬЗОВАТЕЛЬСКОЕ СОГЛАШЕНИЕ</a> </li>
 							<li><a class="footer-nav__link" href="#"> ПРАВИЛА ПОСЕЩЕНИЯ КЛУБА</a> </li>
 							<li><a class="footer-nav__link" href="#"> ПРАВИЛА ДЕТСКОГО КЛУБА</a> </li>
 							<li><a class="footer-nav__link" href="#"> ТЕХНИКА БЕЗОПАСНОСТИ</a> </li>
@@ -431,6 +438,15 @@
 							<div class="form-input__name">Ваше телефон</div>
 						</div>
 					</div>
+					<div class="popup-form__item">
+						<div class="cheсkbox">
+							<label class="checkbox__label">
+								<input checked type="checkbox" class="checkbox__input">
+								<span class="checkbox__block _icon-check"></span>
+								<span>Соглашаюсь на обработку <a href="polzovatelskoe-soglashenie.html">персональных
+										данных</a></span></label>
+						</div>
+					</div>
 				</div>
 				<div class="popup-form__footer">
 					<button type="submit" class="popup-form__btn">Отправить данные</button>
@@ -533,6 +549,15 @@
 						<div class="form-input">
 							<textarea class="form-input__textarea" required></textarea>
 							<div class="form-input__name">Текст вопроса</div>
+						</div>
+					</div>
+					<div class="popup-form__item">
+						<div class="cheсkbox">
+							<label class="checkbox__label">
+								<input checked type="checkbox" class="checkbox__input">
+								<span class="checkbox__block _icon-check"></span>
+								<span>Соглашаюсь на обработку <a href="polzovatelskoe-soglashenie.html">персональных
+										данных</a></span></label>
 						</div>
 					</div>
 				</div>
