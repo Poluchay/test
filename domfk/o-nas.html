@@ -61,13 +61,16 @@
 											<a href="o-nas.html" class="header__sub-link">О Компании</a>
 										</li>
 										<li>
+											<a href="uslugi.html" class="header__sub-link">Услуги</a>
+										</li>
+										<li>
 											<a href="team.html" class="header__sub-link">Команда</a>
 										</li>
 										<li>
 											<a href="jobs.html" class="header__sub-link">Вакансии</a>
 										</li>
 										<li>
-											<a href="contacts.html" class="header__sub-link">Контакты</a>
+											<a href="contacts.html" class="header__sub-link  _active">Контакты</a>
 										</li>
 									</ul>
 								</li>
@@ -100,7 +103,7 @@
 									</ul>
 								</li>
 								<li class="header__item">
-									<a class="header__link" href="novosti.html">Новости</a>
+									<a class="header__link _active" href="novosti.html">Новости</a>
 								</li>
 								<li class="header__item">
 									<a class="header__link header__link--red" href="#">Приложение</a>
@@ -219,6 +222,40 @@
    <div class="decor-block">
       <img class="decor-block__img-left" src="img/decor/gromofon-blur.png" alt="decor">
       <img class="decor-block__img-right" src="img/decor/ruka.svg" alt="decor">
+   </div>
+</section>
+
+<section class="page__section lt-section">
+   <div class="lt-section__container _container">
+      <div class="lt-section__header lt-section__header--m80 ">
+         <h2 class="lt-section__title section-title">О нас на видео</h2>
+      </div>
+      <div class="lt-section__body">
+         <div class="lt-columns lt-columns__item--m-medium">
+            <div class="lt-columns__item lt-columns__item--columns-two">
+               <div class="video-card">
+                  <div class="video-card__body">
+                     <a href="#video" class="video-card__link _popup-link  _ibg" data-video="bM7SZ5SBzyY">
+                        <img class="lazyload"
+                           src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                           data-src="img/foto/img-2.jpg" alt="Бассейны" data-sizes="auto">
+                     </a>
+                  </div>
+               </div>
+            </div>
+            <div class="lt-columns__item lt-columns__item--columns-two">
+               <div class="video-card">
+                  <div class="video-card__body">
+                     <a href="#video" class="video-card__link _popup-link  _ibg" data-video="bM7SZ5SBzyY">
+                        <img class="lazyload"
+                           src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                           data-src="img/foto/img-2.jpg" alt="Бассейны" data-sizes="auto">
+                     </a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
    </div>
 </section>
 
@@ -349,7 +386,8 @@
 							<li><a class="footer-nav__link" href="#">Контакты</a></li>
 						</ul>
 						<ul class="footer-nav__list">
-							<li><a class="footer-nav__link" href="polzovatelskoe-soglashenie.html"> ПОЛЬЗОВАТЕЛЬСКОЕ СОГЛАШЕНИЕ</a> </li>
+							<li><a class="footer-nav__link" href="polzovatelskoe-soglashenie.html"> ПОЛЬЗОВАТЕЛЬСКОЕ
+									СОГЛАШЕНИЕ</a> </li>
 							<li><a class="footer-nav__link" href="#"> ПРАВИЛА ПОСЕЩЕНИЯ КЛУБА</a> </li>
 							<li><a class="footer-nav__link" href="#"> ПРАВИЛА ДЕТСКОГО КЛУБА</a> </li>
 							<li><a class="footer-nav__link" href="#"> ТЕХНИКА БЕЗОПАСНОСТИ</a> </li>
@@ -365,9 +403,9 @@
 				</div>
 				<div class="footer__column footer__column--flex">
 					<div class="footer__contacts-column">
-						<span class="footer__column-title">
+						<a href="vostochka-single.html" class="footer__column-title">
 							Восточно-Кругликовская
-						</span>
+						</a>
 						<div class="footer__contacts">
 							<a class="footer__contacts-link" href="tel:205-01-11"><img src="img/footer/phone.svg" alt="">
 								205-01-11</a>
@@ -391,9 +429,9 @@
 						</div>
 					</div>
 					<div class="footer__contacts-column">
-						<span class="footer__column-title">
+						<a href="machugi-single.html" class="footer__column-title">
 							Мачуги
-						</span>
+						</a>
 						<div class="footer__contacts">
 							<a class="footer__contacts-link" href="tel:205-01-11"><img src="img/footer/phone.svg" alt="">
 								205-01-11</a>
@@ -426,7 +464,10 @@
 				<p>ИНН 2311158499</p>
 			</div>
 			<div class="footer__right footer-right">
-				<a class="footer-right__link" href="#"><img src="img/footer/duns.png" alt="wbs"></a>
+				<div class="footer-right__inner">
+					<a class="footer-right__link footer-right__link--halva" href="#"><img src="img/footer/halva.jpg" alt="halva"></a>
+					<a class="footer-right__link" href="#"><img src="img/footer/duns.png" alt="duns"></a>
+				</div>
 				<div class="dev">
 					Разработка сайта:
 					<a class="dev__link" href="#"><img src="img/footer/dev.png" alt="wbs"></a>
