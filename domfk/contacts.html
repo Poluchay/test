@@ -61,13 +61,16 @@
 											<a href="o-nas.html" class="header__sub-link">О Компании</a>
 										</li>
 										<li>
+											<a href="uslugi.html" class="header__sub-link">Услуги</a>
+										</li>
+										<li>
 											<a href="team.html" class="header__sub-link">Команда</a>
 										</li>
 										<li>
 											<a href="jobs.html" class="header__sub-link">Вакансии</a>
 										</li>
 										<li>
-											<a href="contacts.html" class="header__sub-link">Контакты</a>
+											<a href="contacts.html" class="header__sub-link  _active">Контакты</a>
 										</li>
 									</ul>
 								</li>
@@ -100,7 +103,7 @@
 									</ul>
 								</li>
 								<li class="header__item">
-									<a class="header__link" href="novosti.html">Новости</a>
+									<a class="header__link _active" href="novosti.html">Новости</a>
 								</li>
 								<li class="header__item">
 									<a class="header__link header__link--red" href="#">Приложение</a>
@@ -223,6 +226,24 @@
    </div>
 </section>
 
+<div class="page__section lt-section">
+   <div class="lt-section__container _container">
+      <div class="lt-section__body">
+         <div class="text">
+            <div class="text__block">
+               <p>Адрес для корреспонденции:</p>
+               <p>350901, Краснодарский край, г. Краснодар,</p>
+               <p>ул. Восточно-Кругликовская, д. 64/2,</p>
+            </div>
+            <div class="text__block">
+               <p>Почта для предложений и пожеланий - <a href="mailto:info@domfk.ru">info@domfk.ru</a></p>
+               <p>Почта отдела продаж - <a href="mailto:manager@domfk.ru">manager@domfk.ru</a></p>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
+
 <div id="map" class="page__section map">
 </div>
 
@@ -337,7 +358,8 @@
 							<li><a class="footer-nav__link" href="#">Контакты</a></li>
 						</ul>
 						<ul class="footer-nav__list">
-							<li><a class="footer-nav__link" href="polzovatelskoe-soglashenie.html"> ПОЛЬЗОВАТЕЛЬСКОЕ СОГЛАШЕНИЕ</a> </li>
+							<li><a class="footer-nav__link" href="polzovatelskoe-soglashenie.html"> ПОЛЬЗОВАТЕЛЬСКОЕ
+									СОГЛАШЕНИЕ</a> </li>
 							<li><a class="footer-nav__link" href="#"> ПРАВИЛА ПОСЕЩЕНИЯ КЛУБА</a> </li>
 							<li><a class="footer-nav__link" href="#"> ПРАВИЛА ДЕТСКОГО КЛУБА</a> </li>
 							<li><a class="footer-nav__link" href="#"> ТЕХНИКА БЕЗОПАСНОСТИ</a> </li>
@@ -353,9 +375,9 @@
 				</div>
 				<div class="footer__column footer__column--flex">
 					<div class="footer__contacts-column">
-						<span class="footer__column-title">
+						<a href="vostochka-single.html" class="footer__column-title">
 							Восточно-Кругликовская
-						</span>
+						</a>
 						<div class="footer__contacts">
 							<a class="footer__contacts-link" href="tel:205-01-11"><img src="img/footer/phone.svg" alt="">
 								205-01-11</a>
@@ -379,9 +401,9 @@
 						</div>
 					</div>
 					<div class="footer__contacts-column">
-						<span class="footer__column-title">
+						<a href="machugi-single.html" class="footer__column-title">
 							Мачуги
-						</span>
+						</a>
 						<div class="footer__contacts">
 							<a class="footer__contacts-link" href="tel:205-01-11"><img src="img/footer/phone.svg" alt="">
 								205-01-11</a>
@@ -414,7 +436,10 @@
 				<p>ИНН 2311158499</p>
 			</div>
 			<div class="footer__right footer-right">
-				<a class="footer-right__link" href="#"><img src="img/footer/duns.png" alt="wbs"></a>
+				<div class="footer-right__inner">
+					<a class="footer-right__link footer-right__link--halva" href="#"><img src="img/footer/halva.jpg" alt="halva"></a>
+					<a class="footer-right__link" href="#"><img src="img/footer/duns.png" alt="duns"></a>
+				</div>
 				<div class="dev">
 					Разработка сайта:
 					<a class="dev__link" href="#"><img src="img/footer/dev.png" alt="wbs"></a>

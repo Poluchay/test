@@ -6697,6 +6697,23 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   margin-top: 1.45em;
 }
 
+.text {
+  text-align: center;
+  line-height: 1.4;
+}
+.text__block p:not(:last-child) {
+  margin-bottom: 10px;
+}
+.text__block:not(:last-child) {
+  margin-bottom: 25px;
+}
+.text__block a {
+  font-weight: 700;
+}
+.text__block a:hover {
+  color: #ff0000;
+}
+
 .lt-article__header:not(:last-child) {
   margin-bottom: 25px;
 }
