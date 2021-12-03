@@ -7029,3 +7029,33 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 .page {
   flex: 1 1 auto;
 }
+.page__header:not(:last-child) {
+  margin-bottom: 100px;
+}
+@media (max-width: 1238px) {
+  .page__header:not(:last-child) {
+    margin-bottom: calc(70px + 30 * ((100vw - 320px) / 918));
+  }
+}
+.page__section {
+  margin-bottom: 100px;
+}
+@media (max-width: 1238px) {
+  .page__section {
+    margin-bottom: calc(70px + 30 * ((100vw - 320px) / 918));
+  }
+}
+.page__article {
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+@media (max-width: 1238px) {
+  .page__article {
+    margin-top: calc(30px + 20 * ((100vw - 320px) / 918));
+  }
+}
+@media (max-width: 1238px) {
+  .page__article {
+    margin-bottom: calc(70px + 30 * ((100vw - 320px) / 918));
+  }
+}
