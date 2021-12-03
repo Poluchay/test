@@ -6294,7 +6294,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   display: flex;
   flex-direction: column;
   gap: 50px;
-  padding: 10px 0 50px;
+  padding: 10px 0 0;
 }
 @media (min-width: 991.98px) {
   .stock-card {
