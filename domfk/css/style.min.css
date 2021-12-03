@@ -1673,7 +1673,7 @@ textarea.input {
   width: 15px;
   height: 18px;
 }
-@media (min-width: 479.98px) {
+@media (min-width: 340px) {
   .icon-button {
     flex: 0 0 36px;
     width: 36px;
@@ -3716,13 +3716,6 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   height: 100%;
 }
 @media (min-width: 340px) {
-  .header__logo {
-    flex: 0 0 70px;
-    width: 70px;
-    height: 49px;
-  }
-}
-@media (min-width: 479.98px) {
   .header__logo {
     flex: 0 0 90px;
     width: 90px;
