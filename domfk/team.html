@@ -58,9 +58,18 @@
 						</div>
 						<div class="header__menu">
 							<div class="header__menu-inner">
-								<a href="#message" class="header__btn _popup-link">
-									Тест-драйв
-								</a>
+								<div class="header__user header-user _dropdown">
+									<div class="header-user__head _dropdown-button">
+										<!-- <img class="header-user__icon" src="img/icons/user.svg" alt="user" height="22" width="22"> -->
+										<i class="header-user__icon _icon-user"></i>
+										<!-- <span class="header-user__name">Личный кабинет</span> -->
+										<i class="header-user__arrow _icon-arrow-down"></i>
+									</div>
+									<ul class="header-user__body _dropdown-body">
+										<li><a class="header-user__link" href="#">Мой Профиль</a></li>
+										<li><button class="header-user__link _show">Выход</button></li>
+									</ul>
+								</div>
 								<nav class="header__nav">
 									<ul class="header__list" data-spollers="992,max" data-one-spoller>
 										<li class="header__item">
@@ -131,18 +140,9 @@
 										<img src="img/icons/search.svg" alt="search">
 									</div>
 								</div>
-								<div class="header__user header-user _dropdown">
-									<div class="header-user__head _dropdown-button">
-										<!-- <img class="header-user__icon" src="img/icons/user.svg" alt="user" height="22" width="22"> -->
-										<i class="header-user__icon _icon-user"></i>
-										<!-- <span class="header-user__name">Личный кабинет</span> -->
-										<i class="header-user__arrow _icon-arrow-down"></i>
-									</div>
-									<ul class="header-user__body _dropdown-body">
-										<li><a class="header-user__link" href="#">Мой Профиль</a></li>
-										<li><button class="header-user__link _show">Выход</button></li>
-									</ul>
-								</div>
+								<a href="#message" class="header__btn _popup-link">
+									Тест-драйв
+								</a>
 							</div>
 						</div>
 					</div>
@@ -169,19 +169,17 @@
                   data-src="img/card/card-2-pc.png" alt="Бассейны" data-sizes="auto">
             </div>
          </div>
+         <div class="team-nav">
+            <a class="team-nav__link _active" href="team.html">Бассейн</a>
+            <a class="team-nav__link" href="team.html">Тренажерный зал</a>
+            <a class="team-nav__link" href="team.html">Групповые программы</a>
+            <a class="team-nav__link" href="team.html">Отдел продаж</a>
+            <a class="team-nav__link" href="team.html">Массаж</a>
+         </div>
       </div>
    </div>
    <div class="lt-tabs__block _tabs-block">
       <div class="lt-block">
-         <div class="lt-block__header">
-            <div class="lt-block__container _container">
-               <div class="lt-block__inner">
-                  <div class="lt-block__title">
-                     тренажерный зал
-                  </div>
-               </div>
-            </div>
-         </div>
          <div class="lt-block__body">
             <div class="lt-block__content _container">
                <div class="team-block">
@@ -240,15 +238,6 @@
    </div>
    <div class="lt-tabs__block _tabs-block  _active">
       <div class="lt-block">
-         <div class="lt-block__header">
-            <div class="lt-block__container _container">
-               <div class="lt-block__inner">
-                  <div class="lt-block__title">
-                     басейн
-                  </div>
-               </div>
-            </div>
-         </div>
          <div class="lt-block__body">
             <div class="lt-block__content _container">
                <div class="team-block">
@@ -298,25 +287,6 @@
                            подробнее
                         </a>
                      </div>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </div>
-      <div class="lt-block">
-         <div class="lt-block__header">
-            <div class="lt-block__container _container">
-               <div class="lt-block__inner">
-                  <div class="lt-block__title">
-                     тренажерный зал
-                  </div>
-               </div>
-            </div>
-         </div>
-         <div class="lt-block__body">
-            <div class="lt-block__content _container">
-               <div class="team-block">
-                  <div class="team-block__items">
                      <div class="team-block__item">
                         <div class="team-block__img _ibg">
                            <a href="single-person.html">
@@ -483,6 +453,7 @@
 							Восточно-Кругликовская
 						</a>
 						<div class="footer__contacts">
+							<p class="footer__contacts-link"><img src="img/footer/time.svg" alt="time">Пн-Вс: 07:00-21:00</p>
 							<a class="footer__contacts-link" href="tel:205-01-11"><img src="img/footer/phone.svg" alt="">
 								205-01-11</a>
 							<a class="footer__contacts-link" href="#"><img src="img/footer/marker.svg" alt=""> г. Краснодар,
@@ -499,9 +470,6 @@
 							<a href="#" class="social__link">
 								<i class="social__icon _icon-instagram"></i>
 							</a>
-							<a href="#" class="social__link">
-								<i class="social__icon _icon-viber-brands"></i>
-							</a>
 						</div>
 					</div>
 					<div class="footer__contacts-column">
@@ -509,6 +477,7 @@
 							Мачуги
 						</a>
 						<div class="footer__contacts">
+							<p class="footer__contacts-link"><img src="img/footer/time.svg" alt="time">Пн-Вс: 07:00-21:00</p>
 							<a class="footer__contacts-link" href="tel:205-01-11"><img src="img/footer/phone.svg" alt="">
 								205-01-11</a>
 							<a class="footer__contacts-link" href="tel:205-02-22"><img src="img/footer/marker.svg" alt=""> г.
@@ -524,9 +493,6 @@
 							</a>
 							<a href="#" class="social__link">
 								<i class="social__icon _icon-instagram"></i>
-							</a>
-							<a href="#" class="social__link">
-								<i class="social__icon _icon-viber-brands"></i>
 							</a>
 						</div>
 					</div>

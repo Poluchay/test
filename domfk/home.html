@@ -58,9 +58,18 @@
 						</div>
 						<div class="header__menu">
 							<div class="header__menu-inner">
-								<a href="#message" class="header__btn _popup-link">
-									Тест-драйв
-								</a>
+								<div class="header__user header-user _dropdown">
+									<div class="header-user__head _dropdown-button">
+										<!-- <img class="header-user__icon" src="img/icons/user.svg" alt="user" height="22" width="22"> -->
+										<i class="header-user__icon _icon-user"></i>
+										<!-- <span class="header-user__name">Личный кабинет</span> -->
+										<i class="header-user__arrow _icon-arrow-down"></i>
+									</div>
+									<ul class="header-user__body _dropdown-body">
+										<li><a class="header-user__link" href="#">Мой Профиль</a></li>
+										<li><button class="header-user__link _show">Выход</button></li>
+									</ul>
+								</div>
 								<nav class="header__nav">
 									<ul class="header__list" data-spollers="992,max" data-one-spoller>
 										<li class="header__item">
@@ -131,18 +140,9 @@
 										<img src="img/icons/search.svg" alt="search">
 									</div>
 								</div>
-								<div class="header__user header-user _dropdown">
-									<div class="header-user__head _dropdown-button">
-										<!-- <img class="header-user__icon" src="img/icons/user.svg" alt="user" height="22" width="22"> -->
-										<i class="header-user__icon _icon-user"></i>
-										<!-- <span class="header-user__name">Личный кабинет</span> -->
-										<i class="header-user__arrow _icon-arrow-down"></i>
-									</div>
-									<ul class="header-user__body _dropdown-body">
-										<li><a class="header-user__link" href="#">Мой Профиль</a></li>
-										<li><button class="header-user__link _show">Выход</button></li>
-									</ul>
-								</div>
+								<a href="#message" class="header__btn _popup-link">
+									Тест-драйв
+								</a>
 							</div>
 						</div>
 					</div>
@@ -202,6 +202,7 @@
                <div class="card-info__text">
                   <p>ул. Восточно-Кругликовская д. 64 / 2</p>
                   <a href="tel:+78612199720">+7 (861) 219-97-20</a>
+                  <p class="card-info__time"><img src="img/advantages/icon-1.svg" alt="time"> Пн-Вс: 07:00-21:00</p>
                </div>
                <a href="vostochka-single.html" class="card-info__btn btn-primary btn-primary--mob-small">Подробнее</a>
             </div>
@@ -214,6 +215,7 @@
                <div class="card-info__text">
                   <p>г. Краснодар, ул. Мачуги, дом. 4/2</p>
                   <a href="tel:+78612199784">+7 (861) 219-97-84</a>
+                  <p class="card-info__time"><img src="img/advantages/icon-1.svg" alt="time"> Пн-Вс: 07:00-21:00</p>
                </div>
                <a href="machugi-single.html" class="card-info__btn btn-primary btn-primary--mob-small">Подробнее</a>
             </div>
@@ -221,382 +223,6 @@
       </div>
    </div>
 </section>
-
-<section class="page__section lt-section">
-   <div class="lt-section__container _container">
-      <div class="lt-section__header lt-section__header--m-small">
-         <h2 class="lt-section__title section-title">Новости</h2>
-      </div>
-      <div class="lt-section__body slider">
-         <div class="lt-section__slider-nav">
-            <div class="lt-section__btn-prev slider-nav-prev _icon-arrow-left"></div>
-            <div class="slider-nav-next _icon-arrow-right"></div>
-         </div>
-         <div class="swiper slider__body">
-            <div class="swiper-wrapper slider__wrapper">
-               <a href="#" class="swiper-slide single-card">
-                  <div class="single-card__img _ibg">
-                     <img class="lazyload"
-                        src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-                        data-src="img/programm/img-1.jpg" alt="Бассейны" data-sizes="auto">
-                  </div>
-                  <div class="single-card__body-slide">
-                     <h3 class="single-card__title">
-                        Новость номер один
-                     </h3>
-                     <div class="single-card__text">
-                        <p>
-                           25-метровый спортивный бассейн и детский бассейн с современной системой фильтрации
-                        </p>
-                     </div>
-                  </div>
-               </a>
-               <a href="#" class="swiper-slide single-card">
-                  <div class="single-card__img _ibg">
-                     <img class="lazyload"
-                        src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-                        data-src="img/programm/img-2.jpg" alt="Бассейны" data-sizes="auto">
-                  </div>
-                  <div class="single-card__body-slide">
-                     <h3 class="single-card__title">
-                        Новость номер два
-                     </h3>
-                     <div class="single-card__text">
-                        <p>
-                           700 кв.м. тренажерный зал, оснащенный лучшим оборудованием и комфортабельными раздевалками
-                        </p>
-                     </div>
-                  </div>
-               </a>
-               <a href="#" class="swiper-slide single-card">
-                  <div class="single-card__img _ibg">
-                     <img class="lazyload"
-                        src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-                        data-src="img/programm/img-3.jpg" alt="Бассейны" data-sizes="auto">
-                  </div>
-                  <div class="single-card__body-slide">
-                     <h3 class="single-card__title">
-                        Новость номер три
-                     </h3>
-                     <div class="single-card__text">
-                        <p>
-                           3 зала фитнес тренировок в сопровождении тренера, кардио-зона, cycle… выбор на любой возраст,
-                           темп и уровень сложности
-                        </p>
-                     </div>
-                  </div>
-               </a>
-            </div>
-         </div>
-      </div>
-      <div class="lt-section__footer">
-         <a href="novosti.html" class="btn-primary">Смотреть все</a>
-      </div>
-   </div>
-</section>
-
-<section class="page__section lt-section lt-section--decor">
-   <div class="lt-section__container lt-section__container--index-high _container">
-      <div class="lt-section__header lt-section__header--m80 ">
-         <h2 class="lt-section__title section-title">Наши приемущества</h2>
-      </div>
-      <div class="lt-section__body">
-         <div class="advantages">
-            <a href="#popup-text" class="advantages__item _popup-link">
-               <div class="advantages__icon">
-                  <img src="img/advantages/icon-1.svg" alt="Время">
-               </div>
-               <div class="advantages__text">
-                  <p>Разнообразное расписание</p>
-               </div>
-            </a>
-            <a href="#popup-text" class="advantages__item _popup-link">
-               <div class="advantages__icon">
-                  <img src="img/advantages/icon-10.png" alt="Команда">
-               </div>
-               <div class="advantages__text">
-                  <p>Экспертная команда</p>
-               </div>
-            </a>
-            <a href="#popup-text" class="advantages__item _popup-link">
-               <div class="advantages__icon">
-                  <img src="img/advantages/icon-9.png" alt="Скидка">
-               </div>
-               <div class="advantages__text">
-                  <p>Выгодные предложения</p>
-               </div>
-            </a>
-            <a href="#popup-text" class="advantages__item _popup-link">
-               <div class="advantages__icon">
-                  <img src="img/advantages/icon-8.png" alt="family">
-               </div>
-               <div class="advantages__text">
-                  <p>Программы для всех</p>
-               </div>
-            </a>
-            <a href="#popup-text" class="advantages__item _popup-link">
-               <div class="advantages__icon">
-                  <img src="img/advantages/icon-7.png" alt="people">
-               </div>
-               <div class="advantages__text">
-                  <p>Интересная клубная жизнь</p>
-               </div>
-            </a>
-            <a href="#popup-text" class="advantages__item _popup-link">
-               <div class="advantages__icon">
-                  <img src="img/advantages/icon-6.svg" alt="message">
-               </div>
-               <div class="advantages__text">
-                  <p>Делаем то, что проповедуем</p>
-               </div>
-            </a>
-            <a href="#popup-text" class="advantages__item _popup-link">
-               <div class="advantages__icon">
-                  <img src="img/advantages/icon-5.svg" alt="heart">
-               </div>
-               <div class="advantages__text">
-                  <p>Работа с любовью</p>
-               </div>
-            </a>
-         </div>
-      </div>
-      <div class="lt-section__footer">
-         <a href="#message" class="btn-primary _popup-link">Запишись на тест драйв</a>
-      </div>
-   </div>
-   <div class="decor-block">
-      <img class="decor-block__img-left" src="img/decor/gromofon-blur.png" alt="decor">
-      <img class="decor-block__img-right" src="img/decor/ruka.svg" alt="decor">
-   </div>
-</section>
-
-<section class="page__section lt-section">
-   <div class="lt-section__container _container">
-      <div class="lt-section__header">
-         <h2 class="lt-section__title section-title">Наши программы</h2>
-      </div>
-      <div class="lt-section__body slider slider--view-two _tabs">
-         <div class="slider__inner">
-            <div class="slider__tabs-nav">
-               <div class="slider__nav-item">
-                  <span class="slider__tab _tabs-item _active">
-                     Клуб на Мачуги
-                  </span>
-                  <a href="programm.html" class="slider__tab-link">Смотреть
-                     все</a>
-               </div>
-               <div class="slider__nav-item">
-                  <span class="slider__tab _tabs-item">
-                     Клуб на Восточно-Кругликовской
-                  </span>
-                  <a href="programm.html" class="slider__tab-link">Смотреть все</a>
-               </div>
-            </div>
-            <div class="slider__tabs-block _tabs-block _active">
-               <div class="slider__nav">
-                  <div class="slider__btn-prev slider-nav-prev _icon-arrow-left"></div>
-                  <div class="slider__btn-next slider-nav-next _icon-arrow-right"></div>
-               </div>
-               <div class="swiper slider__body">
-                  <div class="swiper-wrapper slider__wrapper">
-                     <a href="#" class="swiper-slide single-card">
-                        <div class="single-card__img _ibg">
-                           <img class="lazyload"
-                              src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-                              data-src="img/programm/img-1.jpg" alt="Бассейны" data-sizes="auto">
-                           <div class="single-card__img-text">
-                              Бассейны
-                           </div>
-                        </div>
-                     </a>
-                     <a href="#" class="swiper-slide single-card">
-                        <div class="single-card__img _ibg">
-                           <img class="lazyload"
-                              src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-                              data-src="img/programm/img-2.jpg" alt="Групповые занятия" data-sizes="auto">
-                           <div class="single-card__img-text">
-                              Групповые занятия
-                           </div>
-                        </div>
-                     </a>
-                     <a href="#" class="swiper-slide single-card">
-                        <div class="single-card__img _ibg">
-                           <img class="lazyload"
-                              src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-                              data-src="img/programm/img-3.jpg" alt="Тренажерный зал" data-sizes="auto">
-                           <div class="single-card__img-text">
-                              Тренажерный зал
-                           </div>
-                        </div>
-                     </a>
-                  </div>
-               </div>
-            </div>
-            <div class="slider__tabs-block _tabs-block">
-               <div class="slider__nav">
-                  <div class="slider__btn-prev slider-nav-prev _icon-arrow-left"></div>
-                  <div class="slider__btn-next slider-nav-next _icon-arrow-right"></div>
-               </div>
-               <div class="swiper slider__body">
-                  <div class="swiper-wrapper slider__wrapper">
-                     <a href="#" class="swiper-slide single-card">
-                        <div class="single-card__img _ibg">
-                           <img class="lazyload"
-                              src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-                              data-src="img/programm/img-2.jpg" alt="Бассейны" data-sizes="auto">
-                           <div class="single-card__img-text">
-                              Бассейны
-                           </div>
-                        </div>
-                     </a>
-                     <a href="#" class="swiper-slide single-card">
-                        <div class="single-card__img _ibg">
-                           <img class="lazyload"
-                              src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-                              data-src="img/programm/img-3.jpg" alt="Групповые занятия" data-sizes="auto">
-                           <div class="single-card__img-text">
-                              Групповые занятия
-                           </div>
-                        </div>
-                     </a>
-                     <a href="#" class="swiper-slide single-card">
-                        <div class="single-card__img _ibg">
-                           <img class="lazyload"
-                              src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-                              data-src="img/programm/img-3.jpg" alt="Тренажерный зал" data-sizes="auto">
-                           <div class="single-card__img-text">
-                              Тренажерный зал
-                           </div>
-                        </div>
-                     </a>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </div>
-      <div class="lt-section__footer">
-         <a href="#message" class="btn-primary  _popup-link">Запишись на тест драйв</a>
-      </div>
-   </div>
-</section>
-
-<div class="page__section">
-   <div class="_container">
-      <div class="about">
-         <div class="about__items">
-            <div class="about__item">
-               <span class="about__number" data-letters="5">
-                  5
-               </span>
-               <div class="about__text">
-                  <p>Более 5 лет на
-                     рынке</p>
-               </div>
-            </div>
-            <div class="about__item">
-               <span class="about__number" data-letters="14">
-                  14
-               </span>
-               <div class="about__text">
-                  <p>Рабочих часов
-                     в сутки</p>
-               </div>
-            </div>
-            <div class="about__item">
-               <span class="about__number" data-letters="364">
-                  364
-               </span>
-               <div class="about__text">
-                  <p>Рабочих дня
-                     в году</p>
-               </div>
-            </div>
-            <div class="about__item">
-               <span class="about__number" data-letters="7 300">
-                  7 300
-               </span>
-               <div class="about__text">
-                  <p>м2 для
-                     тренировок</p>
-               </div>
-            </div>
-            <div class="about__item">
-               <span class="about__number" data-letters="5">
-                  5
-               </span>
-               <div class="about__text">
-                  <p>Видов
-                     групповых
-                     уроков</p>
-               </div>
-            </div>
-            <div class="about__item">
-               <span class="about__number" data-letters="56">
-                  56
-               </span>
-               <div class="about__text">
-                  <p>Единиц
-                     тренажёров</p>
-               </div>
-            </div>
-            <div class="about__item">
-               <span class="about__number" data-letters="8">
-                  8
-               </span>
-               <div class="about__text">
-                  <p>ми кратный
-                     обмен воздуха</p>
-               </div>
-            </div>
-            <div class="about__item">
-               <span class="about__number" data-letters="12">
-                  12
-               </span>
-               <div class="about__text">
-                  <p>Ответ на любое
-                     обращение
-                     в течении
-                     12 часов</p>
-               </div>
-            </div>
-         </div>
-      </div>
-   </div>
-</div>
-
-<div class="page__section widget-line" style="background-image: url(img/about-block/about-block-bg.png);">
-   <div class="widget-line__container _container-left">
-      <div class="widget-line__content">
-         <div class="widget-line__text">
-            <p>Фитнес-наша жизнь!</p>
-            <p>Делаем фитнес доступным <br> для всей семьи!</p>
-         </div>
-         <div class="widget-line__img _ibg">
-            <img src="img/stock/stock-1.jpg" alt="">
-         </div>
-      </div>
-   </div>
-</div>
-
-<!-- <section class="page__section stock">
-   <div class="stock__container _container">
-      <div class="stock__body">
-         <h2 class="stock__title">Акция!</h2>
-         <div class="stock__text">
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-               industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
-               scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap
-               into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the
-               release of Letraset</p>
-         </div>
-         <a href="#" class="stock__btn btn-primary btn-primary--medium">Получить подарок</a>
-      </div>
-   </div>
-   <div class="stock__bg _ibg">
-      <img class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-         data-src="img/stock/bg-stock.jpg" alt="bg" data-sizes="auto">
-   </div>
-</section> -->
 
 <section class="page__section lt-section">
    <div class="lt-section__container _container">
@@ -624,43 +250,6 @@
                </div>
                <div class="cards__slider swiper slider-card">
                   <div class="swiper-wrapper slider-card__wrapper">
-                     <div class="swiper-slide slider-card__slide card-link">
-                        <div class="card-link__img _ibg">
-                           <img class="lazyload"
-                              src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-                              data-src="img/card-link/card.jpg" alt="люкс" data-sizes="auto">
-                        </div>
-                        <div class="card-link__title">
-                           Люкс - 12 мес.
-                        </div>
-                        <ul class="card-link__list">
-                           <li><b>13 000</b> на депозит</li>
-                           <li><b>12 месяцев</b> посещения</li>
-                           <li><b>60 дней</b> заморозки</li>
-                           <li><b>2</b> подарочные тренировки</li>
-                           <li><b>5</b> гостевых визита</li>
-                           <li><b>1</b> массаж воротниковой зоны 20 минут.</li>
-                        </ul>
-                        <span class="card-link__price">28 000 руб.</span>
-                     </div>
-                     <div class="swiper-slide slider-card__slide card-link">
-                        <div class="card-link__img _ibg">
-                           <img class="lazyload"
-                              src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-                              data-src="img/card-link/card.jpg" alt="люкс" data-sizes="auto">
-                        </div>
-                        <div class="card-link__title">
-                           Люкс - 6 мес.
-                        </div>
-                        <ul class="card-link__list">
-                           <li><b>7 000</b> на депозит</li>
-                           <li><b>6 месяцев</b> посещения</li>
-                           <li><b>2</b> ВПТ</li>
-                           <li><b>5</b> гостевых визита</li>
-                           <li><b>1</b> массаж воротниковой зоны 20 минут.</li>
-                        </ul>
-                        <span class="card-link__price">16 500 руб.</span>
-                     </div>
                      <div class="swiper-slide slider-card__slide card-link">
                         <div class="card-link__img _ibg">
                            <img class="lazyload"
@@ -757,48 +346,6 @@
                </div>
                <div class="cards__slider swiper slider-card">
                   <div class="swiper-wrapper slider-card__wrapper">
-                     <div class="swiper-slide slider-card__slide card-link">
-                        <div class="card-link__img _ibg">
-                           <img class="lazyload"
-                              src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-                              data-src="img/card-link/card.jpg" alt="люкс" data-sizes="auto">
-                        </div>
-                        <div class="card-link__title">
-                           Люкс - 12 мес.
-                        </div>
-                        <ul class="card-link__list">
-                           <li><b>13 000</b> на депозит</li>
-                           <li><b>12 месяцев</b> посещения</li>
-                           <li><b>60 дней</b> заморозки</li>
-                           <li><b>2</b> подарочные персональные тренировки
-                              исследование состава тела на аппарате In Body,</li>
-                           <li><b>5</b> гостевых визита</li>
-                           <li><b>1</b> массаж воротниковой зоны 20 минут.</li>
-                           <li>Бесплатная парковка</li>
-                        </ul>
-                        <span class="card-link__price">30 000 руб.</span>
-                     </div>
-                     <div class="swiper-slide slider-card__slide card-link">
-                        <div class="card-link__img _ibg">
-                           <img class="lazyload"
-                              src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-                              data-src="img/card-link/card.jpg" alt="люкс" data-sizes="auto">
-                        </div>
-                        <div class="card-link__title">
-                           Люкс - 6 мес.
-                        </div>
-                        <ul class="card-link__list">
-                           <li><b>8 000</b> на депозит</li>
-                           <li><b>6 месяцев</b> посещения</li>
-                           <li><b>60 дней</b> заморозки</li>
-                           <li><b>2</b> подарочные персональные тренировки
-                              исследование состава тела на аппарате In Body,</li>
-                           <li><b>5</b> гостевых визита</li>
-                           <li><b>1</b> массаж воротниковой зоны 20 минут.</li>
-                           <li>Бесплатная парковка</li>
-                        </ul>
-                        <span class="card-link__price">20 000 руб.</span>
-                     </div>
                      <div class="swiper-slide slider-card__slide card-link">
                         <div class="card-link__img _ibg">
                            <img class="lazyload"
@@ -992,6 +539,382 @@
    </div>
 </section>
 
+<section class="page__section lt-section lt-section--decor">
+   <div class="lt-section__container lt-section__container--index-high _container">
+      <div class="lt-section__header lt-section__header--m80 ">
+         <h2 class="lt-section__title section-title">Наши приемущества</h2>
+      </div>
+      <div class="lt-section__body">
+         <div class="advantages">
+            <a href="#popup-text" class="advantages__item _popup-link">
+               <div class="advantages__icon">
+                  <img src="img/advantages/icon-1.svg" alt="Время">
+               </div>
+               <div class="advantages__text">
+                  <p>Разнообразное расписание</p>
+               </div>
+            </a>
+            <a href="#popup-text" class="advantages__item _popup-link">
+               <div class="advantages__icon">
+                  <img src="img/advantages/biceps.svg" alt="Команда">
+               </div>
+               <div class="advantages__text">
+                  <p>Экспертная команда</p>
+               </div>
+            </a>
+            <a href="#popup-text" class="advantages__item _popup-link">
+               <div class="advantages__icon">
+                  <img src="img/advantages/icon-9.png" alt="Скидка">
+               </div>
+               <div class="advantages__text">
+                  <p>Выгодные предложения</p>
+               </div>
+            </a>
+            <a href="#popup-text" class="advantages__item _popup-link">
+               <div class="advantages__icon">
+                  <img src="img/advantages/icon-8.png" alt="family">
+               </div>
+               <div class="advantages__text">
+                  <p>Программы для всех</p>
+               </div>
+            </a>
+            <a href="#popup-text" class="advantages__item _popup-link">
+               <div class="advantages__icon">
+                  <img src="img/advantages/icon-7.png" alt="people">
+               </div>
+               <div class="advantages__text">
+                  <p>Интересная клубная жизнь</p>
+               </div>
+            </a>
+            <a href="#popup-text" class="advantages__item _popup-link">
+               <div class="advantages__icon">
+                  <img src="img/advantages/clipboard.svg" alt="message">
+               </div>
+               <div class="advantages__text">
+                  <p>Делаем то, что проповедуем</p>
+               </div>
+            </a>
+            <a href="#popup-text" class="advantages__item _popup-link">
+               <div class="advantages__icon">
+                  <img src="img/advantages/icon-5.svg" alt="heart">
+               </div>
+               <div class="advantages__text">
+                  <p>Работа с любовью</p>
+               </div>
+            </a>
+         </div>
+      </div>
+      <div class="lt-section__footer">
+         <a href="#message" class="btn-primary _popup-link">Запишись на тест драйв</a>
+      </div>
+   </div>
+   <div class="decor-block">
+      <img class="decor-block__img-left" src="img/decor/gromofon-blur.png" alt="decor">
+      <img class="decor-block__img-right" src="img/decor/ruka.svg" alt="decor">
+   </div>
+</section>
+
+<div class="page__section">
+   <div class="_container">
+      <div class="about">
+         <div class="about__items">
+            <div class="about__item">
+               <span class="about__number" data-letters="5">
+                  5
+               </span>
+               <div class="about__text">
+                  <p>Более 5 лет на
+                     рынке</p>
+               </div>
+            </div>
+            <div class="about__item">
+               <span class="about__number" data-letters="14">
+                  14
+               </span>
+               <div class="about__text">
+                  <p>Рабочих часов
+                     в сутки</p>
+               </div>
+            </div>
+            <div class="about__item">
+               <span class="about__number" data-letters="364">
+                  364
+               </span>
+               <div class="about__text">
+                  <p>Рабочих дня
+                     в году</p>
+               </div>
+            </div>
+            <div class="about__item">
+               <span class="about__number" data-letters="7 300">
+                  7 300
+               </span>
+               <div class="about__text">
+                  <p>м2 для
+                     тренировок</p>
+               </div>
+            </div>
+            <div class="about__item">
+               <span class="about__number" data-letters="5">
+                  5
+               </span>
+               <div class="about__text">
+                  <p>Видов
+                     групповых
+                     уроков</p>
+               </div>
+            </div>
+            <div class="about__item">
+               <span class="about__number" data-letters="56">
+                  56
+               </span>
+               <div class="about__text">
+                  <p>Единиц
+                     тренажёров</p>
+               </div>
+            </div>
+            <div class="about__item">
+               <span class="about__number" data-letters="8">
+                  8
+               </span>
+               <div class="about__text">
+                  <p>ми кратный
+                     обмен воздуха</p>
+               </div>
+            </div>
+            <div class="about__item">
+               <span class="about__number" data-letters="12">
+                  12
+               </span>
+               <div class="about__text">
+                  <p>Ответ на любое
+                     обращение
+                     в течении
+                     12 часов</p>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
+
+<section class="page__section lt-section">
+   <div class="lt-section__container _container">
+      <div class="lt-section__header">
+         <h2 class="lt-section__title section-title">Наши программы</h2>
+      </div>
+      <div class="lt-section__body slider slider--view-two _tabs">
+         <div class="slider__inner">
+            <div class="slider__tabs-nav">
+               <div class="slider__nav-item">
+                  <span class="slider__tab _tabs-item _active">
+                     Клуб на Мачуги
+                  </span>
+                  <a href="programm.html" class="slider__tab-link">Смотреть
+                     все</a>
+               </div>
+               <div class="slider__nav-item">
+                  <span class="slider__tab _tabs-item">
+                     Клуб на Восточно-Кругликовской
+                  </span>
+                  <a href="programm.html" class="slider__tab-link">Смотреть все</a>
+               </div>
+            </div>
+            <div class="slider__tabs-block _tabs-block _active">
+               <div class="slider__nav">
+                  <div class="slider__btn-prev slider-nav-prev _icon-arrow-left"></div>
+                  <div class="slider__btn-next slider-nav-next _icon-arrow-right"></div>
+               </div>
+               <div class="swiper slider__body">
+                  <div class="swiper-wrapper slider__wrapper">
+                     <a href="#" class="swiper-slide single-card">
+                        <div class="single-card__img _ibg">
+                           <img class="lazyload"
+                              src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                              data-src="img/programm/img-1.jpg" alt="Бассейны" data-sizes="auto">
+                           <div class="single-card__img-text">
+                              Бассейны
+                           </div>
+                        </div>
+                     </a>
+                     <a href="#" class="swiper-slide single-card">
+                        <div class="single-card__img _ibg">
+                           <img class="lazyload"
+                              src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                              data-src="img/programm/img-2.jpg" alt="Групповые занятия" data-sizes="auto">
+                           <div class="single-card__img-text">
+                              Групповые занятия
+                           </div>
+                        </div>
+                     </a>
+                     <a href="#" class="swiper-slide single-card">
+                        <div class="single-card__img _ibg">
+                           <img class="lazyload"
+                              src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                              data-src="img/programm/img-3.jpg" alt="Тренажерный зал" data-sizes="auto">
+                           <div class="single-card__img-text">
+                              Тренажерный зал
+                           </div>
+                        </div>
+                     </a>
+                  </div>
+               </div>
+            </div>
+            <div class="slider__tabs-block _tabs-block">
+               <div class="slider__nav">
+                  <div class="slider__btn-prev slider-nav-prev _icon-arrow-left"></div>
+                  <div class="slider__btn-next slider-nav-next _icon-arrow-right"></div>
+               </div>
+               <div class="swiper slider__body">
+                  <div class="swiper-wrapper slider__wrapper">
+                     <a href="#" class="swiper-slide single-card">
+                        <div class="single-card__img _ibg">
+                           <img class="lazyload"
+                              src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                              data-src="img/programm/img-2.jpg" alt="Бассейны" data-sizes="auto">
+                           <div class="single-card__img-text">
+                              Бассейны
+                           </div>
+                        </div>
+                     </a>
+                     <a href="#" class="swiper-slide single-card">
+                        <div class="single-card__img _ibg">
+                           <img class="lazyload"
+                              src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                              data-src="img/programm/img-3.jpg" alt="Групповые занятия" data-sizes="auto">
+                           <div class="single-card__img-text">
+                              Групповые занятия
+                           </div>
+                        </div>
+                     </a>
+                     <a href="#" class="swiper-slide single-card">
+                        <div class="single-card__img _ibg">
+                           <img class="lazyload"
+                              src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                              data-src="img/programm/img-3.jpg" alt="Тренажерный зал" data-sizes="auto">
+                           <div class="single-card__img-text">
+                              Тренажерный зал
+                           </div>
+                        </div>
+                     </a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="lt-section__footer">
+         <a href="#message" class="btn-primary  _popup-link">Запишись на тест драйв</a>
+      </div>
+   </div>
+</section>
+
+<section class="page__section lt-section">
+   <div class="lt-section__container _container">
+      <div class="lt-section__header lt-section__header--m-small">
+         <h2 class="lt-section__title section-title">Новости</h2>
+      </div>
+      <div class="lt-section__body slider">
+         <div class="lt-section__slider-nav">
+            <div class="lt-section__btn-prev slider-nav-prev _icon-arrow-left"></div>
+            <div class="slider-nav-next _icon-arrow-right"></div>
+         </div>
+         <div class="swiper slider__body">
+            <div class="swiper-wrapper slider__wrapper">
+               <a href="#" class="swiper-slide single-card">
+                  <div class="single-card__img _ibg">
+                     <img class="lazyload"
+                        src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                        data-src="img/programm/img-1.jpg" alt="Бассейны" data-sizes="auto">
+                  </div>
+                  <div class="single-card__body-slide">
+                     <h3 class="single-card__title">
+                        Новость номер один
+                     </h3>
+                     <div class="single-card__text">
+                        <p>
+                           25-метровый спортивный бассейн и детский бассейн с современной системой фильтрации
+                        </p>
+                     </div>
+                  </div>
+               </a>
+               <a href="#" class="swiper-slide single-card">
+                  <div class="single-card__img _ibg">
+                     <img class="lazyload"
+                        src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                        data-src="img/programm/img-2.jpg" alt="Бассейны" data-sizes="auto">
+                  </div>
+                  <div class="single-card__body-slide">
+                     <h3 class="single-card__title">
+                        Новость номер два
+                     </h3>
+                     <div class="single-card__text">
+                        <p>
+                           700 кв.м. тренажерный зал, оснащенный лучшим оборудованием и комфортабельными раздевалками
+                        </p>
+                     </div>
+                  </div>
+               </a>
+               <a href="#" class="swiper-slide single-card">
+                  <div class="single-card__img _ibg">
+                     <img class="lazyload"
+                        src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                        data-src="img/programm/img-3.jpg" alt="Бассейны" data-sizes="auto">
+                  </div>
+                  <div class="single-card__body-slide">
+                     <h3 class="single-card__title">
+                        Новость номер три
+                     </h3>
+                     <div class="single-card__text">
+                        <p>
+                           3 зала фитнес тренировок в сопровождении тренера, кардио-зона, cycle… выбор на любой возраст,
+                           темп и уровень сложности
+                        </p>
+                     </div>
+                  </div>
+               </a>
+            </div>
+         </div>
+      </div>
+      <div class="lt-section__footer">
+         <a href="novosti.html" class="btn-primary">Смотреть все</a>
+      </div>
+   </div>
+</section>
+
+<div class="page__section widget-line" style="background-image: url(img/about-block/about-block-bg.png);">
+   <div class="widget-line__container _container-left">
+      <div class="widget-line__content">
+         <div class="widget-line__text">
+            <p>Фитнес-наша жизнь!</p>
+            <p>Делаем фитнес доступным <br> для всей семьи!</p>
+         </div>
+         <div class="widget-line__img _ibg">
+            <img src="img/stock/stock-1.jpg" alt="">
+         </div>
+      </div>
+   </div>
+</div>
+
+<!-- <section class="page__section stock">
+   <div class="stock__container _container">
+      <div class="stock__body">
+         <h2 class="stock__title">Акция!</h2>
+         <div class="stock__text">
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+               industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+               scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap
+               into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the
+               release of Letraset</p>
+         </div>
+         <a href="#" class="stock__btn btn-primary btn-primary--medium">Получить подарок</a>
+      </div>
+   </div>
+   <div class="stock__bg _ibg">
+      <img class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+         data-src="img/stock/bg-stock.jpg" alt="bg" data-sizes="auto">
+   </div>
+</section> -->
+
 <section class="page__section lt-section">
    <div class="lt-section__container _container">
       <div class="lt-section__header lt-section__header--m-small">
@@ -1172,17 +1095,17 @@
 				<ul class="social-fixed__list">
 					<li class="social-fixed__item">
 						<a href="#" class="social-fixed__link">
-							<i class="_icon-instagram"></i>
+							<img src="img/social/inst-2.svg" alt="">
 						</a>
 					</li>
 					<li class="social-fixed__item">
 						<a href="#" class="social-fixed__link">
-							<i class="_icon-vk"></i>
+							<img src="img/social/vk-2.svg" alt="">
 						</a>
 					</li>
 					<li class="social-fixed__item">
 						<a href="#" class="social-fixed__link">
-							<i class="_icon-whs"></i>
+							<img src="img/social/viber-2.svg" alt="">
 						</a>
 					</li>
 					<li class="social-fixed__item">
@@ -1201,17 +1124,17 @@
 				<ul class="social-fixed__list">
 					<li class="social-fixed__item">
 						<a href="#" class="social-fixed__link">
-							<i class="_icon-instagram"></i>
+							<img src="img/social/inst-2.svg" alt="">
 						</a>
 					</li>
 					<li class="social-fixed__item">
 						<a href="#" class="social-fixed__link">
-							<i class="_icon-vk"></i>
+							<img src="img/social/vk-2.svg" alt="">
 						</a>
 					</li>
 					<li class="social-fixed__item">
 						<a href="#" class="social-fixed__link">
-							<i class="_icon-whs"></i>
+							<img src="img/social/viber-2.svg" alt="">
 						</a>
 					</li>
 					<li class="social-fixed__item">
@@ -1267,6 +1190,7 @@
 							Восточно-Кругликовская
 						</a>
 						<div class="footer__contacts">
+							<p class="footer__contacts-link"><img src="img/footer/time.svg" alt="time">Пн-Вс: 07:00-21:00</p>
 							<a class="footer__contacts-link" href="tel:205-01-11"><img src="img/footer/phone.svg" alt="">
 								205-01-11</a>
 							<a class="footer__contacts-link" href="#"><img src="img/footer/marker.svg" alt=""> г. Краснодар,
@@ -1283,9 +1207,6 @@
 							<a href="#" class="social__link">
 								<i class="social__icon _icon-instagram"></i>
 							</a>
-							<a href="#" class="social__link">
-								<i class="social__icon _icon-viber-brands"></i>
-							</a>
 						</div>
 					</div>
 					<div class="footer__contacts-column">
@@ -1293,6 +1214,7 @@
 							Мачуги
 						</a>
 						<div class="footer__contacts">
+							<p class="footer__contacts-link"><img src="img/footer/time.svg" alt="time">Пн-Вс: 07:00-21:00</p>
 							<a class="footer__contacts-link" href="tel:205-01-11"><img src="img/footer/phone.svg" alt="">
 								205-01-11</a>
 							<a class="footer__contacts-link" href="tel:205-02-22"><img src="img/footer/marker.svg" alt=""> г.
@@ -1308,9 +1230,6 @@
 							</a>
 							<a href="#" class="social__link">
 								<i class="social__icon _icon-instagram"></i>
-							</a>
-							<a href="#" class="social__link">
-								<i class="social__icon _icon-viber-brands"></i>
 							</a>
 						</div>
 					</div>
