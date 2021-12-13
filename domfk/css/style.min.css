@@ -3490,7 +3490,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 .header {
   position: relative;
   z-index: 50;
-  min-height: 55px;
+  min-height: 60px;
 }
 .header._scroll .header__logo {
   height: 50px;
