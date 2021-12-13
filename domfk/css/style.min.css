@@ -3490,7 +3490,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 .header {
   position: relative;
   z-index: 50;
-  min-height: 62px;
+  min-height: 60px;
 }
 .header._scroll .header__logo {
   height: 50px;
@@ -3513,6 +3513,11 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   }
   to {
     top: 0;
+  }
+}
+@media (min-width: 345px) {
+  .header {
+    min-height: 80px;
   }
 }
 @media (min-width: 767.98px) {
