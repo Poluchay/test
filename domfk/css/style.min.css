@@ -3693,6 +3693,12 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 @media (min-width: 991.98px) {
   .header__logo {
     margin-right: 20px;
+    flex: 0 0 100px;
+    height: 79px;
+  }
+}
+@media (min-width: 1250px) {
+  .header__logo {
     flex: 0 0 144px;
     height: 99px;
   }
