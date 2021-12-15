@@ -6663,7 +6663,6 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   position: relative;
   flex: 1 0 40%;
   max-width: 600px;
-  min-width: 450px;
   margin: 0 auto;
   align-self: flex-start;
   border-radius: 16px;
@@ -6684,6 +6683,11 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 }
 .text-widget__column-media--img::before {
   padding-bottom: 95%;
+}
+@media (min-width: 767.98px) {
+  .text-widget__column-media {
+    min-width: 450px;
+  }
 }
 
 .lt-tabs__header--m-bottom:not(:last-child) {
