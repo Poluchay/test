@@ -585,7 +585,7 @@ body._lock {
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  background: linear-gradient(176.9deg, #FFD187 -0.25%, #FFF6E2 49.67%, #FFCD7A 100.64%);
+  background: radial-gradient(50% 50% at 50% 50%, #FFFFFF 0%, #EECA8E 100%);
 }
 .wrapper__btn-down {
   position: fixed;
@@ -1360,19 +1360,22 @@ textarea.input {
 }
 
 .list-primary li {
-  display: flex;
+  position: relative;
+  padding-left: 20px;
 }
 .list-primary li:not(:last-child) {
   margin-bottom: 10px;
 }
 .list-primary li::before {
   content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
   display: inline-block;
   flex: none;
+  margin: 3px 0;
   width: 12px;
   height: 12px;
-  margin: 5px 0;
-  margin-right: 9px;
   border-radius: 50%;
   background-color: #ffc844;
 }
@@ -6606,7 +6609,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 .text-widget__column-text {
   display: flex;
   flex-direction: column;
-  flex: 1 1 auto;
+  flex: 1 1 50%;
   line-height: 1.4;
 }
 .text-widget__list-title {
