@@ -812,6 +812,21 @@ body._lock {
   }
 }
 
+label.input-primary {
+  background-color: #fff;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+label.input-primary [type=file] {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+
 textarea.input-primary {
   min-height: 160px;
 }
@@ -937,6 +952,7 @@ textarea.input-primary {
 input[type=text],
 input[type=email],
 input[type=tel],
+input[type=number],
 textarea {
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -945,6 +961,7 @@ textarea {
 input[type=text]:focus,
 input[type=email]:focus,
 input[type=tel]:focus,
+input[type=number]:focus,
 textarea:focus {
   outline: none;
 }
@@ -3425,6 +3442,9 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 }
 .popup-form__item:not(:last-child) {
   margin-bottom: 30px;
+}
+.popup-form__item .select__title {
+  background-color: transparent;
 }
 .popup-form__input:not(:last-child) {
   margin-bottom: 20px;
@@ -6613,15 +6633,20 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   line-height: 1.4;
 }
 .text-widget__list-title {
-  font-size: 16px;
-  font-weight: 800;
+  font-family: "Rubik", sans-serif;
+  font-size: 25px;
+  font-weight: 900;
+  color: #333333;
 }
 .text-widget__list-title:not(:last-child) {
   margin-bottom: 15px;
 }
+.text-widget__list-title span {
+  color: #ff0000;
+}
 @media (min-width: 767.98px) {
   .text-widget__list-title {
-    font-size: 18px;
+    font-size: 36px;
   }
 }
 .text-widget__list {
@@ -6638,8 +6663,11 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   position: relative;
   flex: 1 0 40%;
   max-width: 600px;
+  min-width: 450px;
   margin: 0 auto;
   align-self: flex-start;
+  border-radius: 16px;
+  overflow: hidden;
 }
 .text-widget__column-media::before {
   content: "";
@@ -6653,6 +6681,9 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   display: block;
   width: 100%;
   height: 100%;
+}
+.text-widget__column-media--img::before {
+  padding-bottom: 95%;
 }
 
 .lt-tabs__header--m-bottom:not(:last-child) {
