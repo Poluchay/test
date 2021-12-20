@@ -6632,7 +6632,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 }
 .page-content p:not([class]) b {
   font-family: "Rubik", sans-serif;
-  font-weight: 900;
+  font-weight: 500;
   font-size: 15px;
 }
 @media (min-width: 767.98px) {
@@ -6669,7 +6669,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 }
 @media (min-width: 767.98px) {
   .text-widget__list-title {
-    font-size: 36px;
+    font-size: 34px;
   }
 }
 .text-widget__list {
