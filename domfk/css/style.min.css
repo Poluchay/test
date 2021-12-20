@@ -4839,14 +4839,16 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 }
 .lt-section__header {
   text-align: center;
+}
+.lt-section__header:not(:last-child) {
   margin-bottom: 60px;
 }
 @media (max-width: 1238px) {
-  .lt-section__header {
+  .lt-section__header:not(:last-child) {
     margin-bottom: calc(40px + 20 * ((100vw - 320px) / 918));
   }
 }
-.lt-section__header--m-small {
+.lt-section__header--m-small:not(:last-child) {
   margin-bottom: 25px;
 }
 .lt-section__title:not(:last-child) {
