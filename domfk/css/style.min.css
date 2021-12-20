@@ -6833,6 +6833,8 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 .team-block__img {
   width: 100%;
   padding-bottom: 100%;
+  border-radius: 16px;
+  overflow: hidden;
 }
 .team-block__img:not(:last-child) {
   margin-bottom: 30px;
