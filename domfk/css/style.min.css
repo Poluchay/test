@@ -4862,7 +4862,8 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   font-weight: 600;
 }
 .lt-section__sub-title--t-red {
-  font-weight: 600;
+  font-size: 17px;
+  font-weight: 800;
   color: #ff0000;
 }
 .lt-section__sub-title:not(:last-child) {
@@ -6603,6 +6604,26 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 }
 .page-content__widget:not(:last-child) {
   margin-bottom: 50px;
+}
+.page-content__text h1,
+.page-content__text h2,
+.page-content__text h3,
+.page-content__text h4,
+.page-content__text h5 {
+  font-family: "Rubik", sans-serif;
+}
+.page-content__text h2,
+.page-content__text h3,
+.page-content__text h4,
+.page-content__text h5 {
+  font-size: 1.6rem;
+  margin-bottom: 0.8em;
+  font-weight: 900;
+}
+.page-content__text h6 {
+  font-size: 1.1rem;
+  margin-bottom: 0.5em;
+  font-weight: 600;
 }
 .page-content p:not([class]):not(:last-child) {
   margin-bottom: 10px;
