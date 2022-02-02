@@ -2042,7 +2042,7 @@ body.ie ._ibg img {
 }
 
 .page__wrapper {
-  padding: 6.25rem;
+  padding: 6.25rem 0;
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: contain;
