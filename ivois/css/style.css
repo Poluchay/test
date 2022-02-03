@@ -686,6 +686,23 @@ textarea.input {
           transform: rotate(180deg);
 }
 
+.button-arrow-prev,
+.button-arrow-next {
+  cursor: pointer;
+}
+
+.button-arrow-prev i::before,
+.button-arrow-next i::before {
+  font-size: 2.5rem;
+  color: #f2140a;
+}
+
+.button-arrow-prev i::before {
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
 .download-file {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2360,8 +2377,31 @@ body.ie ._ibg img {
   font-weight: 700;
 }
 
+.review-slider {
+  position: relative;
+  padding: 0 3.125rem;
+}
+
 .review-slider__slide {
   padding: 0.625rem;
+}
+
+.review-slider__prev {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.review-slider__next {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  right: 0;
 }
 
 .review {
