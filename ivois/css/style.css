@@ -697,6 +697,11 @@ textarea.input {
   color: #f2140a;
 }
 
+.button-arrow-prev.swiper-button-disabled i::before,
+.button-arrow-next.swiper-button-disabled i::before {
+  color: #dddddd;
+}
+
 .button-arrow-prev i::before {
   -webkit-transform: rotate(180deg);
       -ms-transform: rotate(180deg);
