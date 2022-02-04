@@ -422,37 +422,45 @@ let _slideToggle = (target, duration = 500) => {
 	}
 }
 ;
-const sliderInit = (slider, setting = {
-  spaceBetween: 50,
-  slidesPerView: 1,
-}) => {
-  const btnNext = slider.querySelector('.button-next');
-  const btnPrev = slider.querySelector('.button-prev');
+const sliderInit = (slider, setting) => {
+  const btnPrev = slider.querySelector('[data-swiper-prev]');
+  const btnNext = slider.querySelector('[data-swiper-next]');
   const scrollbar = slider.querySelector('.slider-scrollbar');
+
+  console.log(btnPrev);
+  const sliderInner = slider.querySelector('.swiper');
+  if (sliderInner) {
+    slider = sliderInner;
+  } 
   
+  if (!setting) {
+    setting = { 
+      spaceBetween: 50, 
+      slidesPerView: 1, 
+          
+    scrollbar: {
+      el: scrollbar,
+      draggable: true,
+    },
+    };
+  }
+
   const swiper = new Swiper(slider, {
     // Optional parameters
     observer: true,
     observeParents: true,
     ...setting,
-    
-    scrollbar: {
-      el: scrollbar,
-      draggable: true,
-    },
-  
-    // Navigation arrows
     navigation: {
       nextEl: btnNext,
       prevEl: btnPrev,
-    }, 
+    }
   });
 }
 
 const sliders = document.querySelectorAll('.slider');
 sliders.forEach(slider => sliderInit(slider))
 
-const reviewSliders = document.querySelectorAll('.review-slider .review-slider__body');
+const reviewSliders = document.querySelectorAll('.review-slider');
 const reviewSlidersSetting = {
   spaceBetween: 30,
   slidesPerView: 1,
@@ -462,8 +470,8 @@ const reviewSlidersSetting = {
       spaceBetween: 30,
     }
   },
-
 }
+
 reviewSliders.forEach(slider => sliderInit(slider, reviewSlidersSetting));
 //let btn = document.querySelectorAll('button[type="submit"],input[type="submit"]');
 let forms = document.querySelectorAll('form');
