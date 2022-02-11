@@ -1811,12 +1811,19 @@ body.ie ._ibg img {
 }
 
 .content-badges__badge {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   text-align: center;
   min-height: 2.25rem;
   line-height: 2.25rem;
   padding: 0.3125rem;
   margin: 0 0.625rem 0.625rem 0;
   border-radius: 8px;
+  line-height: 1.2;
   border: 1px solid #f2140a;
 }
 
