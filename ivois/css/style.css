@@ -627,9 +627,9 @@ textarea.input {
   background-color: #dddddd;
   border-radius: 15px;
   cursor: pointer;
-  -webkit-transition: left 0.6s ease 0s, color 0.3s ease 0s;
-  -o-transition: left 0.6s ease 0s, color 0.3s ease 0s;
-  transition: left 0.6s ease 0s, color 0.3s ease 0s;
+  -webkit-transition: background-color 0.3s ease 0s;
+  -o-transition: background-color 0.3s ease 0s;
+  transition: background-color 0.3s ease 0s;
 }
 
 .switch-btn::after {
@@ -645,13 +645,16 @@ textarea.input {
   -webkit-transform: translateY(-50%);
       -ms-transform: translateY(-50%);
           transform: translateY(-50%);
+  -webkit-transition: left 0.3s ease 0s;
+  -o-transition: left 0.3s ease 0s;
+  transition: left 0.3s ease 0s;
 }
 
-.switch-btn._active {
+.switch-btn._switch-on {
   background-color: #f2140a;
 }
 
-.switch-btn._active::after {
+.switch-btn._switch-on::after {
   left: 50%;
 }
 
@@ -1060,8 +1063,16 @@ body.ie ._ibg img {
   display: none;
 }
 
+._switch-item + ._switch-item {
+  display: block;
+}
+
 ._switch-item._active {
   display: block;
+}
+
+._switch-item._active + ._switch-item {
+  display: none;
 }
 
 ._tabs-block {

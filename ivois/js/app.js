@@ -491,6 +491,17 @@ if (galleryAll) {
     }
   }
 }
+
+//switch
+const switchAll = document.querySelectorAll("._switch");
+switchAll.forEach((item) => {
+  const switchBtn = item.querySelector("._switch-btn");
+  const switchBlock = item.querySelector("._switch-item");
+  switchBtn.addEventListener("click", () => {
+    switchBtn.classList.toggle("_switch-on");
+    switchBlock.classList.toggle("_active");
+  });
+});
 ;
 const sliders = document.querySelectorAll(".slider");
 const slidersSetting = [
