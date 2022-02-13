@@ -85,6 +85,21 @@ window.addEventListener("load", function () {
 let unlock = true;
 
 //=================
+//Menu
+let iconMenu = document.querySelector(".icon-menu");
+if (iconMenu != null) {
+  let delay = 500;
+  let menuBody = document.querySelector(".header-menu");
+  iconMenu.addEventListener("click", function (e) {
+    if (unlock) {
+      body_lock(delay);
+      iconMenu.classList.toggle("_active");
+      menuBody.classList.toggle("_active");
+    }
+  });
+}
+
+//=================
 //BodyLock
 function body_lock(delay) {
   let body = document.querySelector("body");
@@ -463,7 +478,37 @@ let _slideToggle = (target, duration = 500) => {
   }
 };
 ;
+//lightgallery
+galleryAll = document.querySelectorAll("[data-lg]");
+if (galleryAll) {
+  for (let gallery of galleryAll) {
+    const galleryId = gallery.getAttribute("data-lg");
+    if (galleryId) {
+      lightGallery(document.querySelector(`[data-lg = '${galleryId}']`), {
+        selector: "a",
+        speed: 500,
+      });
+    }
+  }
+}
+;
 const sliders = document.querySelectorAll(".slider");
+const slidersSetting = [
+  {
+    spaceBetween: 8,
+    slidesPerView: 1,
+    breakpoints: {
+      768: {
+        slidesPerView: 2,
+        spaceBetween: 20,
+      },
+      1024: {
+        slidesPerView: 2,
+        spaceBetween: 30,
+      },
+    },
+  },
+];
 sliders.forEach((slider) => sliderInit(slider));
 
 const reviewSliders = document.querySelectorAll(".review-slider");
@@ -549,6 +594,33 @@ function sliderInit(slider, setting, resize = false) {
   const sliderInner = slider.querySelector(".swiper");
   if (sliderInner) {
     slider = sliderInner;
+  }
+
+  if (slider.classList.contains("slider--three-col")) {
+    setting = {
+      breakpoints: {
+        200: {
+          slidesPerView: 1,
+          spaceBetween: 20,
+        },
+        605: {
+          slidesPerView: 2,
+          spaceBetween: 20,
+        },
+        768: {
+          slidesPerView: 3,
+          spaceBetween: 30,
+        },
+        1024: {
+          slidesPerView: 3,
+          spaceBetween: 60,
+        },
+      },
+      scrollbar: {
+        el: scrollbar,
+        draggable: true,
+      },
+    };
   }
 
   if (!setting) {
