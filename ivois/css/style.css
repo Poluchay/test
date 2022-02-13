@@ -4603,6 +4603,10 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
     margin-bottom: 0.625rem;
   }
 
+  .header__bottom-line {
+    display: block;
+  }
+
   .header__button-mob {
     display: none;
   }
@@ -4869,12 +4873,6 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 
   .lt-section__body:not(:last-child) {
     margin-bottom: 2.5rem;
-  }
-}
-
-@media (min-width: 61.99875empx) {
-  .header__bottom-line {
-    display: block;
   }
 }
 
