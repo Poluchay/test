@@ -688,6 +688,9 @@ textarea.input {
 .button-prev,
 .button-next {
   position: relative;
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
   width: 1.875rem;
   height: 1.875rem;
   margin: 0.3125rem;
@@ -4028,6 +4031,99 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 
 .document-block__link {
   color: #7a7a7a;
+}
+
+.portfolio-section__header {
+  margin-bottom: 1.25rem;
+}
+
+.portfolio-section__img::before {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+}
+
+.portfolio-section .swiper-pagination {
+  bottom: 0.3125rem;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.portfolio-section .swiper-pagination .swiper-pagination-bullet {
+  width: 1.25rem;
+  height: 1.25rem;
+  background-color: #538912;
+}
+
+.portfolio-section .swiper-pagination .swiper-pagination-bullet:not(:last-child) {
+  margin-right: 0.625rem;
+}
+
+.clients-slider__header {
+  margin-bottom: 1.25rem;
+}
+
+.clients-slider__prev {
+  z-index: 2;
+}
+
+.clients-slider__next {
+  z-index: 2;
+}
+
+.clients-slider__body {
+  position: relative;
+}
+
+.clients-slider__body--padding-70 {
+  padding: 4.375rem 0;
+}
+
+.clients-slider__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.clients-slider__slider {
+  padding: 0.625rem;
+  margin: 0 0.9375rem;
+  min-width: 0;
+}
+
+.clients-slider__slide {
+  background-color: #fff;
+  -webkit-box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.12);
+          box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.12);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.clients-slider__slide::before {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+}
+
+.clients-slider__bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.clients-slider__bg img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .page {

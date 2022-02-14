@@ -485,7 +485,7 @@ if (galleryAll) {
     const galleryId = gallery.getAttribute("data-lg");
     if (galleryId) {
       lightGallery(document.querySelector(`[data-lg = '${galleryId}']`), {
-        selector: "a",
+        selector: "a.document-block__doc",
         speed: 500,
       });
     }
@@ -503,9 +503,14 @@ switchAll.forEach((item) => {
   });
 });
 ;
-const sliders = document.querySelectorAll(".slider");
-const slidersSetting = [
-  {
+document.addEventListener("DOMContentLoaded", () => {
+  let doc = document;
+
+  const sliders = doc.querySelectorAll(".slider");
+  sliders.forEach((slider) => sliderInit(slider));
+
+  const reviewSliders = doc.querySelectorAll(".review-slider");
+  const reviewSlidersSetting = {
     spaceBetween: 8,
     slidesPerView: 1,
     breakpoints: {
@@ -518,82 +523,108 @@ const slidersSetting = [
         spaceBetween: 30,
       },
     },
-  },
-];
-sliders.forEach((slider) => sliderInit(slider));
+  };
+  reviewSliders.forEach((slider) => sliderInit(slider, reviewSlidersSetting));
 
-const reviewSliders = document.querySelectorAll(".review-slider");
-const reviewSlidersSetting = {
-  spaceBetween: 8,
-  slidesPerView: 1,
-  breakpoints: {
-    768: {
-      slidesPerView: 2,
-      spaceBetween: 20,
-    },
-    1024: {
-      slidesPerView: 2,
-      spaceBetween: 30,
-    },
-  },
-};
-reviewSliders.forEach((slider) => sliderInit(slider, reviewSlidersSetting));
+  const teamSlider = doc.querySelectorAll(".team");
+  const teamSliderSetting = {
+    watchOverflow: true,
 
-const teamSlider = document.querySelectorAll(".team");
-const teamSliderSetting = {
-  watchOverflow: true,
+    breakpoints: {
+      200: {
+        slidesPerView: 2,
+        spaceBetween: 20,
+      },
+      525: {
+        slidesPerView: 3,
+        spaceBetween: 20,
+      },
+      768: {
+        slidesPerView: 4,
+        spaceBetween: 20,
+      },
+      1024: {
+        slidesPerView: 4,
+        spaceBetween: 35,
+      },
+    },
+  };
+  teamSlider.forEach((slider) => sliderInit(slider, teamSliderSetting));
 
-  breakpoints: {
-    200: {
-      slidesPerView: 2,
-      spaceBetween: 20,
-    },
-    525: {
-      slidesPerView: 3,
-      spaceBetween: 20,
-    },
-    768: {
-      slidesPerView: 4,
-      spaceBetween: 20,
-    },
-    1024: {
-      slidesPerView: 4,
-      spaceBetween: 35,
-    },
-  },
-};
-teamSlider.forEach((slider) => sliderInit(slider, teamSliderSetting));
+  const sliderMob = doc.querySelectorAll(".grid-container");
+  const sliderMobSetting = {
+    watchOverflow: true,
+    loop: true,
 
-const sliderMob = document.querySelectorAll(".grid-container");
-const sliderMobSetting = {
-  watchOverflow: true,
-  loop: true,
+    breakpoints: {
+      200: {
+        slidesPerView: 1,
+        spaceBetween: 20,
+      },
+      605: {
+        slidesPerView: 2,
+        spaceBetween: 20,
+      },
+      768: {
+        slidesPerView: 3,
+        spaceBetween: 20,
+      },
+      1024: {
+        slidesPerView: 4,
+        spaceBetween: 35,
+      },
+    },
+  };
+  if (sliderMob) {
+    const slider = mobileSlider(sliderMob, sliderMobSetting);
+    slider();
+    window.addEventListener("resize", slider);
+  }
 
-  breakpoints: {
-    200: {
-      slidesPerView: 1,
-      spaceBetween: 20,
+  const portfolio = doc.querySelectorAll(".portfolio-section");
+  const portfolioSetting = {
+    loop: true,
+    breakpoints: {
+      200: {
+        slidesPerView: 2,
+      },
+      525: {
+        slidesPerView: 3,
+      },
+      768: {
+        slidesPerView: 4,
+      },
+      1024: {
+        slidesPerView: 4,
+      },
     },
-    605: {
-      slidesPerView: 2,
-      spaceBetween: 20,
-    },
-    768: {
-      slidesPerView: 3,
-      spaceBetween: 20,
-    },
-    1024: {
-      slidesPerView: 4,
-      spaceBetween: 35,
-    },
-  },
-};
+  };
+  portfolio.forEach((slider) => sliderInit(slider, portfolioSetting));
 
-if (sliderMob) {
-  const slider = mobileSlider(sliderMob, sliderMobSetting);
-  slider();
-  window.addEventListener("resize", slider);
-}
+  const clientsSlider = doc.querySelectorAll(".clients-slider");
+  const clientsSetting = {
+    loop: true,
+    breakpoints: {
+      200: {
+        slidesPerView: 2,
+        spaceBetween: 20,
+      },
+      525: {
+        slidesPerView: 3,
+        spaceBetween: 20,
+      },
+      768: {
+        slidesPerView: 4,
+        spaceBetween: 20,
+      },
+      1024: {
+        slidesPerView: 5,
+        spaceBetween: 20,
+      },
+    },
+  };
+  clientsSlider.forEach((slider) => sliderInit(slider, clientsSetting));
+});
 
 function sliderInit(slider, setting, resize = false) {
   if (!slider) return;
@@ -601,7 +632,7 @@ function sliderInit(slider, setting, resize = false) {
   const btnPrev = slider.querySelector("[data-swiper-prev]");
   const btnNext = slider.querySelector("[data-swiper-next]");
   const scrollbar = slider.querySelector(".slider-scrollbar");
-
+  const pagination = slider.querySelector(".swiper-pagination");
   const sliderInner = slider.querySelector(".swiper");
   if (sliderInner) {
     slider = sliderInner;
@@ -654,6 +685,10 @@ function sliderInit(slider, setting, resize = false) {
     navigation: {
       nextEl: btnNext,
       prevEl: btnPrev,
+    },
+    pagination: {
+      el: pagination,
+      clickable: true,
     },
   });
 
