@@ -4104,7 +4104,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   overflow: hidden;
 }
 
-.clients-slider__slide::before {
+.clients-slider__slide-content::before {
   content: "";
   display: block;
   padding-bottom: 100%;
