@@ -4094,6 +4094,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   padding: 0.625rem;
   margin: 0 0.9375rem;
   min-width: 0;
+  max-width: 100%;
 }
 
 .clients-slider__slide {
