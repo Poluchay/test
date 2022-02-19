@@ -3981,6 +3981,9 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 }
 
 .article-content__list ol {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   padding: 0.9375rem 0.3125rem 0.9375rem 0.625rem;
   counter-reset: li;
   list-style: none;
@@ -4014,6 +4017,9 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 }
 
 .article-content__list ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   color: #7a7a7a;
 }
 
