@@ -5988,7 +5988,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 @media (min-width: 21.93625em) and (max-width: 47.99875em) {
   .causes-section--mob-fw .causes-section__item {
     margin-left: 2.3125rem;
-    margin-right: -0.9375rem;
+    margin-right: -0.3125rem;
   }
 
   .causes-section--mob-fw .causes-section__item:nth-child(2n+2) {
