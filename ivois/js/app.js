@@ -586,13 +586,13 @@ document.addEventListener("DOMContentLoaded", () => {
     loop: true,
     breakpoints: {
       200: {
-        slidesPerView: 2,
+        slidesPerView: 1,
       },
       525: {
-        slidesPerView: 3,
+        slidesPerView: 2,
       },
       768: {
-        slidesPerView: 4,
+        slidesPerView: 3,
       },
       1024: {
         slidesPerView: 4,
