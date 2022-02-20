@@ -5948,6 +5948,9 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   }
 
   .info-tabs__nav {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 40%;
+            flex: 0 0 40%;
     -ms-flex-item-align: end;
         align-self: flex-end;
     margin-bottom: -1.25rem;
