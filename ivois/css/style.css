@@ -4132,7 +4132,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 .contacts-badge__body {
   max-width: 61.875rem;
   margin: 0 auto;
-  padding: 1.25rem 1.25rem;
+  padding: 0.625rem;
   background-color: rgba(255, 255, 255, 0.466);
   -webkit-box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.12);
           box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.12);
@@ -4699,6 +4699,10 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
         -ms-flex: 1 0 calc(50% - 1.25rem);
             flex: 1 0 calc(50% - 1.25rem);
     margin-right: 1.25rem;
+  }
+
+  .contacts-badge__body {
+    padding: 1.25rem;
   }
 }
 
