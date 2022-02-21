@@ -2701,6 +2701,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 .footer-menu__nav-link {
   display: inline-block;
   padding: 1px 0;
+  color: #adadad;
 }
 
 .footer-info__info {
@@ -6383,7 +6384,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   }
 
   .footer-menu__nav-link:hover {
-    color: #f2140a;
+    color: #fff;
   }
 
   .cases-tabs__item {
