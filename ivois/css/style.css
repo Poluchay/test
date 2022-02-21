@@ -596,10 +596,14 @@ textarea.input {
 }
 
 .button-primary.button-primary--wht {
-  padding: 1.1875rem 1.1875rem;
   background-color: #fff;
   border: 2px solid #0967be;
   color: #0967be;
+}
+
+.button-primary.button-primary--wht span,
+.button-primary.button-primary--wht span:nth-child(2) {
+  padding: 1.1875rem 1.1875rem;
 }
 
 .button-primary.button-primary--wht span:nth-child(2) {
@@ -607,7 +611,6 @@ textarea.input {
           clip-path: inset(-2% 100% -2% -2%);
   background-color: #f2140a;
   color: #fff;
-  padding: 1.1875rem 1.1875rem;
 }
 
 .title-cover {
