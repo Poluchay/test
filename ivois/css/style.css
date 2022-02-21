@@ -469,7 +469,6 @@ textarea.input {
   -webkit-transition: all 0.3s ease-out;
   -o-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
-  padding: 1.3125rem 0.8125rem;
 }
 
 .button-primary span {
@@ -482,6 +481,7 @@ textarea.input {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  padding: 1.3125rem 0.8125rem;
 }
 
 .button-primary span i {
@@ -519,10 +519,14 @@ textarea.input {
 }
 
 .button-primary.button-primary--hover-wht {
-  padding: 1.1875rem 1.1875rem;
   background-color: #f2140a;
   border: 2px solid #f2140a;
   color: #fff;
+}
+
+.button-primary.button-primary--hover-wht span,
+.button-primary.button-primary--hover-wht span:nth-child(2) {
+  padding: 1.1875rem 1.1875rem;
 }
 
 .button-primary.button-primary--hover-wht span:nth-child(2) {
@@ -530,7 +534,6 @@ textarea.input {
           clip-path: inset(-2% 100% -2% -2%);
   background-color: white;
   color: #000;
-  padding: 1.1875rem 1.1875rem;
 }
 
 .button-primary.button-primary--blue span:nth-child(2) {
@@ -558,11 +561,11 @@ textarea.input {
 }
 
 .button-primary.button-primary--large {
-  padding: 1.25rem 0.75rem;
   font-size: 0.9375rem;
 }
 
-.button-primary.button-primary--large span:nth-child(2) {
+.button-primary.button-primary--large span:nth-child(2),
+.button-primary.button-primary--large span {
   padding: 1.25rem 0.75rem;
 }
 
@@ -575,12 +578,12 @@ textarea.input {
 }
 
 .button-primary.button-primary--small {
-  padding: 0.625rem 1.125rem;
   font-size: 1rem;
   border: none;
 }
 
-.button-primary.button-primary--small span:nth-child(2) {
+.button-primary.button-primary--small span:nth-child(2),
+.button-primary.button-primary--small span {
   padding: 0.5rem 0.9375rem;
 }
 
@@ -4698,10 +4701,10 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 @media (min-width: 29.99875em) {
   .button-primary {
     font-size: 1rem;
-    padding: 1.3125rem 1.3125rem;
   }
 
-  .button-primary span:nth-child(2) {
+  .button-primary span:nth-child(2),
+  .button-primary span {
     padding: 1.3125rem 1.3125rem;
   }
 
@@ -5412,11 +5415,11 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   }
 
   .button-primary.button-primary--large {
-    padding: 1.625rem 1.625rem;
     font-size: 1.3125rem;
   }
 
-  .button-primary.button-primary--large span:nth-child(2) {
+  .button-primary.button-primary--large span:nth-child(2),
+  .button-primary.button-primary--large span {
     padding: 1.625rem 1.625rem;
   }
 
