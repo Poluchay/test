@@ -5393,13 +5393,6 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
     margin-bottom: auto;
   }
 
-  .info-tabs__block-img {
-    display: block;
-    position: absolute;
-    bottom: 0;
-    right: 0;
-  }
-
   .page__wrapper {
     padding: 3.75rem 0;
   }
@@ -5719,6 +5712,13 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+  }
+
+  .info-tabs__block-img {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    right: 0;
   }
 
   .page__wrapper {
