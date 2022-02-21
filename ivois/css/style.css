@@ -514,18 +514,18 @@ textarea.input {
 }
 
 .button-primary:hover span:nth-child(2) {
-  -webkit-clip-path: inset(-2% 0% -2% -2%);
-  clip-path: inset(-2% 0% -2% -2%);
+  -webkit-clip-path: inset(-2% 0% -2% -2%) !important;
+          clip-path: inset(-2% 0% -2% -2%) !important;
 }
 
-.button-primary--hover-wht {
+.button-primary.button-primary--hover-wht {
   padding: 1.1875rem 1.1875rem;
   background-color: #f2140a;
   border: 2px solid #f2140a;
   color: #fff;
 }
 
-.button-primary--hover-wht span:nth-child(2) {
+.button-primary.button-primary--hover-wht span:nth-child(2) {
   -webkit-clip-path: inset(-2% 100% -2% -2%);
           clip-path: inset(-2% 100% -2% -2%);
   background-color: white;
@@ -533,72 +533,73 @@ textarea.input {
   padding: 1.1875rem 1.1875rem;
 }
 
-.button-primary--blue span:nth-child(2) {
+.button-primary.button-primary--blue span:nth-child(2) {
   background-color: #24458c;
 }
 
-.button-primary--blue-fw {
+.button-primary.button-primary--blue-fw {
   background-color: #24458c;
   border: 2px solid #24458c;
   color: #fff;
 }
 
-.button-primary--blue-fw span:nth-child(2) {
+.button-primary.button-primary--blue-fw span:nth-child(2) {
   -webkit-clip-path: inset(-2% 100% -2% -2%);
           clip-path: inset(-2% 100% -2% -2%);
   background-color: #fff;
   color: #000;
 }
 
-.button-primary--fw {
+.button-primary.button-primary--fw {
   -webkit-box-flex: 0;
       -ms-flex: none;
           flex: none;
   width: 100%;
 }
 
-.button-primary--large {
+.button-primary.button-primary--large {
   padding: 1.25rem 0.75rem;
   font-size: 0.9375rem;
 }
 
-.button-primary--large span:nth-child(2) {
+.button-primary.button-primary--large span:nth-child(2) {
   padding: 1.25rem 0.75rem;
 }
 
-.button-primary--large span i {
+.button-primary.button-primary--large span i {
   margin-left: 1.25rem;
 }
 
-.button-primary--large span i::before {
+.button-primary.button-primary--large span i::before {
   font-size: 1.5625rem;
 }
 
-.button-primary--small {
-  padding: 0.5rem 0.9375rem;
+.button-primary.button-primary--small {
+  padding: 0.625rem 1.125rem;
   font-size: 1rem;
+  border: none;
 }
 
-.button-primary--small span:nth-child(2) {
+.button-primary.button-primary--small span:nth-child(2) {
   padding: 0.5rem 0.9375rem;
 }
 
-.button-primary--small span i {
+.button-primary.button-primary--small span i {
   margin-left: 1.25rem;
 }
 
-.button-primary--small span i::before {
+.button-primary.button-primary--small span i::before {
   font-size: 1.5625rem;
 }
 
-.button-primary--wht {
+.button-primary.button-primary--wht {
   padding: 1.1875rem 1.1875rem;
   background-color: #fff;
   border: 2px solid #0967be;
   color: #0967be;
 }
 
-.button-primary--wht span:nth-child(2) {
+.button-primary.button-primary--wht span:nth-child(2) {
   -webkit-clip-path: inset(-2% 100% -2% -2%);
           clip-path: inset(-2% 100% -2% -2%);
   background-color: #f2140a;
@@ -5394,20 +5395,20 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
     font-size: 1rem;
   }
 
-  .button-primary--large {
+  .button-primary.button-primary--large {
     padding: 1.625rem 1.625rem;
     font-size: 1.3125rem;
   }
 
-  .button-primary--large span:nth-child(2) {
+  .button-primary.button-primary--large span:nth-child(2) {
     padding: 1.625rem 1.625rem;
   }
 
-  .button-primary--large span i {
+  .button-primary.button-primary--large span i {
     margin-left: 1.25rem;
   }
 
-  .button-primary--large span i::before {
+  .button-primary.button-primary--large span i::before {
     font-size: 2.1875rem;
   }
 
@@ -6180,7 +6181,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 }
 
 @media (max-width: 29.99875em) {
-  .button-primary--fw-mob {
+  .button-primary.button-primary--fw-mob {
     -webkit-box-flex: 0;
         -ms-flex: none;
             flex: none;
