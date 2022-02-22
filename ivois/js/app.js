@@ -157,8 +157,20 @@ function body_lock_add(delay) {
 let tabs = document.querySelectorAll("._tabs");
 for (let index = 0; index < tabs.length; index++) {
   let tab = tabs[index];
-  let tabs_items = tab.querySelectorAll("._tabs-item");
-  let tabs_blocks = tab.querySelectorAll("._tabs-block");
+  let tabs_items;
+  let tabs_blocks;
+  if (tabs[index].querySelector("._tabs")) {
+    tabs_items = tab.querySelectorAll(
+      "._tabs-item:not(._tabs-block ._tabs-item)"
+    );
+    tabs_blocks = tab.querySelectorAll(
+      "._tabs-block:not(._tabs-block ._tabs-block"
+    );
+  } else {
+    tabs_items = tab.querySelectorAll("._tabs-item");
+    tabs_blocks = tab.querySelectorAll("._tabs-block");
+  }
+
   for (let index = 0; index < tabs_items.length; index++) {
     let tabs_item = tabs_items[index];
     tabs_item.addEventListener("click", function (e) {
@@ -500,6 +512,15 @@ switchAll.forEach((item) => {
   switchBtn.addEventListener("click", () => {
     switchBtn.classList.toggle("_switch-on");
     switchBlock.classList.toggle("_active");
+  });
+});
+
+//show more
+const showMore = document.querySelectorAll("._show-more");
+showMore.forEach((item) => {
+  const showMoreBtn = item;
+  showMoreBtn.addEventListener("click", () => {
+    showMoreBtn.classList.remove("_show-more");
   });
 });
 ;
