@@ -504,6 +504,8 @@ if (galleryAll) {
   }
 }
 
+AOS.init();
+
 //switch
 const switchAll = document.querySelectorAll("._switch");
 switchAll.forEach((item) => {
@@ -516,13 +518,50 @@ switchAll.forEach((item) => {
 });
 
 //show more
-const showMore = document.querySelectorAll("._show-more");
-showMore.forEach((item) => {
-  const showMoreBtn = item;
-  showMoreBtn.addEventListener("click", () => {
-    showMoreBtn.classList.remove("_show-more");
-  });
+const showMoreElements = document.querySelectorAll("._show-more");
+
+showMoreElements.forEach((element) => {
+  const showMoreBtn = element.querySelector("._show-more__btn");
+  if (showMoreBtn) {
+    const slideUp = showMore(element, 700);
+    showMoreBtn.addEventListener("click", slideUp);
+  }
 });
+
+function showMore(target, duration = 500) {
+  blockHidden = target.querySelector("._show-more__hidden");
+  if (!blockHidden) return;
+
+  const offsetH = blockHidden.offsetHeight + "px";
+  let height = 0;
+  return () => {
+    blockHidden.style.transitionProperty = "height";
+    blockHidden.style.transitionDuration = duration + "ms";
+    blockHidden.style.overflow = "hidden";
+
+    if (height === 0) {
+      blockHidden.style.height = "auto";
+      height = blockHidden.offsetHeight + "px";
+      blockHidden.style.height = offsetH;
+    }
+
+    if (target.classList.contains("_slide")) {
+      target.classList.remove("_slide");
+      blockHidden.style.height = "auto";
+      height = blockHidden.offsetHeight + "px";
+      blockHidden.style.height = height;
+      blockHidden.offsetHeight;
+      blockHidden.style.height = offsetH;
+    } else {
+      target.classList.add("_slide");
+      blockHidden.offsetHeight;
+      blockHidden.style.height = height;
+      window.setTimeout(() => {
+        blockHidden.style.height = "auto";
+      }, duration);
+    }
+  };
+}
 ;
 document.addEventListener("DOMContentLoaded", () => {
   let doc = document;
