@@ -6369,20 +6369,16 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
   background-color: #f0f0f0;
   border-radius: 8px;
   overflow: hidden;
-  -webkit-transition: opacity 0.3s ease 0s;
-  -o-transition: opacity 0.3s ease 0s;
-  transition: opacity 0.3s ease 0s;
+  -webkit-transition: background-color 0.3s ease 0s;
+  -o-transition: background-color 0.3s ease 0s;
+  transition: background-color 0.3s ease 0s;
   opacity: 1;
   margin-right: 0.625rem;
   margin-bottom: 0.625rem;
 }
 
-.section-links__item._active {
-  background-color: #dddddd;
-}
-
 .section-links__item:hover {
-  opacity: 0.8;
+  background-color: #dddddd;
 }
 
 .page {
@@ -7410,6 +7406,8 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
 
   .header-nav__link {
     font-size: 1.1875rem;
+    text-transform: none;
+    font-weight: 400;
   }
 
   .header-nav__sub-list {
@@ -7441,7 +7439,6 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
         -ms-flex-align: center;
             align-items: center;
     font-size: 1rem;
-    font-weight: 700;
   }
 
   .header-nav__sub-list .header-nav__sub-list .header-nav__sub-link::before {
