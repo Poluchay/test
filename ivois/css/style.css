@@ -4699,6 +4699,8 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .content-badges__badge {
