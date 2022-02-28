@@ -1236,6 +1236,10 @@ body.ie ._ibg img {
   position: relative;
 }
 
+._show-more._slide {
+  padding-bottom: 1.5625rem !important;
+}
+
 ._show-more._slide ._show-more__btn {
   height: 3%;
 }
