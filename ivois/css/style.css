@@ -4151,11 +4151,19 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
   color: #0967be;
 }
 
+.nav {
+  line-height: 1.2;
+}
+
 .nav__link {
   font-size: 1rem;
   font-weight: 700;
   letter-spacing: 0.5px;
   text-transform: uppercase;
+}
+
+.header-nav {
+  line-height: 1.2;
 }
 
 .header-nav__item {
@@ -4172,7 +4180,7 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
 }
 
 .header-nav__item:not(:last-child) {
-  margin-bottom: 0.9375rem;
+  margin-bottom: 0.625rem;
 }
 
 .header-nav__item:hover .header-nav__sub-list {
