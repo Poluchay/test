@@ -4203,25 +4203,36 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
 }
 
 .header-nav__sppoler-btn {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 auto;
-          flex: 1 1 auto;
-}
-
-.header-nav__sppoler-btn::before {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 none;
+          flex: 0 0 none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 1.5625rem;
-  height: 1.5625rem;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-left: auto;
+  width: 1.5625rem;
+  height: 1.5625rem;
   background-color: #24458c;
+  margin-left: auto;
+}
+
+.header-nav__sppoler-btn i::before {
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  -o-transition: transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+}
+
+.header-nav__sppoler-btn._active i::before {
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
 }
 
 .header-nav__sub-item {
