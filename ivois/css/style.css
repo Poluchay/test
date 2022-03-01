@@ -8440,6 +8440,16 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
     color: #f2140a;
   }
 
+  .nav__link {
+    -webkit-transition: color 0.3s ease 0s;
+    -o-transition: color 0.3s ease 0s;
+    transition: color 0.3s ease 0s;
+  }
+
+  .nav__link:hover {
+    color: #f2140a;
+  }
+
   .contacts-item__link {
     -webkit-transition: color 0.3s ease 0s;
     -o-transition: color 0.3s ease 0s;
