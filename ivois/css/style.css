@@ -3962,6 +3962,8 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
 }
 
 .header__button-mob {
+  position: relative;
+  z-index: 5;
   display: inline-block;
   width: 2.1875rem;
   height: 2.1875rem;
@@ -4029,6 +4031,12 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
 
 .header-menu__button:not(:last-child) {
   margin-right: 1.1875rem;
+}
+
+.header-menu__button-mob {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
 }
 
 .location {
@@ -7451,6 +7459,10 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
 
   .header-menu__buttons {
     display: block;
+  }
+
+  .header-menu__button-mob {
+    display: none;
   }
 
   .nav__list {
