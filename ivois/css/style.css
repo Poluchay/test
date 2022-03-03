@@ -1237,6 +1237,10 @@ body.ie ._ibg img {
   position: relative;
 }
 
+._show-more__btn {
+  cursor: pointer;
+}
+
 .circle {
   position: absolute;
   z-index: -1;
@@ -3988,6 +3992,10 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
 }
 
 .logo {
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+  width: 10.625rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -6442,6 +6450,26 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
   background-color: #dddddd;
 }
 
+.showmore-block__content {
+  height: 0.0625rem;
+}
+
+.showmore-block__btn {
+  text-align: center;
+}
+
+.showmore-block__btn span:nth-child(2) {
+  display: none;
+}
+
+.showmore-block__btn._active span:first-child {
+  display: none;
+}
+
+.showmore-block__btn._active span:nth-child(2) {
+  display: block;
+}
+
 .page {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 auto;
@@ -6476,8 +6504,7 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
   background-color: #f0f0f0;
 }
 
-.lt-section__container--height-500 {
-  overflow: hidden;
+.lt-section__container._slide {
   height: 31.25rem;
 }
 
