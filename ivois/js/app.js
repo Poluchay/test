@@ -522,45 +522,44 @@ const showMoreElements = document.querySelectorAll("._show-more");
 
 showMoreElements.forEach((element) => {
   const showMoreBtn = element.querySelector("._show-more__btn");
-  if (showMoreBtn) {
-    const slideUp = showMore(element, 700);
-    showMoreBtn.addEventListener("click", slideUp);
+  const blockHidden = element.querySelector("._show-more__hidden");
+  if ((showMoreBtn, blockHidden)) {
+    blockHidden.classList.add("_slide");
+    showMoreBtn.addEventListener("click", showMore);
   }
 });
 
-function showMore(target, duration = 500) {
-  blockHidden = target.querySelector("._show-more__hidden");
-  if (!blockHidden) return;
-
-  const offsetH = blockHidden.offsetHeight + "px";
-  let height = 0;
-  return () => {
-    blockHidden.style.transitionProperty = "height";
-    blockHidden.style.transitionDuration = duration + "ms";
-    blockHidden.style.overflow = "hidden";
-
-    if (height === 0) {
-      blockHidden.style.height = "auto";
-      height = blockHidden.offsetHeight + "px";
-      blockHidden.style.height = offsetH;
-    }
-
-    if (target.classList.contains("_slide")) {
-      target.classList.remove("_slide");
-      blockHidden.style.height = "auto";
-      height = blockHidden.offsetHeight + "px";
-      blockHidden.style.height = height;
-      blockHidden.offsetHeight;
-      blockHidden.style.height = offsetH;
-    } else {
-      target.classList.add("_slide");
-      blockHidden.offsetHeight;
-      blockHidden.style.height = height;
-      window.setTimeout(() => {
-        blockHidden.style.height = "auto";
-      }, duration);
-    }
-  };
+function showMore(e) {
+  const target = e.target;
+  const showMore = target.closest("._show-more");
+  const blockHidden = showMore.querySelector("._show-more__hidden");
+  let height = blockHidden.offsetHeight + "px";
+  const btn = showMore.querySelector("._show-more__btn");
+  if (!showMore) return;
+  btn.classList.toggle("_active");
+  if (!blockHidden.hasAttribute("data-height")) {
+    blockHidden.setAttribute("data-height", height);
+  }
+  const minHeight = blockHidden.getAttribute("data-height");
+  blockHidden.style.transitionProperty = "height";
+  blockHidden.style.transitionDuration = 500 + "ms";
+  blockHidden.style.overflow = "hidden";
+  if (!blockHidden.classList.contains("_slide")) {
+    blockHidden.style.height = blockHidden.offsetHeight + "px";
+    blockHidden.offsetHeight;
+    blockHidden.style.height = minHeight;
+    blockHidden.classList.add("_slide");
+  } else {
+    blockHidden.classList.remove("_slide");
+    blockHidden.style.removeProperty("height");
+    height = blockHidden.offsetHeight + "px";
+    blockHidden.style.height = minHeight;
+    blockHidden.offsetHeight;
+    blockHidden.style.height = height;
+    window.setTimeout(() => {
+      blockHidden.style.removeProperty("height");
+    }, 500);
+  }
 }
 ;
 document.addEventListener("DOMContentLoaded", () => {
