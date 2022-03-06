@@ -364,6 +364,7 @@ for (let index = 0; index < popups.length; index++) {
 
 function popup_open(item, video = "") {
   let activePopup = document.querySelectorAll(".popup._active");
+  let body = document.querySelector("body");
   if (activePopup.length > 0) {
     popup_close("", false);
   }
@@ -376,6 +377,9 @@ function popup_open(item, video = "") {
         video +
         '?autoplay=1"  allow="autoplay; encrypted-media" allowfullscreen></iframe>';
     }
+    if (body.classList.contains("_lock")) {
+      body.classList.add("_modal-active");
+    }
     if (!document.querySelector(".menu__body._active")) {
       body_lock_add(500);
     }
@@ -385,6 +389,7 @@ function popup_open(item, video = "") {
 }
 
 function popup_close(item, bodyUnlock = true) {
+  let body = document.querySelector("body");
   if (unlock) {
     if (!item) {
       for (let index = 0; index < popups.length; index++) {
@@ -402,8 +407,14 @@ function popup_close(item, bodyUnlock = true) {
       }
       item.classList.remove("_active");
     }
-    if (!document.querySelector(".menu__body._active") && bodyUnlock) {
+    if (
+      !document.querySelector(".menu__body._active") &&
+      bodyUnlock &&
+      !body.classList.contains("_modal-active")
+    ) {
       body_lock_remove(500);
+    } else {
+      body.classList.remove("_modal-active");
     }
     history.pushState("", "", window.location.href.split("#")[0]);
   }
