@@ -1433,6 +1433,14 @@ body.ie ._ibg img {
   fill: #2379ee;
 }
 
+.map__iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
 .breadcrumbs li {
   display: inline-block;
   font-size: 14px;
