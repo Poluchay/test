@@ -2982,6 +2982,10 @@ body.ie ._ibg img {
     visibility: visible;
   }
 
+  .header__inner._active::after {
+    opacity: 1;
+  }
+
   .header__inner::before {
     content: "";
     position: fixed;
@@ -2992,6 +2996,22 @@ body.ie ._ibg img {
     height: 90px;
     display: block;
     background-color: #ffffff;
+  }
+
+  .header__inner::after {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    -webkit-transition: opacity 0.3s;
+    -o-transition: opacity 0.3s;
+    transition: opacity 0.3s;
+    background-color: #010d1883;
   }
 
   .header__menu-item:last-child {
