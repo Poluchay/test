@@ -780,3 +780,148 @@ function documentActions(e) {
     targetElement.closest(".nav__item").classList.remove("_show");
   }
 }
+
+//Placeholers
+let inputs = document.querySelectorAll(
+  "input[data-value],textarea[data-value]"
+);
+inputs_init(inputs);
+
+function inputs_init(inputs) {
+  if (inputs.length > 0) {
+    for (let index = 0; index < inputs.length; index++) {
+      const input = inputs[index];
+      const input_g_value = input.getAttribute("data-value");
+      input_placeholder_add(input);
+      if (input.value != "" && input.value != input_g_value) {
+        input_focus_add(input);
+      }
+      input.addEventListener("focus", function (e) {
+        if (input.value == input_g_value) {
+          input_focus_add(input);
+          input.value = "";
+        }
+        if (input.getAttribute("data-type") === "pass") {
+          if (input.parentElement.querySelector("._viewpass")) {
+            if (
+              !input.parentElement
+                .querySelector("._viewpass")
+                .classList.contains("_active")
+            ) {
+              input.setAttribute("type", "password");
+            }
+          } else {
+            input.setAttribute("type", "password");
+          }
+        }
+        if (input.classList.contains("_date")) {
+          /*
+					input.classList.add('_mask');
+					Inputmask("99.99.9999", {
+						//"placeholder": '',
+						clearIncomplete: true,
+						clearMaskOnLostFocus: true,
+						onincomplete: function () {
+							input_clear_mask(input, input_g_value);
+						}
+					}).mask(input);
+					*/
+        }
+        if (input.classList.contains("_phone")) {
+          //'+7(999) 999 9999'
+          //'+38(999) 999 9999'
+          //'+375(99)999-99-99'
+          input.classList.add("_mask");
+          Inputmask("+7 (999) 999-99-99", {
+            //"placeholder": '',
+            clearIncomplete: true,
+            clearMaskOnLostFocus: true,
+            onincomplete: function () {
+              input_clear_mask(input, input_g_value);
+            },
+          }).mask(input);
+        }
+        if (input.classList.contains("_digital")) {
+          input.classList.add("_mask");
+          Inputmask("9{1,}", {
+            placeholder: "",
+            clearIncomplete: true,
+            clearMaskOnLostFocus: true,
+            onincomplete: function () {
+              input_clear_mask(input, input_g_value);
+            },
+          }).mask(input);
+        }
+        form_remove_error(input);
+      });
+      input.addEventListener("blur", function (e) {
+        if (input.value == "") {
+          input.value = input_g_value;
+          input_focus_remove(input);
+          if (input.classList.contains("_mask")) {
+            input_clear_mask(input, input_g_value);
+          }
+          if (input.getAttribute("data-type") === "pass") {
+            input.setAttribute("type", "text");
+          }
+        }
+      });
+      if (input.classList.contains("_date")) {
+        const calendarItem = datepicker(input, {
+          customDays: ["Пн", "Вт", "Ср", "Чт", "Пт", "Сб", "Вс"],
+          customMonths: [
+            "Янв",
+            "Фев",
+            "Мар",
+            "Апр",
+            "Май",
+            "Июн",
+            "Июл",
+            "Авг",
+            "Сен",
+            "Окт",
+            "Ноя",
+            "Дек",
+          ],
+          overlayButton: "Применить",
+          overlayPlaceholder: "Год (4 цифры)",
+          startDay: 1,
+          formatter: (input, date, instance) => {
+            const value = date.toLocaleDateString();
+            input.value = value;
+          },
+          onSelect: function (input, instance, date) {
+            input_focus_add(input.el);
+          },
+        });
+        const dataFrom = input.getAttribute("data-from");
+        const dataTo = input.getAttribute("data-to");
+        if (dataFrom) {
+          calendarItem.setMin(new Date(dataFrom));
+        }
+        if (dataTo) {
+          calendarItem.setMax(new Date(dataTo));
+        }
+      }
+    }
+  }
+}
+function input_placeholder_add(input) {
+  const input_g_value = input.getAttribute("data-value");
+  if (input.value == "" && input_g_value != "") {
+    input.value = input_g_value;
+  }
+}
+function input_focus_add(input) {
+  input.classList.add("_focus");
+  input.parentElement.classList.add("_focus");
+}
+function input_focus_remove(input) {
+  input.classList.remove("_focus");
+  input.parentElement.classList.remove("_focus");
+}
+function input_clear_mask(input, input_g_value) {
+  input.inputmask.remove();
+  input.value = input_g_value;
+  input_focus_remove(input);
+}
