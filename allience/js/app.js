@@ -758,13 +758,12 @@ document.addEventListener("click", documentActions);
 // Actions (делигирование события)
 function documentActions(e) {
   const targetElement = e.target;
-
   const item = targetElement.closest(".nav__item");
   if (
-    targetElement.classList.contains("nav__link") &&
+    (targetElement.classList.contains("nav__link") ||
+      targetElement.classList.contains("nav__item")) &&
     item.querySelector(".nav__inner")
   ) {
-    e.preventDefault();
     item.classList.add("_show");
   }
 
