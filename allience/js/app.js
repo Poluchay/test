@@ -759,18 +759,13 @@ document.addEventListener("click", documentActions);
 function documentActions(e) {
   const targetElement = e.target;
 
+  const item = targetElement.closest(".nav__item");
   if (
     targetElement.classList.contains("nav__link") &&
-    targetElement.closest(".nav__item")
+    item.querySelector(".nav__inner")
   ) {
     e.preventDefault();
-    const item = targetElement.closest(".nav__item");
-    const btn = item.querySelector(".nav__btn-down");
-    console.log(btn);
     item.classList.add("_show");
-    if (btn) {
-      btn.innerHTML = targetElement.innerHTML;
-    }
   }
 
   if (

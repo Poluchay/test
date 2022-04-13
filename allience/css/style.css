@@ -550,7 +550,7 @@ body.ie ._ibg img {
 .popup {
   -webkit-overflow-scrolling: touch;
   z-index: 100;
-  padding: 30px 10px;
+  padding: 30px 25px;
   position: fixed;
   top: 0px;
   left: 0;
@@ -658,15 +658,53 @@ body.ie ._ibg img {
   max-width: 800px;
 }
 
+.popup__body--mw410 {
+  max-width: 410px;
+}
+
 .popup__close {
-  width: 15px;
-  height: 15px;
+  width: 40px;
+  height: 40px;
   position: absolute;
+  background-color: #2379ee;
+  background-image: url("../img/icons/close.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 14px 14px;
   top: 0px;
   right: 0px;
+  -webkit-transform: translate3d(50%, -50%, 0);
+          transform: translate3d(50%, -50%, 0);
+  border-radius: 50%;
   cursor: pointer;
   z-index: 30;
-  background: url("../img/icons/close.svg") 0 0 no-repeat;
+}
+
+.popup-contacts {
+  padding: 25px;
+}
+
+.popup-contacts__item {
+  font-size: 15px;
+}
+
+.popup-contacts__item input:not(:last-child) {
+  margin-bottom: 5px;
+}
+
+.popup-contacts__item span {
+  font-size: 11px;
+  color: #cccfd1;
+}
+
+.popup-contacts__item:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.popup-contacts__title {
+  margin-bottom: 5px;
+  font-size: 18px;
+  font-weight: 700;
 }
 
 .header {
@@ -743,18 +781,25 @@ body.ie ._ibg img {
       -ms-flex-pack: justify;
           justify-content: space-between;
   background-color: #010d18;
-  padding: 15px 30px;
   color: #ffffff;
 }
 
-.nav__btn-down::after {
-  content: "";
-  margin-left: auto;
-  width: 6px;
+.nav__btn-down a {
+  text-decoration: underline;
+  padding: 15px 5px 15px 30px;
+}
+
+.nav__btn-down-img {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 15%;
+          flex: 0 0 15%;
+  padding: 15px 30px 15px 5px;
+}
+
+.nav__btn-down-img img {
+  display: block;
   height: 12px;
-  background-image: url("../img/icons/arrow-left.svg");
-  background-position: center;
-  background-repeat: no-repeat;
+  margin-left: auto;
 }
 
 .nav__list {
@@ -2689,6 +2734,36 @@ body.ie ._ibg img {
 
   .link-style {
     font-size: 60px;
+  }
+
+  .popup__close {
+    background-size: 18px 18px;
+    width: 50px;
+    height: 50px;
+  }
+
+  .popup-contacts {
+    padding: 30px 35px;
+  }
+
+  .popup-contacts__item {
+    font-size: 18px;
+  }
+
+  .popup-contacts__item input:not(:last-child) {
+    margin-bottom: 10px;
+  }
+
+  .popup-contacts__item:not(:last-child) {
+    margin-bottom: 20px;
+  }
+
+  .popup-contacts__item span {
+    font-size: 14px;
+  }
+
+  .popup-contacts__title {
+    font-size: 24px;
   }
 
   .header__inner {

@@ -59,6 +59,8 @@
                   </svg>
                   <div class="nav__inner">
                     <div class="nav__btn-down">
+                      <a href="#">О компании</a>
+                      <div class="nav__btn-down-img"><img src="img/icons/arrow-left.svg" alt="arrow"></div>
                     </div>
                     <ul class="nav__sub-list">
                       <li class="nav__sub-item nav__sub-item--mob">
@@ -272,7 +274,22 @@
   </div>
   <div class="popup popup_popup">
 	<div class="popup__content">
-		<div class="popup__body">
+		<div class="popup__body popup__body--mw410">
+			<div class="popup-contacts">
+				<div class="popup-contacts__item">
+					<div class="popup-contacts__title">Форма обратной связи</div>
+					<p>Наш менеджер перезвонит вами в течении 5 минут</p>
+				</div>
+				<div class="popup-contacts__item">
+					<input type="text" class="form-input form-input--fw" placeholder="Имя">
+					<input type="text" data-value="" placeholder="+7 (___) ___-__-__" class="form-input form-input--fw _phone">
+				</div>
+				<div class="popup-contacts__item"><button class="btn-primary btn-primary--fw">Отправить заявку</button></div>
+				<div class="popup-contacts__item">
+					<span>Нажимая кнопку “Отправить заявку” на сайте Вы даете свое согласие на обработку Ваших персональных данных
+					</span>
+				</div>
+			</div>
 			<div class="popup__close"></div>
 		</div>
 	</div>
@@ -291,8 +308,7 @@
 			<div class="popup__video _video"></div>
 		</div>
 	</div>
-</div>
- <!-- Swiper -->
+</div> <!-- Swiper -->
 <!-- <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> -->
 <script src="js/vendors.min.js"></script>
 <script src="js/app.min.js"></script>
