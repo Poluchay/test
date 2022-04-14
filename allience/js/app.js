@@ -754,6 +754,20 @@ function sliderDestroy(slider) {
   return item;
 }
 
+//lightgallery
+const galleryAll = document.querySelectorAll("[data-lg]");
+if (galleryAll) {
+  let i = 0;
+  for (gallery of galleryAll) {
+    gallery.setAttribute("data-lg", `${++i}`);
+    console.log(document.querySelector(`[data-lg = '${i}']`));
+    lightGallery(document.querySelector(`[data-lg = '${i}']`), {
+      selector: "a",
+      speed: 500,
+    });
+  }
+}
+
 document.addEventListener("click", documentActions);
 // Actions (делигирование события)
 function documentActions(e) {
