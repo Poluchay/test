@@ -2583,14 +2583,14 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 
 .breadcrumbs li {
   display: inline-block;
-  font-size: 14px;
+  font-size: 10px;
 }
 
 .breadcrumbs li:not(:last-child)::after {
   content: ">";
   display: inline-block;
   color: #cccfd1;
-  margin: 0 12px;
+  margin: 0 6px;
 }
 
 .breadcrumbs a {
@@ -3620,6 +3620,14 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
     width: 20px;
     height: 20px;
     margin-right: 10px;
+  }
+
+  .breadcrumbs li {
+    font-size: 14px;
+  }
+
+  .breadcrumbs li:not(:last-child)::after {
+    margin: 0 12px;
   }
 
   .slide-comment {
